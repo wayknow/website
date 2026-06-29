@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SnapMark — A privacy-first Chrome extension for screenshots and annotation. 5 capture modes, 7 annotation tools, 100% local processing, no watermark. $29 lifetime.">
+  <title>SnapMark — Screenshot & Annotation Tool | WayKnow</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/snapmark-logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <img src="/assets/snapmark-logo.svg" alt="SnapMark" width="72" height="72" style="border-radius: 16px; margin-bottom: var(--space-5);">
+        <h1>SnapMark</h1>
+        <p>Capture, annotate, export. All locally. No watermark. No account. Just works.</p>
+        <div class="hero-actions" style="margin-top: var(--space-6);">
+          <a href="#" class="btn btn-primary btn-lg">Install from Chrome Web Store</a>
+          <a href="#pricing" class="btn btn-secondary btn-lg">View Pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshot Modes -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Five Capture Modes</h2>
+          <p>Every screenshot scenario, covered</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <div class="feature-icon">🖥️</div>
+            <div class="feature-text">
+              <h4>Visible Area</h4>
+              <p>Capture the current viewport. One click, instant result.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📜</div>
+            <div class="feature-text">
+              <h4>Full Page</h4>
+              <p>Auto-scroll and stitch the entire page. Smart handling of sticky headers, lazy-loaded images — no ghosting.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✂️</div>
+            <div class="feature-text">
+              <h4>Region Selection</h4>
+              <p>Drag to select any area. Real-time dimension display (W×H). Release to capture. Press Esc to cancel.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">⏱️</div>
+            <div class="feature-text">
+              <h4>Delayed Capture</h4>
+              <p>3/5/10-second countdown. Perfect for dropdown menus, hover tooltips, and other fleeting UI elements.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🎯</div>
+            <div class="feature-text">
+              <h4>Smart Element Selection</h4>
+              <p>Hover to auto-detect page elements (DOM). Highlights on hover, captures on click. Pinpoint buttons, cards, tables instantly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Annotation Tools -->
+    <section style="background: var(--color-bg-alt);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Seven Annotation Tools</h2>
+          <p>Editor opens automatically after every capture — full toolkit built in</p>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Tool</th><th>Description</th><th>Shortcut</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>➡️ Arrow</td><td>Point to anything with an arrowhead</td><td><code>A</code></td></tr>
+              <tr><td>⬜ Rectangle</td><td>Draw a box around key areas</td><td><code>R</code></td></tr>
+              <tr><td>⭕ Ellipse</td><td>Circle or elliptical highlights</td><td><code>E</code></td></tr>
+              <tr><td>🔤 Text</td><td>Click anywhere to add a text label</td><td><code>T</code></td></tr>
+              <tr><td>✏️ Freehand</td><td>Draw freeform lines and shapes</td><td><code>F</code></td></tr>
+              <tr><td>🔲 Blur / Mosaic</td><td>Brush to redact sensitive info — passwords, amounts, phone numbers</td><td><code>B</code></td></tr>
+              <tr><td>🔢 Step Numbers</td><td>Click to place ①②③ numbered markers — perfect for tutorials</td><td><code>N</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top: var(--space-10); margin-bottom: var(--space-4);">Editing Capabilities</h3>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <div class="feature-icon">↩️</div>
+            <div class="feature-text"><h4>Undo / Redo</h4><p>Ctrl+Z / Ctrl+Y. Free: 20 steps. Pro: 100 steps.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🎨</div>
+            <div class="feature-text"><h4>Custom Colors</h4><p>Color picker with free selection. Pro: custom palette presets.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📏</div>
+            <div class="feature-text"><h4>Stroke Width</h4><p>Slider control from 1–10px.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✨</div>
+            <div class="feature-text"><h4>Selection Feedback</h4><p>Blue glow + corner handles + dashed border + red delete button on hover.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Export -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Export Formats</h2>
+          <p>Multiple formats for every use case</p>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Format</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>📋 <strong>Copy to Clipboard</strong></td><td>Ctrl+C and paste directly into Slack, Notion, Figma, email, etc.</td></tr>
+              <tr><td>🖼️ <strong>PNG</strong></td><td>Lossless format, ideal for archiving</td></tr>
+              <tr><td>📸 <strong>JPEG</strong></td><td>Adjustable quality (10%–100%), smaller file size</td></tr>
+              <tr><td>🌐 <strong>WebP</strong></td><td>Best balance of quality and compression</td></tr>
+              <tr><td>📄 <strong>PDF</strong></td><td>No watermark, adjustable page size (A4 / Letter / A3 / Auto-fit)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section style="background: var(--color-bg-alt);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Screenshot History</h2>
+          <p>Never lose a capture</p>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th></th><th>Free</th><th>Pro</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>History entries</td><td>5</td><td>100</td></tr>
+              <tr><td>Thumbnail browser</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>Full-text search</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>One-click re-edit</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>Batch delete</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>High-res retention</td><td>5</td><td>30</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Choose the plan that fits you</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Free -->
+          <div class="pricing-card">
+            <div class="pricing-name">Free</div>
+            <div class="pricing-price">$0</div>
+            <p class="pricing-desc">Free forever, fully functional</p>
+            <ul class="pricing-features">
+              <li>All 5 capture modes</li>
+              <li>All 7 annotation tools</li>
+              <li>All export formats</li>
+              <li>Copy to clipboard</li>
+              <li>Undo/redo (20 steps)</li>
+              <li>100% local processing</li>
+              <li>No watermark, no ads</li>
+              <li>No sign-up required</li>
+            </ul>
+            <a href="#" class="btn btn-outline" style="width:100%">Install Free</a>
+          </div>
+
+          <!-- Lifetime -->
+          <div class="pricing-card featured">
+            <div class="pricing-name">Pro Lifetime</div>
+            <div class="pricing-price">$29 <small>one-time</small></div>
+            <p class="pricing-desc">Best value — pay once, own forever</p>
+            <ul class="pricing-features">
+              <li>Everything in Free</li>
+              <li>100 screenshot history</li>
+              <li>30 high-res retention</li>
+              <li>Undo/redo (100 steps)</li>
+              <li>Extra color presets + custom palette</li>
+              <li>Custom PDF page sizes</li>
+              <li>Fully customizable shortcuts</li>
+              <li>Priority support</li>
+              <li>Lifetime updates</li>
+            </ul>
+            <a href="#" class="btn btn-primary" style="width:100%">Buy Now — $29</a>
+          </div>
+
+          <!-- Subscription -->
+          <div class="pricing-card">
+            <div class="pricing-name">Subscription</div>
+            <div class="pricing-price">$1 <small>/ month</small></div>
+            <p class="pricing-desc">Or $10 / year (save $2)</p>
+            <ul class="pricing-features">
+              <li>All Pro features</li>
+              <li>Monthly flexibility</li>
+              <li>Cancel anytime</li>
+            </ul>
+            <a href="#" class="btn btn-secondary" style="width:100%">Subscribe — $1/mo</a>
+            <p style="text-align:center; margin-top: var(--space-3); font-size: var(--text-xs); color: var(--color-text-muted);">
+              Three years of subscription exceeds the lifetime price — lifetime is the smart choice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section style="background: var(--color-bg-alt);">
+      <div class="container">
+        <div class="section-title">
+          <h2>How We Compare</h2>
+          <p>Same needs, better choice</p>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>SnapMark</th>
+                <th>GoFullPage</th>
+                <th>Awesome</th>
+                <th>FireShot</th>
+                <th>Lightshot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Visible area</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>Full page</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>Region select</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>Delayed capture</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>Element select</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="warn">⚠</span></td></tr>
+              <tr><td>Arrow/box/text</td><td><span class="check">✓</span></td><td><span class="warn">💰</span></td><td><span class="check">✓</span></td><td><span class="warn">⚠</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>Brush/blur</td><td><span class="check">✓</span></td><td><span class="warn">💰</span></td><td><span class="check">✓</span></td><td><span class="warn">💰</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>PDF export</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="warn">⚠ watermarked</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>No watermark</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>Local privacy</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>No sign-up</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>Lifetime purchase</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="warn">⚠</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>3-year cost</td><td><strong>$29</strong></td><td>$36</td><td>$216</td><td>$40→?</td><td>$0</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="text-align:center; margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-muted);">
+          ✓ = Free &nbsp; ⚠ = Limited &nbsp; 💰 = Paid &nbsp; ✗ = Not available
+        </p>
+      </div>
+    </section>
+
+    <!-- Privacy Highlight -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Privacy by Design</h2>
+          <p>Your data is yours. We don't want it.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <div class="feature-icon">🏠</div>
+            <div class="feature-text"><h4>100% Local Processing</h4><p>Capture, annotation, and export all happen inside your browser.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📤</div>
+            <div class="feature-text"><h4>Zero Uploads</h4><p>No data is ever sent to any server. Period.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔑</div>
+            <div class="feature-text"><h4>No Sign-Up</h4><p>Install and go. No email, no account, no phone number.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🛡️</div>
+            <div class="feature-text"><h4>Minimal Permissions</h4><p>Only activeTab + scripting + storage + clipboardWrite. No tabs, cookies, or history access.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background: var(--color-bg-alt);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is SnapMark really free?</button>
+          <div class="faq-answer"><p>Yes. The free version includes all 5 capture modes, all 7 annotation tools, and all export formats — no watermark, no ads, no time limit. The Pro version adds more history, more undo steps, and advanced customization.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Where is my data stored?</button>
+          <div class="faq-answer"><p>Entirely on your device. Screenshots are stored in Chrome's local storage. Nothing is uploaded to any server. You can clear everything by clearing your browser data.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Does the Pro license work on multiple devices?</button>
+          <div class="faq-answer"><p>Yes. Your Pro license is tied to your browser profile. As long as you're signed into the same Chrome profile, it works across your devices.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What's your refund policy?</button>
+          <div class="faq-answer"><p>We offer a 14-day no-questions-asked refund for the lifetime license. Just contact us or request a refund through Creem.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to capture better screenshots?</h2>
+        <p>Install now — no sign-up, no watermark, no nonsense.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary btn-lg">Install SnapMark Free</a>
+          <a href="/snapmark-privacy.html" class="btn btn-secondary btn-lg">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/js/main.js"></script>
+</body>
+</html>
