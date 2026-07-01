@@ -8,7 +8,7 @@
 |------|---------|
 | Site structure | 7 HTML pages + CSS + JS + assets |
 | Homepage | Product cards, shared values, CTA |
-| SnapMark page | Features, pricing (Free + $29 lifetime), comparison table, FAQ |
+| SnapMark page | Features, pricing (Free + $39 lifetime), comparison table, FAQ |
 | ClearJSON page | Features, pricing, comparison table, FAQ |
 | Privacy policies | SnapMark + ClearJSON (Creem compliance) |
 | Terms of service | SnapMark + ClearJSON (Creem compliance) |

@@ -10,7 +10,7 @@ This is the official website for WayKnow, a collection of privacy-first browser 
 
 | Product | Description | Pricing |
 |---------|-------------|---------|
-| [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension | Free + $29 lifetime |
+| [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension | Free + $39 lifetime |
 | [ClearJSON](./clearjson.html) | JSON viewer Chrome extension | Free + $29 lifetime |
 
 ## Site Structure

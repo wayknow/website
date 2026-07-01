@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SnapMark — A privacy-first Chrome extension for screenshots and annotation. 5 capture modes, 7 annotation tools, 100% local processing, no watermark. $29 lifetime.">
+  <meta name="description" content="SnapMark — A privacy-first Chrome extension for screenshots and annotation. 5 capture modes, 8 annotation tools, 100% local processing. Free tier available, Pro $39 lifetime.">
   <title>SnapMark — Screenshot & Annotation Tool | WayKnow</title>
   <link rel="icon" type="image/svg+xml" href="/assets/snapmark-logo.svg">
   <link rel="stylesheet" href="/css/style.css">
@@ -17,7 +17,7 @@
       <div class="container">
         <img src="/assets/snapmark-logo.svg" alt="SnapMark" width="72" height="72" style="border-radius: 16px; margin-bottom: var(--space-5);">
         <h1>SnapMark</h1>
-        <p>Capture, annotate, export. All locally. No watermark. No account. Just works.</p>
+        <p>Capture, annotate, export. All locally. Free tier fully functional, Pro $39 lifetime. No subscription.</p>
         <div class="hero-actions" style="margin-top: var(--space-6);">
           <a href="#" class="btn btn-primary btn-lg">Install from Chrome Web Store</a>
         </div>
@@ -54,17 +54,17 @@
             </div>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">⏱️</div>
-            <div class="feature-text">
-              <h4>Delayed Capture</h4>
-              <p>3/5/10-second countdown. Perfect for dropdown menus, hover tooltips, and other fleeting UI elements.</p>
-            </div>
-          </div>
-          <div class="feature-item">
             <div class="feature-icon">🎯</div>
             <div class="feature-text">
               <h4>Smart Element Selection</h4>
               <p>Hover to auto-detect page elements (DOM). Highlights on hover, captures on click. Pinpoint buttons, cards, tables instantly.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">⏱️</div>
+            <div class="feature-text">
+              <h4>Delayed Capture <span class="badge badge-info" style="margin-left: 4px;">Pro</span></h4>
+              <p>3/5/10-second countdown. Perfect for dropdown menus, hover tooltips, and other fleeting UI elements. Pro exclusive.</p>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
     <section style="background: var(--color-bg-alt);">
       <div class="container">
         <div class="section-title">
-          <h2>Seven Annotation Tools</h2>
+          <h2>Eight Annotation Tools</h2>
           <p>Editor opens automatically after every capture — full toolkit built in</p>
         </div>
 
@@ -92,6 +92,7 @@
               <tr><td>✏️ Freehand</td><td>Draw freeform lines and shapes</td><td><code>F</code></td></tr>
               <tr><td>🔲 Blur / Mosaic</td><td>Brush to redact sensitive info — passwords, amounts, phone numbers</td><td><code>B</code></td></tr>
               <tr><td>🔢 Step Numbers</td><td>Click to place ①②③ numbered markers — perfect for tutorials</td><td><code>N</code></td></tr>
+              <tr><td>✂️ Crop</td><td>Crop the screenshot to your selection</td><td><code>C</code></td></tr>
             </tbody>
           </table>
         </div>
@@ -128,14 +129,14 @@
         <div class="table-wrapper">
           <table>
             <thead>
-              <tr><th>Format</th><th>Description</th></tr>
+              <tr><th>Format</th><th>Free</th><th>Pro</th><th>Description</th></tr>
             </thead>
             <tbody>
-              <tr><td>📋 <strong>Copy to Clipboard</strong></td><td>Ctrl+C and paste directly into Slack, Notion, Figma, email, etc.</td></tr>
-              <tr><td>🖼️ <strong>PNG</strong></td><td>Lossless format, ideal for archiving</td></tr>
-              <tr><td>📸 <strong>JPEG</strong></td><td>Adjustable quality (10%–100%), smaller file size</td></tr>
-              <tr><td>🌐 <strong>WebP</strong></td><td>Best balance of quality and compression</td></tr>
-              <tr><td>📄 <strong>PDF</strong></td><td>No watermark, adjustable page size (A4 / Letter / A3 / Auto-fit)</td></tr>
+              <tr><td>📋 <strong>Clipboard</strong></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td>Ctrl+C and paste directly into Slack, Notion, Figma, email, etc. Always PNG.</td></tr>
+              <tr><td>🖼️ <strong>PNG</strong></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td>Lossless format, ideal for archiving</td></tr>
+              <tr><td>📄 <strong>PDF</strong></td><td><span class="warn">⚠ watermarked</span></td><td><span class="check">✓ no watermark</span></td><td>Adjustable page size (A4 / Letter / A3 / Auto-fit). Free: "SnapMark" watermark at bottom-right. Pro: clean.</td></tr>
+              <tr><td>📸 <strong>JPEG</strong></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td>Adjustable quality (10%–100%), smaller file size. Pro exclusive.</td></tr>
+              <tr><td>🌐 <strong>WebP</strong></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td>Best balance of quality and compression. Pro exclusive.</td></tr>
             </tbody>
           </table>
         </div>
@@ -172,7 +173,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Pricing</h2>
-          <p>Choose the plan that fits you</p>
+          <p>Free is fully functional. Pro is $39 once — no subscription.</p>
         </div>
 
         <div class="pricing-grid">
@@ -182,13 +183,13 @@
             <div class="pricing-price">$0</div>
             <p class="pricing-desc">Free forever, fully functional</p>
             <ul class="pricing-features">
-              <li>All 5 capture modes</li>
-              <li>All 7 annotation tools</li>
-              <li>All export formats</li>
-              <li>Copy to clipboard</li>
+              <li>4 capture modes (no Timer)</li>
+              <li>All 8 annotation tools</li>
+              <li>PNG + clipboard export</li>
+              <li>PDF export (watermarked)</li>
               <li>Undo/redo (20 steps)</li>
+              <li>5 screenshot history</li>
               <li>100% local processing</li>
-              <li>No watermark, no ads</li>
               <li>No sign-up required</li>
             </ul>
             <a href="#" class="btn btn-outline" style="width:100%">Install Free</a>
@@ -197,20 +198,22 @@
           <!-- Lifetime -->
           <div class="pricing-card featured">
             <div class="pricing-name">Pro Lifetime</div>
-            <div class="pricing-price">$29 <small>one-time</small></div>
+            <div class="pricing-price">$39 <small>one-time</small></div>
             <p class="pricing-desc">Best value — pay once, own forever</p>
             <ul class="pricing-features">
               <li>Everything in Free</li>
+              <li>Delayed Capture (Timer)</li>
+              <li>JPEG + WebP export</li>
+              <li>PDF without watermark</li>
               <li>100 screenshot history</li>
               <li>30 high-res retention</li>
               <li>Undo/redo (100 steps)</li>
-              <li>Extra color presets + custom palette</li>
-              <li>Custom PDF page sizes</li>
+              <li>Custom color palettes</li>
               <li>Fully customizable shortcuts</li>
               <li>Priority support</li>
               <li>Lifetime updates</li>
             </ul>
-            <a href="#" class="btn btn-primary" style="width:100%">Buy Now — $29</a>
+            <a href="#" class="btn btn-primary" style="width:100%">Buy Now — $39</a>
           </div>
 
         </div>
@@ -240,16 +243,16 @@
               <tr><td>Visible area</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
               <tr><td>Full page</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
               <tr><td>Region select</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-              <tr><td>Delayed capture</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>Delayed capture</td><td><span class="check">✓ Pro</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
               <tr><td>Element select</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="warn">⚠</span></td></tr>
               <tr><td>Arrow/box/text</td><td><span class="check">✓</span></td><td><span class="warn">💰</span></td><td><span class="check">✓</span></td><td><span class="warn">⚠</span></td><td><span class="check">✓</span></td></tr>
               <tr><td>Brush/blur</td><td><span class="check">✓</span></td><td><span class="warn">💰</span></td><td><span class="check">✓</span></td><td><span class="warn">💰</span></td><td><span class="cross">✗</span></td></tr>
               <tr><td>PDF export</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="warn">⚠ watermarked</span></td><td><span class="cross">✗</span></td></tr>
-              <tr><td>No watermark</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>No watermark</td><td><span class="warn">⚠ Pro</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
               <tr><td>Local privacy</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
               <tr><td>No sign-up</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
               <tr><td>Lifetime purchase</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="warn">⚠</span></td><td><span class="check">✓</span></td></tr>
-              <tr><td>3-year cost</td><td><strong>$29</strong></td><td>$36</td><td>$216</td><td>$40→?</td><td>$0</td></tr>
+              <tr><td>3-year cost</td><td><strong>$39</strong></td><td>$36</td><td>$216</td><td>$40→?</td><td>$0</td></tr>
             </tbody>
           </table>
         </div>
@@ -295,7 +298,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Is SnapMark really free?</button>
-          <div class="faq-answer"><p>Yes. The free version includes all 5 capture modes, all 7 annotation tools, and all export formats — no watermark, no ads, no time limit. The Pro version adds more history, more undo steps, and advanced customization.</p></div>
+          <div class="faq-answer"><p>Yes. The free version includes 4 capture modes, all 8 annotation tools, and PNG + clipboard export — no watermark on screenshots, no ads, no time limit. Pro ($39 lifetime) adds Delayed Capture, JPEG/WebP export, watermark-free PDF, and more.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What's the difference between Free and Pro?</button>
+          <div class="faq-answer"><p>Free covers most daily needs: 4 capture modes, all annotation tools, PNG/clipboard export. Pro ($39 one-time) adds: Delayed Capture (Timer), JPEG & WebP export, watermark-free PDF, 100 history entries, 100 undo steps, custom color palettes, and customizable shortcuts.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Where is my data stored?</button>
@@ -316,7 +323,7 @@
     <section class="cta-section">
       <div class="container">
         <h2>Ready to capture better screenshots?</h2>
-        <p>Install now — no sign-up, no watermark, no nonsense.</p>
+        <p>Install now — no sign-up, no watermark on screenshots, no nonsense.</p>
         <div class="hero-actions">
           <a href="#" class="btn btn-primary btn-lg">Install SnapMark Free</a>
           <a href="/snapmark-privacy.html" class="btn btn-secondary btn-lg">Privacy Policy</a>
