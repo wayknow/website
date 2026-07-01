@@ -13,71 +13,46 @@
 
   <main>
     <article class="policy-content">
-      <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: July 1, 2025</p>
+      <h1>SnapMark Privacy Policy</h1>
+      <p class="last-updated">Last updated: June 25, 2026</p>
 
-      <p>SnapMark ("the extension", "we", "us", or "our") respects and protects your privacy. This Privacy Policy explains how we collect, use, and safeguard your information. Please read it carefully.</p>
+      <p>SnapMark is a Chrome extension for screenshot capture and annotation. This policy explains what data SnapMark handles and how.</p>
 
-      <h2>1. Information We Collect</h2>
+      <h2>Data Collection</h2>
+      <p><strong>SnapMark does not collect, transmit, or store any of your data on any remote server.</strong> All processing — screenshot capture, image annotation, file export — happens entirely inside your browser, on your device.</p>
 
-      <h3>1.1 What We DO NOT Collect</h3>
-      <p>SnapMark is designed with <strong>100% local processing</strong> at its core. Here's what we <strong>do not</strong> collect:</p>
+      <h2>What SnapMark Accesses</h2>
       <ul>
-        <li><strong>Personal information</strong>: We do not collect your name, email address, phone number, IP address, or any personally identifiable information.</li>
-        <li><strong>Screenshot content</strong>: All screenshots and annotations are processed entirely within your local browser. They never leave your device.</li>
-        <li><strong>Browsing history</strong>: We do not read, record, or track which websites you visit.</li>
-        <li><strong>Location data</strong>: We do not collect your geographic location.</li>
-        <li><strong>Usage analytics</strong>: We do not collect any usage data, feature usage frequency, or any form of analytics — not even anonymous statistics.</li>
+        <li><strong>Screenshot data</strong>: Captured via Chrome's <code>captureVisibleTab</code> API and stored temporarily in Chrome's local storage (<code>chrome.storage.local</code>) on your device. This data is never uploaded or transmitted anywhere.</li>
+        <li><strong>Active tab URL</strong>: Read only to determine whether the current page is a restricted page (e.g. <code>chrome://</code>). The URL is not stored, logged, or transmitted.</li>
+        <li><strong>License key</strong>: If you enter a Pro license key, it is stored locally in <code>chrome.storage.local</code> and validated locally. No server-side validation is performed.</li>
       </ul>
 
-      <h3>1.2 Local Storage</h3>
-      <p>The extension uses Chrome's <code>chrome.storage.local</code> API to store the following data <strong>on your device only</strong>:</p>
+      <h2>Permissions</h2>
+      <p>SnapMark requests the following Chrome permissions, and uses them only as described:</p>
       <ul>
-        <li><strong>User preferences</strong>: Your settings (theme selection, shortcut configuration, etc.).</li>
-        <li><strong>Screenshot history</strong>: Screenshot records you save within the extension (stored in your browser's local storage; never uploaded).</li>
-        <li><strong>License information</strong>: If you purchase the Pro version, license verification data is stored locally.</li>
-      </ul>
-      <p>All of the above data is <strong>stored exclusively on your device</strong>. You can delete it at any time by clearing your browser data.</p>
-
-      <h2>2. How We Use Data</h2>
-      <p>Since we collect no data, there is no data usage to describe. All functionality (capture, annotation, export) executes entirely within your browser and requires no network connectivity beyond the initial extension installation.</p>
-
-      <h2>3. Data Sharing</h2>
-      <p>We do not share any data with any third party — because we collect no data in the first place.</p>
-
-      <h2>4. Data Security</h2>
-      <p>Since all data resides on your local device, data security is ensured by your device and Chrome browser's security mechanisms. We recommend:</p>
-      <ul>
-        <li>Keeping Chrome updated to the latest version</li>
-        <li>Using OS-level security features (screen lock, disk encryption)</li>
-        <li>Not installing browser extensions on untrusted devices</li>
+        <li><strong><code>activeTab</code></strong>: To capture screenshots of the current tab only when you click the extension icon.</li>
+        <li><strong><code>scripting</code></strong>: To inject minimal scripts for full-page scrolling, element selection, and delayed capture. Scripts are injected only when you initiate a capture, and are removed immediately after.</li>
+        <li><strong><code>storage</code></strong>: To save your settings, screenshot history, and license key locally on your device.</li>
+        <li><strong><code>clipboardWrite</code></strong>: To copy annotated screenshots to your clipboard when you choose to.</li>
       </ul>
 
-      <h2>5. Third-Party Services</h2>
-      <p>SnapMark <strong>does not integrate any third-party services</strong>. No analytics tools (such as Google Analytics), no advertising platforms, no crash reporting tools. If you purchase the Pro version through Creem, the payment process is handled by Creem — please refer to Creem's privacy policy for their data handling practices.</p>
+      <h2>Third-Party Services</h2>
+      <p>SnapMark does not integrate with any third-party analytics, tracking, or advertising services. No data is shared with any third party.</p>
+      <p>If you purchase the Pro version through Creem, the payment process is handled by Creem — please refer to Creem's privacy policy for their data handling practices.</p>
 
-      <h2>6. Permission Justification</h2>
-      <p>SnapMark requests the following Chrome permissions, each with a specific purpose:</p>
+      <h2>Your Control</h2>
+      <p>You can clear all SnapMark data at any time by:</p>
       <ul>
-        <li><strong>activeTab</strong>: Access the current tab only when you actively click the extension icon, for capturing screenshots.</li>
-        <li><strong>scripting</strong>: Inject screenshot and annotation scripts into the current page (only upon your action).</li>
-        <li><strong>storage</strong>: Store your preferences and screenshot history locally.</li>
-        <li><strong>clipboardWrite</strong>: Copy screenshots to your clipboard (only upon your action).</li>
+        <li>Opening Chrome DevTools on the extension's service worker and clearing storage, or</li>
+        <li>Removing the extension from Chrome</li>
       </ul>
-      <p>We do not request <code>tabs</code>, <code>cookies</code>, <code>history</code>, <code>webRequest</code>, or any other permissions.</p>
 
-      <h2>7. Children's Privacy</h2>
-      <p>SnapMark does not collect data from anyone, and therefore does not collect data from children under 13.</p>
+      <h2>Changes to This Policy</h2>
+      <p>If this policy changes, the updated version will be posted here and the "Last updated" date will be revised.</p>
 
-      <h2>8. Changes to This Privacy Policy</h2>
-      <p>If we update this Privacy Policy, we will update this page and revise the "Last updated" date. Since we do not collect your contact information, we cannot proactively notify you of changes. We encourage you to review this page periodically.</p>
-
-      <h2>9. Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy, please contact us:</p>
-      <ul>
-        <li>GitHub Issues (open an issue in the SnapMark repository)</li>
-        <li>Email: support@wayknow.tech</li>
-      </ul>
+      <h2>Contact</h2>
+      <p>For questions about this policy, contact <a href="mailto:support@wayknow.tech">support@wayknow.tech</a>.</p>
     </article>
   </main>
 
