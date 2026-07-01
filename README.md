@@ -29,7 +29,7 @@ wayknow/
 ├── js/
 │   └── main.js                 # Header/footer injection, nav, FAQ
 ├── assets/
-│   ├── snapmark-logo.svg       # SnapMark logo (placeholder)
+│   ├── snapmark-logo.png       # SnapMark logo (placeholder)
 │   └── clearjson-logo.svg      # ClearJSON logo (placeholder)
 ├── README.md
 ├── STATUS.md
