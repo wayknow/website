@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ClearJSON — A JSON viewer you can trust. Open source (MIT), 100% local, zero tracking. Handles 100MB+ files, JSONPath, Diff, CSV export. $29 lifetime.">
+  <meta name="description" content="ClearJSON — A JSON viewer you can trust. Open source (MIT), 100% local, zero tracking. Handles 100MB+ files, JWT decode, CSV export. $29 lifetime.">
   <title>ClearJSON — A JSON Viewer You Can Trust | WayKnow</title>
   <link rel="icon" type="image/svg+xml" href="/assets/clearjson-logo.svg">
   <link rel="stylesheet" href="/css/style.css">
@@ -66,7 +66,7 @@
           </div>
           <div class="feature-item">
             <div class="feature-icon">🎨</div>
-            <div class="feature-text"><h4>5 Base Themes</h4><p>Light and dark themes with instant CSS-variable switching.</p></div>
+            <div class="feature-text"><h4>10 Free Themes</h4><p>Light, Dark, Sepia, Monokai, and more. Instant CSS-variable switching, follows system preference.</p></div>
           </div>
           <div class="feature-item">
             <div class="feature-icon">📋</div>
@@ -100,21 +100,21 @@
             <div class="feature-icon">⚡</div>
             <div class="feature-text">
               <h4>Large File Handling</h4>
-              <p>Virtual scrolling renders 100MB+ JSON files without freezing. No free alternative handles this.</p>
+              <p>Virtual scrolling renders 100MB+ JSON files without freezing. Web Worker streaming parser handles even the biggest API responses.</p>
             </div>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">🎯</div>
+            <div class="feature-icon">🔐</div>
             <div class="feature-text">
-              <h4>JSONPath Query</h4>
-              <p>Type <code>$.store.book[0].title</code> to jump directly to any node. No more manual digging through nested objects.</p>
+              <h4>JWT Auto-Decode</h4>
+              <p>Automatically detects <code>eyJ...</code> tokens and displays decoded header + payload inline. See algorithm, claims, and expiry at a glance.</p>
             </div>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">🔄</div>
+            <div class="feature-icon">🔍</div>
             <div class="feature-text">
-              <h4>JSON Diff</h4>
-              <p>Paste two JSON snippets, see differences highlighted. Essential for debugging API changes.</p>
+              <h4>Advanced Search</h4>
+              <p>Regex and fuzzy matching. Navigate results with ↑↓ keys. All matches highlighted — not just the current one.</p>
             </div>
           </div>
           <div class="feature-item">
@@ -177,12 +177,12 @@
             <ul class="pricing-features">
               <li>Everything in Free</li>
               <li>Large file handling (100MB+)</li>
-              <li>JSONPath query</li>
-              <li>JSON Diff</li>
-              <li>Export CSV / TSV</li>
-              <li>30 themes</li>
-              <li>Custom shortcuts</li>
-              <li>Lifetime updates + priority support</li>
+              <li>JWT auto-decode (header + payload)</li>
+              <li>Advanced search (regex, fuzzy)</li>
+              <li>Export CSV / TSV / YAML / TypeScript</li>
+              <li>20 additional themes (30 total)</li>
+              <li>Custom keyboard shortcuts</li>
+              <li>Lifetime updates</li>
             </ul>
             <a href="#" class="btn btn-primary" style="width:100%">Buy Now — $29</a>
           </div>
@@ -214,9 +214,9 @@
               <tr><td>Open source</td><td><span class="check">✓ MIT</span></td><td><span class="check">✓ MIT</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
               <tr><td>Zero tracking</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
               <tr><td>Large files</td><td><span class="check">✓ 100MB+</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
-              <tr><td>JSONPath</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>JWT decode</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
               <tr><td>CSV export</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
-              <tr><td>Diff</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>Regex search</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
               <tr><td>30+ themes</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓ 60+</span></td><td><span class="cross">✗</span></td><td><span class="check">✓ 20+</span></td></tr>
               <tr><td>Commercialized</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
             </tbody>
@@ -225,7 +225,7 @@
 
         <div class="alert alert-success" style="max-width: 700px; margin: var(--space-8) auto 0;">
           <p style="font-size: var(--text-base);">
-            <strong>The takeaway:</strong> All competitors choke on large files. None are commercialized. ClearJSON covers all free features while differentiating with large-file handling, JSONPath, and Diff — hard requirements that free tools can't deliver. At $29, it's an impulse-buy price for a developer tool. (CSS Scan sold 1,450+ copies at $69.)
+            <strong>The takeaway:</strong> All competitors choke on large files. None are commercialized. ClearJSON covers all free features while differentiating with large-file handling, JWT decode, and regex search — hard requirements that free tools can't deliver. At $29, it's an impulse-buy price for a developer tool. (CSS Scan sold 1,450+ copies at $69.)
           </p>
         </div>
       </div>
