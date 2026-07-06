@@ -195,3 +195,32 @@
 **Future pattern**: `api.wayknow.tech/clearjson/*` for ClearJSON license server, `api.wayknow.tech/telemetry` for optional analytics, etc.
 
 **Why**: Single domain is simpler to manage (one SSL cert, one DNS record). Path-based routing lets each product's Worker be deployed independently. Scales horizontally — add new products by adding new routes, not new domains.
+
+---
+
+## 17. CookieClear: Completely Free (No Pro Tier)
+
+**Decision**: CookieClear is completely free — no Pro tier, no subscription, no ads, no paid features.
+
+**Why**: The cookie editor market has no validated paid demand:
+- EditThisCookie had 3M free users for a decade
+- Cookie-Editor has 2M free users
+- CookieJar ($4.99/mo) and Cookie Editor ($3/mo) have unknown conversion rates and no public revenue data
+- Users are accustomed to free cookie editors
+
+**Strategy**: CookieClear serves as a **free acquisition channel** for the product family:
+- CookieClear → top of funnel (free, mass appeal, 3M+ addressable market)
+- ClearJSON → monetization ($29 lifetime)
+- SnapMark → monetization ($39 lifetime)
+
+**Cross-promotion**: CookieClear promotes ClearJSON and SnapMark within the extension. Three products cover three high-frequency developer needs, cross-promoting each other.
+
+---
+
+## 18. CookieClear: EditThisCookie Replacement Positioning
+
+**Decision**: Position CookieClear explicitly as the safe EditThisCookie replacement in SEO, store listing, and website copy.
+
+**Why**: EditThisCookie was removed from CWS (3M+ users stranded). A malicious copycat scammed 50K+ users. Search volume for "EditThisCookie replacement" and "EditThisCookie alternative" is high. Naming the competitor directly in marketing copy captures this search traffic.
+
+**Implementation**: Website "Why CookieClear Exists" section tells the EditThisCookie story. Store listing uses "EditThisCookie replacement" as a keyword. Comparison table includes EditThisCookie column showing "✗ Removed".

@@ -12,6 +12,7 @@ Official website for WayKnow, a collection of privacy-first Chrome browser exten
 |---------|-------------|---------|
 | [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension (8 annotation tools, 5 capture modes, license server live) | Free + $39 lifetime |
 | [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, JWT decode, regex search, large files) | Free + $29 lifetime |
+| [CookieClear](./cookieclear.html) | Cookie editor Chrome extension (privacy score, import/export, domain whitelist, undo, dark mode) | Always Free |
 
 ## Key Design Decisions
 
@@ -26,6 +27,7 @@ Official website for WayKnow, a collection of privacy-first Chrome browser exten
 | No subscription pricing | Both products: Free + one-time lifetime purchase only |
 | SnapMark Pro $39 | Researched competitors (FireShot $99.95 lifetime, others subscription-only). Deliberately underpriced for market entry |
 | ClearJSON Pro $29 | Impulse-buy price for developer tools (CSS Scan sold 1,450+ at $69) |
+| CookieClear always free | Free acquisition channel for product family. No validated paid demand in cookie editor market |
 
 ## Site Structure
 
@@ -34,10 +36,13 @@ wayknow/
 ├── index.html                  # Homepage — product cards + shared values
 ├── snapmark.html               # SnapMark product page (features, pricing, comparison, FAQ)
 ├── clearjson.html              # ClearJSON product page (features, pricing, comparison, FAQ)
+├── cookieclear.html            # CookieClear product page (free cookie editor, EditThisCookie replacement)
 ├── snapmark-privacy.html       # SnapMark privacy policy (Creem compliance)
 ├── snapmark-terms.html         # SnapMark terms of service
 ├── clearjson-privacy.html      # ClearJSON privacy policy (Creem compliance)
 ├── clearjson-terms.html        # ClearJSON terms of service
+├── cookieclear-privacy.html    # CookieClear privacy policy (zero data collection)
+├── cookieclear-terms.html      # CookieClear terms of service (MIT license)
 ├── css/
 │   └── style.css               # Design system (~1000 lines, CSS variables, responsive)
 ├── js/
