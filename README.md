@@ -53,7 +53,10 @@ wayknow/
 ├── README.md
 ├── STATUS.md
 ├── DECISIONS.md                # Key decisions and rationale
-└── DEPLOY.md                   # Deployment guide
+├── DEPLOY.md                   # Deployment guide
+├── SEO.md                      # SEO checklist
+├── CLAUDE.md                   # Project context for Claude Code
+└── robots.txt
 ```
 
 ## Tech Stack

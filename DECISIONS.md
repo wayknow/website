@@ -224,3 +224,31 @@
 **Why**: EditThisCookie was removed from CWS (3M+ users stranded). A malicious copycat scammed 50K+ users. Search volume for "EditThisCookie replacement" and "EditThisCookie alternative" is high. Naming the competitor directly in marketing copy captures this search traffic.
 
 **Implementation**: Website "Why CookieClear Exists" section tells the EditThisCookie story. Store listing uses "EditThisCookie replacement" as a keyword. Comparison table includes EditThisCookie column showing "✗ Removed".
+
+---
+
+## 19. ClearJSON: No Subscription — Lifetime Only
+
+**Decision**: ClearJSON Pro is $29 lifetime only. Removed the subscription option ($2/mo, $20/yr) that appeared in early planning.
+
+**Why**: Pure client-side tool with no server costs (license verification only). Developers hate "yet another subscription." $2/mo revenue wouldn't cover the overhead of managing a subscription system (user accounts, payment retry logic, churn).
+
+---
+
+## 20. ClearJSON: No JSONPath Query, No JSON Diff
+
+**Decision**: Removed JSONPath query and JSON Diff from the Pro feature set.
+
+**Why**:
+- **JSONPath**: JSON Query Tool and Rahul Baruri's Viewer Pro already do this well for free. No differentiation.
+- **JSON Diff**: Just JSON and JsonKing already offer this for free. No differentiation.
+
+**Replaced with**: JWT auto-decode (no competitor has it), advanced search with regex + fuzzy matching, multi-format export (CSV/TSV/YAML/TypeScript).
+
+---
+
+## 21. ClearJSON: No AI Integration
+
+**Decision**: ClearJSON will never include AI features (LLM-based JSON analysis, auto-completion, etc.).
+
+**Why**: Contradicts the core privacy promise ("data never leaves your device"). AI API costs are unpredictable — a single heavy user could burn $5-10/month. Developers already use ChatGPT/Claude alongside the tool anyway.

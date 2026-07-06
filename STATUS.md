@@ -41,9 +41,11 @@
 | Server deploy | ✅ | Tencent Cloud Singapore, Nginx, git-based updates |
 | Cloudflare CDN | ✅ | Global edge caching |
 | Email forwarding | ✅ | `support@wayknow.tech` → Gmail via Cloudflare |
+| CLAUDE.md | ✅ | Project context for Claude Code (aligned with ClearJSON's format) |
 | SnapMark CWS submission | ✅ | v1.1.0 submitted, under review |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
-| ClearJSON License API | ⚠️ | Planned — `api.wayknow.tech/clearjson` to follow same Workers + D1 pattern |
+| ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
+| ClearJSON CWS submission | ⚠️ | $5 registration paid, awaiting identity review |
 | CookieClear CWS submission | ⚠️ | v1.0.0 built, tested (76 tests). CWS developer registration pending |
 
 ## ⚠️ Pending — Requires External URLs
