@@ -45,12 +45,19 @@
 
 **Decision**: Updated the website to accurately reflect what's actually in the extension.
 
-**Key corrections**:
+**Key corrections (SnapMark)**:
 - Delayed Capture is **Pro-only** (was incorrectly listed as free)
 - JPEG and WebP export are **Pro-only** (was "all export formats free")
 - PDF has a "SnapMark" watermark in free version (was "no watermark")
 - 8 annotation tools, not 7 (added Crop)
 - Free: PNG + clipboard only; Pro: JPEG + WebP + watermark-free PDF
+
+**Key corrections (ClearJSON, July 2026)**:
+- JSONPath query → JWT Auto-Decode (actual Pro feature)
+- JSON Diff → Advanced Search (regex + fuzzy matching)
+- 5 Base Themes → 10 Free Themes; 30 themes total (was "30 themes" unclear)
+- Pro export: CSV/TSV only → CSV/TSV/YAML/TypeScript
+- Added custom keyboard shortcuts (Pro feature)
 
 **Why**: The website must match the actual product. Chrome Web Store and Creem will review for accuracy.
 
@@ -68,7 +75,11 @@
 
 **Decision**: The website's privacy policy should match the extension's built-in privacy policy exactly.
 
-**Why**: Chrome Web Store requires the privacy policy URL to match what's in the extension. If someone checks the extension's linked policy against what's on the website, they should be identical. Synced the website version with `work/snapmark/snapmark-privacy.html`.
+**Why**: Chrome Web Store requires the privacy policy URL to match what's in the extension. If someone checks the extension's linked policy against what's on the website, they should be identical.
+
+**SnapMark**: Synced the website version with `work/snapmark/snapmark-privacy.html`.
+
+**ClearJSON**: Updated July 3, 2026. Added Section 6 "Pro License Verification" — documents the one-time license check to `api.wayknow.tech` (license key + device identifier + OS/Chrome version). This is the only network request ClearJSON ever makes. Free users never make any network requests.
 
 ---
 
@@ -131,3 +142,56 @@
 **Decision**: Use the actual extension icon (`icon-128.png` from `work/snapmark/icons/`) instead of the placeholder SVG.
 
 **Why**: More professional and consistent with what users will see in Chrome Web Store.
+
+---
+
+## 14. ClearJSON Pro License Verification
+
+**Decision**: Documented the Pro license verification mechanism in ClearJSON's privacy policy (Section 6).
+
+**Details**:
+- License verification is the **only** network request ClearJSON ever makes
+- Endpoint: `api.wayknow.tech`
+- Payload: license key, random device identifier, OS + Chrome version
+- Frequency: at most once every 7 days
+- Purpose: validate license key + enforce 3-device limit
+- Free users: zero network requests
+
+**Why**: Chrome Web Store requires transparency about all network activity. Being explicit about this single request builds trust — users know exactly what data leaves their machine and why.
+
+---
+
+## 15. SnapMark License Server: Cloudflare Workers + D1
+
+**Decision**: Use Cloudflare Workers + D1 (SQLite) for SnapMark license verification, not a traditional VPS.
+
+**Details**:
+- Endpoint: `api.wayknow.tech/snapmark`
+- 4 API routes: `/api/license/verify`, `/api/license/generate`, `/api/webhook/creem`, `/api/admin/licenses`
+- Database: D1 `snapmark-license-db` (3 tables: licenses, activations, api_tokens)
+- Free tier: 100K requests/day + 5GB D1 storage — sufficient for thousands of Pro users
+
+**Verification strategy** (3 tiers):
+1. Local format check (`SMP-XXXX-XXXX-XXXX`, 0ms)
+2. Cached result (7-day TTL in `chrome.storage.local`)
+3. Online verification (~200ms to `api.wayknow.tech`)
+4. Offline fallback: network failure → use cached result; already-activated users unaffected
+
+**Device binding**: Max 3 devices per license. `device_id` = `crypto.randomUUID()` stored in `chrome.storage.local`.
+
+**Why**: Free tier covers MVP scale, edge deployment minimizes latency, no server to maintain. The 3-tier verification ensures paying users are never blocked by network issues.
+
+---
+
+## 16. Shared API Domain: `/snapmark` Path Prefix
+
+**Decision**: Mount all product API Workers under a single domain (`api.wayknow.tech`) with path-based routing, rather than separate subdomains.
+
+**How it works**:
+- Worker route: `api.wayknow.tech/snapmark/*`
+- Worker strips `/snapmark` prefix internally, so endpoints remain `/api/license/verify` etc.
+- Extension config: `LICENSE_API_BASE = 'https://api.wayknow.tech/snapmark'`
+
+**Future pattern**: `api.wayknow.tech/clearjson/*` for ClearJSON license server, `api.wayknow.tech/telemetry` for optional analytics, etc.
+
+**Why**: Single domain is simpler to manage (one SSL cert, one DNS record). Path-based routing lets each product's Worker be deployed independently. Scales horizontally — add new products by adding new routes, not new domains.

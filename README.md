@@ -10,8 +10,8 @@ Official website for WayKnow, a collection of privacy-first Chrome browser exten
 
 | Product | Description | Pricing |
 |---------|-------------|---------|
-| [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension (8 annotation tools, 5 capture modes) | Free + $39 lifetime |
-| [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, large files) | Free + $29 lifetime |
+| [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension (8 annotation tools, 5 capture modes, license server live) | Free + $39 lifetime |
+| [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, JWT decode, regex search, large files) | Free + $29 lifetime |
 
 ## Key Design Decisions
 
@@ -61,10 +61,13 @@ wayknow/
 
 ```
 User → Cloudflare DNS/CDN (SSL) → Tencent Cloud Singapore 2C2G Ubuntu → Nginx → /var/www/html
+                                              ↓
+                         api.wayknow.tech → Cloudflare Workers → D1 (SQLite)
 ```
 
 - **Domain**: `wayknow.tech` (Tencent Cloud registrar, Cloudflare DNS)
 - **Server**: Tencent Cloud Lightweight 2C2G, Ubuntu Server, Singapore
+- **API**: `api.wayknow.tech` — Cloudflare Workers + D1 (SnapMark license server live; ClearJSON planned)
 - **SSL**: Cloudflare Flexible mode + Always Use HTTPS
 - **Email**: Cloudflare Email Routing (`support@wayknow.tech` → Gmail)
 - **Repo**: `github.com/wayknow/website` (private)
