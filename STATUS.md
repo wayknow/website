@@ -4,7 +4,7 @@
 
 ## ✅ Done
 
-### Website (10 pages)
+### Website (11 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CookieClear), shared values, no hero |
@@ -17,6 +17,7 @@
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
 | CookieClear privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CookieClear terms | ✅ | Free, MIT license, no payment processing |
+| Support page | ✅ | support@wayknow.tech, FAQ links, refund policy |
 
 ### Design & Content
 | Item | Status | Notes |

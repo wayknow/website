@@ -20,7 +20,7 @@ Official website for WayKnow, a collection of privacy-first Chrome browser exten
 |----------|--------|
 | No framework | Static site, fastest load time, easy to maintain |
 | Dark theme (deep blue + teal) | Developer-focused aesthetic, conveys trust & privacy |
-| Header/footer injected via JS | Avoids copy-paste across 7 HTML files |
+| Header/footer are static HTML | Every page directly includes them — search engines and users see the full page instantly |
 | English only | Global audience, server in Singapore |
 | No analytics | Dogfooding our privacy-first philosophy |
 | `support@wayknow.tech` | Cloudflare Email Routing → Gmail |
@@ -43,6 +43,7 @@ wayknow/
 ├── clearjson-terms.html        # ClearJSON terms of service
 ├── cookieclear-privacy.html    # CookieClear privacy policy (zero data collection)
 ├── cookieclear-terms.html      # CookieClear terms of service (MIT license)
+├── support.html                 # Support page (contact, FAQ links, refund policy)
 ├── css/
 │   └── style.css               # Design system (~1000 lines, CSS variables, responsive)
 ├── js/

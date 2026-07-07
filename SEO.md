@@ -23,7 +23,7 @@
 ### 全局
 
 - **robots.txt**：允许所有爬虫，禁止 `/assets/`，指向 sitemap
-- **sitemap.xml**：10 个 URL（首页 + 3 个产品页 + 6 个 legal 页）
+- **sitemap.xml**：11 个 URL（首页 + 3 个产品页 + 1 个支持页 + 6 个 legal 页）
 - **header/footer**：所有页面使用静态 HTML，搜索引擎可直接解析导航链接
 
 ### 各页面 SEO 覆盖
@@ -40,6 +40,7 @@
 | clearjson-terms.html | ✅ | — | — | — | clearjson-logo.svg |
 | cookieclear-privacy.html | ✅ | — | — | — | cookieclear-logo.png |
 | cookieclear-terms.html | ✅ | — | — | — | cookieclear-logo.png |
+| support.html | ✅ | ✅ | ✅ | — | wayknow-logo.svg |
 
 > Privacy 和 Terms 页面不需要 OG/Twitter Card（不需要在社交媒体上分享这些页面）。
 
