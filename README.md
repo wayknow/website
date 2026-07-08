@@ -13,6 +13,7 @@ Official website for WayKnow, a collection of privacy-first Chrome browser exten
 | [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension (8 annotation tools, 5 capture modes, license server live) | Free + $39 lifetime |
 | [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, JWT decode, regex search, large files) | Free + $29 lifetime |
 | [CookieClear](./cookieclear.html) | Cookie editor Chrome extension (privacy score, import/export, domain whitelist, undo, dark mode) | Always Free |
+| [ColorPeek](./colorpeek.html) | macOS color picker for developers (menu bar, 8 formats, Tailwind CSS, SCSS, SwiftUI Color) | Free + $19 lifetime |
 
 ## Key Design Decisions
 
@@ -44,6 +45,9 @@ wayknow/
 ├── cookieclear-privacy.html    # CookieClear privacy policy (zero data collection)
 ├── cookieclear-terms.html      # CookieClear terms of service (MIT license)
 ├── support.html                 # Support page (contact, FAQ links, refund policy)
+├── colorpeek.html               # ColorPeek product page (macOS color picker, $19 lifetime)
+├── colorpeek-privacy.html       # ColorPeek privacy policy
+├── colorpeek-terms.html         # ColorPeek terms of service
 ├── css/
 │   └── style.css               # Design system (~1000 lines, CSS variables, responsive)
 ├── js/

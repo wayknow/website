@@ -1,10 +1,10 @@
 # Project Status
 
-> Last updated: 2026-07-06
+> Last updated: 2026-07-08
 
 ## ✅ Done
 
-### Website (11 pages)
+### Website (14 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CookieClear), shared values, no hero |
@@ -18,6 +18,9 @@
 | CookieClear privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CookieClear terms | ✅ | Free, MIT license, no payment processing |
 | Support page | ✅ | support@wayknow.tech, FAQ links, refund policy |
+| ColorPeek product | ✅ | Features, pricing (Free + $19 lifetime), comparison table, FAQ. macOS desktop app |
+| ColorPeek privacy | ✅ | Zero data collection, Pro license verification only |
+| ColorPeek terms | ✅ | Lifetime-only, 3-Mac activation, 14-day refund |
 
 ### Design & Content
 | Item | Status | Notes |
@@ -43,22 +46,24 @@
 | Cloudflare CDN | ✅ | Global edge caching |
 | Email forwarding | ✅ | `support@wayknow.tech` → Gmail via Cloudflare |
 | CLAUDE.md | ✅ | Project context for Claude Code (aligned with ClearJSON's format) |
-| SnapMark CWS submission | ✅ | v1.1.0 submitted, under review |
+| SnapMark CWS submission | ✅ | v1.1.0 published. [CWS link](https://chromewebstore.google.com/detail/snapmark-screenshot-annot/eppopiophjmfnoimmaklpbmkfmgpfgmj). Search ranking: indexed but low (12+ same-name products ahead). SEO optimization planned for v1.2.0 |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
-| ClearJSON CWS submission | ⚠️ | $5 registration paid, awaiting identity review |
-| CookieClear CWS submission | ⚠️ | v1.0.0 built, tested (76 tests). CWS developer registration pending |
+| ClearJSON CWS submission | ⏳ | v1.0.0 submitted 2026-07-07, awaiting review |
+| CookieClear CWS submission | ⏳ | v1.0.0 submitted, 76 tests passing, awaiting review |
+| ColorPeek product page | 🚧 | Planned. macOS color picker app, in development |
 
 ## ⚠️ Pending — Requires External URLs
 
 | Item | What's needed |
 |------|---------------|
-| SnapMark Chrome Web Store link | Replace 4 `#` placeholders in `snapmark.html` (extension submitted, awaiting review) |
-| ClearJSON Chrome Web Store link | Replace 4 `#` placeholders in `clearjson.html` |
-| Creem purchase link (SnapMark $39) | Replace 1 `#` placeholder. License server ready — Creem webhook → auto-issue `SMP-XXXX-XXXX-XXXX` key |
-| CookieClear Chrome Web Store link | Replace 2 `#` placeholders in `cookieclear.html` (awaiting CWS developer registration) |
-| Creem purchase link (ClearJSON $29) | Replace 1 `#` placeholder |
-| ClearJSON License API | Deploy `api.wayknow.tech/clearjson` Worker (model after SnapMark's) |
+| SnapMark Chrome Web Store link | ✅ Available. Replace 4 `#` placeholders in `snapmark.html` with real CWS URL |
+| ClearJSON Chrome Web Store link | ⏳ Replace 4 `#` placeholders in `clearjson.html` after CWS approval |
+| CookieClear Chrome Web Store link | ⏳ Replace 2 `#` placeholders in `cookieclear.html` after CWS approval |
+| ColorPeek product page | 🚧 New page needed: `colorpeek.html` |
+| Creem purchase link (SnapMark $39) | ⏳ Replace 1 `#` placeholder. License server ready — Creem webhook → auto-issue key |
+| Creem purchase link (ClearJSON $29) | ⏳ Replace 1 `#` placeholder |
+| ColorPeek Creem purchase link ($19) | 🚧 New purchase link needed |
 
 ## ⚠️ Pending — Assets
 
