@@ -10,7 +10,7 @@
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CookieClear), shared values, no hero |
 | SnapMark product | ✅ | Features, pricing (Free + $39 lifetime), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark` |
 | ClearJSON product | ✅ | Features, pricing (Free + $29 lifetime), comparison table, FAQ |
-| CookieClear product | ✅ | Features, comparison table, FAQ. Completely free — no Pro tier. EditThisCookie replacement story |
+| CookieClear product | ✅ | Features, FAQ. Completely free — no Pro tier. MV3-native, privacy-first. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
 | SnapMark terms | ✅ | No subscription, simplified to lifetime-only |
 | ClearJSON privacy | ✅ | Zero data collection, Pro license verification (api.wayknow.tech), email consistent |

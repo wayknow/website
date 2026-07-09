@@ -217,13 +217,18 @@
 
 ---
 
-## 18. CookieClear: EditThisCookie Replacement Positioning
+## 18. CookieClear: EditThisCookie Replacement Positioning ❌ REVERSED
 
-**Decision**: Position CookieClear explicitly as the safe EditThisCookie replacement in SEO, store listing, and website copy.
+**Decision**: ~~Position CookieClear explicitly as the safe EditThisCookie replacement in SEO, store listing, and website copy.~~
 
-**Why**: EditThisCookie was removed from CWS (3M+ users stranded). A malicious copycat scammed 50K+ users. Search volume for "EditThisCookie replacement" and "EditThisCookie alternative" is high. Naming the competitor directly in marketing copy captures this search traffic.
+**Reversed (2026-07-07)**: CWS rejected first submission for keyword spam. Competitor names are prohibited in CWS store listing metadata (title, description, keywords). All competitor references removed from:
+- Store listing (title, description, keywords)
+- README and website product pages
+- Extension screenshots and metadata
 
-**Implementation**: Website "Why CookieClear Exists" section tells the EditThisCookie story. Store listing uses "EditThisCookie replacement" as a keyword. Comparison table includes EditThisCookie column showing "✗ Removed".
+**New approach**: Position CookieClear on its own merits — privacy-first, MV3 native, open source, free. Competitor comparison content moved to off-store channels (Reddit, blog posts, social media) where CWS policies don't apply.
+
+**Original rationale** (for historical record): EditThisCookie was removed from CWS (3M+ users stranded). A malicious copycat scammed 50K+ users. Search volume for "EditThisCookie replacement" and "EditThisCookie alternative" is high. However, CWS policy prohibits using competitor names in store metadata.
 
 ---
 

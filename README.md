@@ -37,7 +37,7 @@ wayknow/
 ├── index.html                  # Homepage — product cards + shared values
 ├── snapmark.html               # SnapMark product page (features, pricing, comparison, FAQ)
 ├── clearjson.html              # ClearJSON product page (features, pricing, comparison, FAQ)
-├── cookieclear.html            # CookieClear product page (free cookie editor, EditThisCookie replacement)
+├── cookieclear.html            # CookieClear product page (free, MV3-native, privacy-first)
 ├── snapmark-privacy.html       # SnapMark privacy policy (Creem compliance)
 ├── snapmark-terms.html         # SnapMark terms of service
 ├── clearjson-privacy.html      # ClearJSON privacy policy (Creem compliance)
