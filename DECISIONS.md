@@ -203,9 +203,9 @@
 **Decision**: CookieClear is completely free — no Pro tier, no subscription, no ads, no paid features.
 
 **Why**: The cookie editor market has no validated paid demand:
-- EditThisCookie had 3M free users for a decade
-- Cookie-Editor has 2M free users
-- CookieJar ($4.99/mo) and Cookie Editor ($3/mo) have unknown conversion rates and no public revenue data
+- The former market-leader cookie editor had 3M free users for a decade
+- The leading open-source alternative has 2M free users
+- The two paid competitors ($3–5/mo) have unknown conversion rates and no public revenue data
 - Users are accustomed to free cookie editors
 
 **Strategy**: CookieClear serves as a **free acquisition channel** for the product family:
@@ -217,9 +217,9 @@
 
 ---
 
-## 18. CookieClear: EditThisCookie Replacement Positioning ❌ REVERSED
+## 18. CookieClear: Competitor-Replacement Positioning ❌ REVERSED
 
-**Decision**: ~~Position CookieClear explicitly as the safe EditThisCookie replacement in SEO, store listing, and website copy.~~
+**Decision**: ~~Position CookieClear explicitly as the safe replacement for the removed market-leader cookie editor in SEO, store listing, and website copy.~~
 
 **Reversed (2026-07-07)**: CWS rejected first submission for keyword spam. Competitor names are prohibited in CWS store listing metadata (title, description, keywords). All competitor references removed from:
 - Store listing (title, description, keywords)
@@ -228,7 +228,7 @@
 
 **New approach**: Position CookieClear on its own merits — privacy-first, MV3 native, open source, free. Competitor comparison content moved to off-store channels (Reddit, blog posts, social media) where CWS policies don't apply.
 
-**Original rationale** (for historical record): EditThisCookie was removed from CWS (3M+ users stranded). A malicious copycat scammed 50K+ users. Search volume for "EditThisCookie replacement" and "EditThisCookie alternative" is high. However, CWS policy prohibits using competitor names in store metadata.
+**Original rationale** (for historical record): The former market-leader cookie editor was removed from CWS (3M+ users stranded). A malicious copycat scammed 50K+ users. Search volume for replacement/alternative queries is high. However, CWS policy prohibits using competitor names in store metadata.
 
 ---
 
