@@ -49,18 +49,16 @@
 | SnapMark CWS submission | ✅ | v1.1.0 published. [CWS link](https://chromewebstore.google.com/detail/snapmark-screenshot-annot/eppopiophjmfnoimmaklpbmkfmgpfgmj). Search ranking: indexed but low (12+ same-name products ahead). SEO optimization planned for v1.2.0 |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
-| ClearJSON CWS submission | ⏳ | v1.0.0 submitted 2026-07-07, awaiting review |
+| ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
 | CookieClear CWS submission | ⏳ | v1.0.0 submitted, 76 tests passing, awaiting review |
-| ColorPeek product page | 🚧 | Planned. macOS color picker app, in development |
 
 ## ⚠️ Pending — Requires External URLs
 
 | Item | What's needed |
 |------|---------------|
-| SnapMark Chrome Web Store link | ✅ Available. Replace 4 `#` placeholders in `snapmark.html` with real CWS URL |
-| ClearJSON Chrome Web Store link | ⏳ Replace 4 `#` placeholders in `clearjson.html` after CWS approval |
+| SnapMark Chrome Web Store link | ✅ Replaced 3 CWS `#` placeholders with real URL. Creem purchase link still pending |
+| ClearJSON Chrome Web Store link | ✅ Replaced all `#` placeholders with real CWS URL |
 | CookieClear Chrome Web Store link | ⏳ Replace 2 `#` placeholders in `cookieclear.html` after CWS approval |
-| ColorPeek product page | 🚧 New page needed: `colorpeek.html` |
 | Creem purchase link (SnapMark $39) | ⏳ Replace 1 `#` placeholder. License server ready — Creem webhook → auto-issue key |
 | Creem purchase link (ClearJSON $29) | ⏳ Replace 1 `#` placeholder |
 | ColorPeek Creem purchase link ($19) | 🚧 New purchase link needed |
@@ -69,7 +67,7 @@
 
 | Item | Notes |
 |------|-------|
-| ClearJSON logo | Currently a placeholder SVG. Replace with real icon when ClearJSON extension has one |
+| ClearJSON logo | ✅ Using real SVG icon from extension |
 | Product screenshots | Optional — add real screenshots to product pages for better conversion |
 
 ## 🔮 Future Ideas

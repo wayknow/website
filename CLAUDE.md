@@ -26,11 +26,15 @@ wayknow/
 ├── clearjson-terms.html        # ClearJSON 服务条款
 ├── cookieclear-privacy.html    # CookieClear 隐私政策
 ├── cookieclear-terms.html      # CookieClear 服务条款
+├── colorpeek.html              # ColorPeek 产品页（macOS 取色器，$19 终身）
+├── colorpeek-privacy.html      # ColorPeek 隐私政策
+├── colorpeek-terms.html        # ColorPeek 服务条款
+├── support.html                 # 通用支持页面
 ├── css/style.css               # ~1000 行 CSS 设计系统
 ├── js/main.js                  # 导航高亮、移动端菜单、FAQ accordion、平滑滚动
 ├── assets/                     # 产品图标
 ├── robots.txt                  # SEO
-├── sitemap.xml                 # SEO（10 个 URL）
+├── sitemap.xml                 # SEO（14 个 URL）
 ├── README.md
 ├── STATUS.md
 ├── DECISIONS.md
@@ -45,6 +49,7 @@ wayknow/
 | SnapMark | 截图 + 标注 | 免费 + $39 终身 | `snapmark.html` | `../snapmark` |
 | ClearJSON | JSON 查看器 | 免费 + $29 终身 | `clearjson.html` | `../clearjson` |
 | CookieClear | Cookie 编辑器 | 完全免费 | `cookieclear.html` | `../cookieclear` |
+| ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 
 CookieClear 是获客渠道（免费），SnapMark 和 ClearJSON 是收入来源（买断制）。
 
