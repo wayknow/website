@@ -50,7 +50,7 @@
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
-| CookieClear CWS submission | ⏳ | v1.0.0 submitted, 76 tests passing, awaiting review |
+| CookieClear CWS submission | ❌ | v1.0.0 rejected (keyword spam). Appealing. 76 tests passing |
 
 ## ⚠️ Pending — Requires External URLs
 
