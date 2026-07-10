@@ -50,7 +50,8 @@
 - JPEG and WebP export are **Pro-only** (was "all export formats free")
 - PDF has a "SnapMark" watermark in free version (was "no watermark")
 - 8 annotation tools, not 7 (added Crop)
-- Free: PNG + clipboard only; Pro: JPEG + WebP + watermark-free PDF
+- Color picker is **Pro-only** (was "Color picker with free selection" in free tier). Free has 5 color presets only.
+- Free: PNG + clipboard + 5 color presets; Pro: JPEG + WebP + watermark-free PDF + free color picker
 
 **Key corrections (ClearJSON, July 2026)**:
 - JSONPath query → JWT Auto-Decode (actual Pro feature)

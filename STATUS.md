@@ -32,7 +32,7 @@
 | SnapMark real logo | ✅ | 128px PNG from extension icons |
 | Pricing accuracy | ✅ | Verified against PRODUCT.md and STATUS.md from extension |
 | No subscription residual | ✅ | All pages — terms, pricing, FAQ — consistent |
-| Feature accuracy | ✅ | SnapMark: 8 tools, 5 capture modes, Timer Pro-only. ClearJSON: JWT decode, regex search, 10 free themes. CookieClear: privacy score, classification, undo, whitelist |
+| Feature accuracy | ✅ | SnapMark: 8 tools, 5 capture modes, Timer Pro-only, color picker Pro-only (5 presets free). ClearJSON: JWT decode, regex search, 10 free themes. CookieClear: privacy score, classification, undo, whitelist |
 | CookieClear logo | ✅ | 128px PNG from extension icons |
 | Email consistency | ✅ | All pages use `support@wayknow.tech` |
 | Date consistency | ✅ | Privacy policies "Last updated: July 3, 2026"; other pages "Last updated: June 25, 2026" |
