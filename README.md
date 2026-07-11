@@ -40,8 +40,10 @@ wayknow/
 ├── cookieclear.html            # CookieClear product page (free, MV3-native, privacy-first)
 ├── snapmark-privacy.html       # SnapMark privacy policy (Creem compliance)
 ├── snapmark-terms.html         # SnapMark terms of service
+├── snapmark-refund.html        # SnapMark refund policy
 ├── clearjson-privacy.html      # ClearJSON privacy policy (Creem compliance)
 ├── clearjson-terms.html        # ClearJSON terms of service
+├── clearjson-refund.html       # ClearJSON refund policy
 ├── cookieclear-privacy.html    # CookieClear privacy policy (zero data collection)
 ├── cookieclear-terms.html      # CookieClear terms of service (MIT license)
 ├── support.html                 # Support page (contact, FAQ links, refund policy)

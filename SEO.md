@@ -36,8 +36,10 @@
 | cookieclear.html | ✅ | ✅ | ✅ | SoftwareApplication | cookieclear-logo.png |
 | snapmark-privacy.html | ✅ | — | — | — | snapmark-logo.png |
 | snapmark-terms.html | ✅ | — | — | — | snapmark-logo.png |
+| snapmark-refund.html | ✅ | — | — | — | snapmark-logo.png |
 | clearjson-privacy.html | ✅ | — | — | — | clearjson-logo.svg |
 | clearjson-terms.html | ✅ | — | — | — | clearjson-logo.svg |
+| clearjson-refund.html | ✅ | — | — | — | clearjson-logo.svg |
 | cookieclear-privacy.html | ✅ | — | — | — | cookieclear-logo.png |
 | cookieclear-terms.html | ✅ | — | — | — | cookieclear-logo.png |
 | support.html | ✅ | ✅ | ✅ | — | wayknow-logo.svg |
