@@ -4,19 +4,17 @@
 
 ## ✅ Done
 
-### Website (16 pages)
+### Website (14 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
-| Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CookieClear), shared values, no hero |
+| Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CookieClear, ColorPeek), shared values, no hero |
 | SnapMark product | ✅ | Features, pricing (Free + $39 lifetime), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark` |
 | ClearJSON product | ✅ | Features, pricing (Free + $29 lifetime), comparison table, FAQ |
 | CookieClear product | ✅ | Features, FAQ. Completely free — no Pro tier. MV3-native, privacy-first. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
 | SnapMark terms | ✅ | Updated July 9 2026: 10 sections, MIT license, Creem payment |
-| SnapMark refund | ✅ | 14-day refund policy, Creem processing, chargeback policy |
 | ClearJSON privacy | ✅ | Zero data collection, Pro license verification (api.wayknow.tech), email consistent |
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
-| ClearJSON refund | ✅ | 14-day refund policy, Creem processing, chargeback policy |
 | CookieClear privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CookieClear terms | ✅ | Free, MIT license, no payment processing |
 | Support page | ✅ | support@wayknow.tech, FAQ links, refund policy |
