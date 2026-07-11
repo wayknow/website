@@ -4,7 +4,7 @@
 
 ## ✅ Done
 
-### Website (15 pages)
+### Website (16 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CookieClear), shared values, no hero |
@@ -16,6 +16,7 @@
 | SnapMark refund | ✅ | 14-day refund policy, Creem processing, chargeback policy |
 | ClearJSON privacy | ✅ | Zero data collection, Pro license verification (api.wayknow.tech), email consistent |
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
+| ClearJSON refund | ✅ | 14-day refund policy, Creem processing, chargeback policy |
 | CookieClear privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CookieClear terms | ✅ | Free, MIT license, no payment processing |
 | Support page | ✅ | support@wayknow.tech, FAQ links, refund policy |
