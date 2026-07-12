@@ -50,8 +50,8 @@
 - JPEG and WebP export are **Pro-only** (was "all export formats free")
 - PDF has a "SnapMark" watermark in free version (was "no watermark")
 - 8 annotation tools, not 7 (added Crop)
-- Color picker is **Pro-only** (was "Color picker with free selection" in free tier). Free has 5 color presets only.
-- Free: PNG + clipboard + 5 color presets; Pro: JPEG + WebP + watermark-free PDF + free color picker
+- Color picker is **Pro-only** (was "Color picker with free selection" in free tier). Free has 6 color presets only.
+- Free: PNG + clipboard + 6 color presets; Pro: JPEG + WebP + watermark-free PDF + free color picker
 
 **Key corrections (ClearJSON, July 2026)**:
 - JSONPath query → JWT Auto-Decode (actual Pro feature)
@@ -258,3 +258,36 @@
 **Decision**: ClearJSON will never include AI features (LLM-based JSON analysis, auto-completion, etc.).
 
 **Why**: Contradicts the core privacy promise ("data never leaves your device"). AI API costs are unpredictable — a single heavy user could burn $5-10/month. Developers already use ChatGPT/Claude alongside the tool anyway.
+
+---
+
+## 22. SnapMark: Creem Payment Pipeline Activated (2026-07-11)
+
+**Decision**: SnapMark's full payment pipeline is now live: Creem checkout → webhook → license generation → email delivery → extension activation. Payout account fully activated (can receive funds).
+
+**Details**:
+- **Payment processor**: Creem (selected over Paddle due to lower barrier for Chrome extensions)
+- **Checkout URL**: `creem.io/payment/prod_6nImGVxcMKQqPKdooVA8ro` (Live mode)
+- **Webhook**: HMAC-SHA256 signature verification enabled (`creem-signature` header, hex digest)
+- **License generation**: Automatic on `checkout.completed` event, stored in D1
+- **Email delivery**: Resend API (100 free emails/day), from `noreply@wayknow.tech`
+- **Payout**: Paysway bank account linked, KYC passed (ID + face recognition)
+
+**Why Creem**: Lower barrier for indie developers; better suited for Chrome extensions (no website integration required); supports lifetime one-time purchases natively.
+
+**Website impact**: Updated `snapmark.html` Buy Now button from `#` placeholder to actual Creem payment link. Updated CWS link to v1.2.0 URL (`snapmark-full-page-screen`).
+
+---
+
+## 23. SnapMark v1.2.0: SEO Optimization (2026-07-11)
+
+**Decision**: Optimized manifest.json title and description for CWS search ranking before submitting the v1.2.0 update.
+
+**Changes**:
+- Title: `SnapMark - Screenshot & Annotate` → `SnapMark - Full Page Screenshot, Screen Capture & Annotation Tool` (65/75 chars)
+- Description: `Capture, annotate and export screenshots...` → `Full page screenshot & screen capture tool for Chrome. 5 capture modes, 7 annotation tools. 100% local, no watermark, free.` (123/132 chars)
+- Version: `1.1.0` → `1.2.0`
+
+**Target search terms**: `Full Page`, `Screen Capture`, `Annotation Tool`, `Chrome`, `screenshot`
+
+**Result**: Approved 2026-07-11. URL slug updated to `snapmark-full-page-screen`, confirming SEO title is indexed.

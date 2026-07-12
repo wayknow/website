@@ -1,6 +1,6 @@
 # Project Status
 
-> Last updated: 2026-07-08
+> Last updated: 2026-07-11
 
 ## ✅ Done
 
@@ -33,7 +33,7 @@
 | SnapMark real logo | ✅ | 128px PNG from extension icons |
 | Pricing accuracy | ✅ | Verified against PRODUCT.md and STATUS.md from extension |
 | No subscription residual | ✅ | All pages — terms, pricing, FAQ — consistent |
-| Feature accuracy | ✅ | SnapMark: 8 tools, 5 capture modes, Timer Pro-only, color picker Pro-only (5 presets free). ClearJSON: JWT decode, regex search, 10 free themes. CookieClear: privacy score, classification, undo, whitelist |
+| Feature accuracy | ✅ | SnapMark: 8 tools, 5 capture modes, Timer Pro-only, color picker Pro-only (6 presets free). ClearJSON: JWT decode, regex search, 10 free themes. CookieClear: privacy score, classification, undo, whitelist |
 | CookieClear logo | ✅ | 128px PNG from extension icons |
 | Email consistency | ✅ | All pages use `support@wayknow.tech` |
 | Date consistency | ✅ | Privacy policies "Last updated: July 3, 2026"; other pages "Last updated: June 25, 2026" |
@@ -48,7 +48,7 @@
 | Cloudflare CDN | ✅ | Global edge caching |
 | Email forwarding | ✅ | `support@wayknow.tech` → Gmail via Cloudflare |
 | CLAUDE.md | ✅ | Project context for Claude Code (aligned with ClearJSON's format) |
-| SnapMark CWS submission | ✅ | v1.1.0 published. [CWS link](https://chromewebstore.google.com/detail/snapmark-screenshot-annot/eppopiophjmfnoimmaklpbmkfmgpfgmj). Search ranking: indexed but low (12+ same-name products ahead). SEO optimization planned for v1.2.0 |
+| SnapMark CWS submission | ✅ | v1.2.0 approved 2026-07-11. [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). SEO title/description optimized, Creem Payout activated, full payment pipeline live |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
@@ -58,10 +58,10 @@
 
 | Item | What's needed |
 |------|---------------|
-| SnapMark Chrome Web Store link | ✅ Replaced 3 CWS `#` placeholders with real URL. Creem purchase link still pending |
+| SnapMark Chrome Web Store link | ✅ Updated CWS link to v1.2.0 `snapmark-full-page-screen`. Creem purchase link also live |
 | ClearJSON Chrome Web Store link | ✅ Replaced all `#` placeholders with real CWS URL |
 | CookieClear Chrome Web Store link | ⏳ Replace 2 `#` placeholders in `cookieclear.html` after CWS approval |
-| Creem purchase link (SnapMark $39) | ⏳ Replace 1 `#` placeholder. License server ready — Creem webhook → auto-issue key |
+| Creem purchase link (SnapMark $39) | ✅ Linked to `creem.io/payment/prod_6nImGVxcMKQqPKdooVA8ro`. Creem Payout activated 2026-07-11 |
 | Creem purchase link (ClearJSON $29) | ⏳ Replace 1 `#` placeholder |
 | ColorPeek Creem purchase link ($19) | 🚧 New purchase link needed |
 
@@ -80,4 +80,4 @@
 | Product Hunt launch page | Dedicated landing page for launches |
 | More product cards | Add new WayKnow products as they ship |
 | Privacy-friendly analytics | Consider Plausible or self-hosted Umami if traffic becomes interesting |
-| SnapMark Pro $49 | Consider raising price after initial traction (still well below FireShot $99.95) |
+| SnapMark Pro price raise | Consider raising to $49 after initial traction (still well below FireShot $99.95). Currently $39 with full payment pipeline live |
