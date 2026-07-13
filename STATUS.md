@@ -17,7 +17,7 @@
 | ClearJSON privacy | ✅ | Zero data collection, Pro license verification (api.wayknow.tech), email consistent |
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
 | ClearJSON refund | ✅ | 14-day refund: technical issues, feature discrepancies, billing errors |
-| ColorPeek refund | ✅ | 14-day no-questions-asked refund, consistent with terms |
+| ColorPeek refund | ✅ | 14-day refund: technical issues, feature discrepancies, billing errors — aligned with SnapMark/ClearJSON |
 | CookieClear privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CookieClear terms | ✅ | Free, MIT license, no payment processing |
 | Support page | ✅ | support@wayknow.tech, FAQ links, refund policy |

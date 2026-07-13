@@ -300,6 +300,6 @@
 
 **Why**: The refund pages were initially built with a bare `<div class="container" style="max-width:720px">` wrapper, which gave no top margin on `<h2>` headings — titles sat flush against preceding paragraphs. The `.policy-content` class provides `margin-top: var(--space-10)` on h2s plus a bottom border separator.
 
-**ColorPeek refund page**: Created 2026-07-13. Simplified compared to SnapMark/ClearJSON — "14-day no-questions-asked refund" (matches the terms), no need to list eligible reasons. Exceptions section covers abuse/chargeback cases only.
+**ColorPeek refund page**: Created 2026-07-13, aligned with SnapMark/ClearJSON on 2026-07-13. Same structured policy: eligible reasons (technical issues, feature discrepancies, billing errors), non-refundable situations, how to request, processing, chargebacks.
 
 **Impact**: Unified look-and-feel across all 17 legal pages. All footers updated to include ColorPeek Refund link.
