@@ -291,3 +291,15 @@
 **Target search terms**: `Full Page`, `Screen Capture`, `Annotation Tool`, `Chrome`, `screenshot`
 
 **Result**: Approved 2026-07-11. URL slug updated to `snapmark-full-page-screen`, confirming SEO title is indexed.
+
+---
+
+## 24. Refund Pages: .policy-content Layout (2026-07-13)
+
+**Decision**: All refund pages (SnapMark, ClearJSON, ColorPeek) use the same `<article class="policy-content">` layout as the privacy/terms pages.
+
+**Why**: The refund pages were initially built with a bare `<div class="container" style="max-width:720px">` wrapper, which gave no top margin on `<h2>` headings — titles sat flush against preceding paragraphs. The `.policy-content` class provides `margin-top: var(--space-10)` on h2s plus a bottom border separator.
+
+**ColorPeek refund page**: Created 2026-07-13. Simplified compared to SnapMark/ClearJSON — "14-day no-questions-asked refund" (matches the terms), no need to list eligible reasons. Exceptions section covers abuse/chargeback cases only.
+
+**Impact**: Unified look-and-feel across all 17 legal pages. All footers updated to include ColorPeek Refund link.

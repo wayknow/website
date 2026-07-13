@@ -50,6 +50,7 @@ wayknow/
 ├── colorpeek.html               # ColorPeek product page (macOS color picker, $19 lifetime)
 ├── colorpeek-privacy.html       # ColorPeek privacy policy
 ├── colorpeek-terms.html         # ColorPeek terms of service
+├── colorpeek-refund.html        # ColorPeek refund policy
 ├── css/
 │   └── style.css               # Design system (~1000 lines, CSS variables, responsive)
 ├── js/

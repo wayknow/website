@@ -1,10 +1,10 @@
 # Project Status
 
-> Last updated: 2026-07-11
+> Last updated: 2026-07-13
 
 ## ✅ Done
 
-### Website (16 pages)
+### Website (17 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CookieClear, ColorPeek), shared values, no hero |
@@ -17,6 +17,7 @@
 | ClearJSON privacy | ✅ | Zero data collection, Pro license verification (api.wayknow.tech), email consistent |
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
 | ClearJSON refund | ✅ | 14-day refund: technical issues, feature discrepancies, billing errors |
+| ColorPeek refund | ✅ | 14-day no-questions-asked refund, consistent with terms |
 | CookieClear privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CookieClear terms | ✅ | Free, MIT license, no payment processing |
 | Support page | ✅ | support@wayknow.tech, FAQ links, refund policy |
@@ -62,7 +63,7 @@
 | ClearJSON Chrome Web Store link | ✅ Replaced all `#` placeholders with real CWS URL |
 | CookieClear Chrome Web Store link | ⏳ Replace 2 `#` placeholders in `cookieclear.html` after CWS approval |
 | Creem purchase link (SnapMark $39) | ✅ Linked to `creem.io/payment/prod_6nImGVxcMKQqPKdooVA8ro`. Creem Payout activated 2026-07-11 |
-| Creem purchase link (ClearJSON $29) | ⏳ Replace 1 `#` placeholder |
+| Creem purchase link (ClearJSON $29) | ✅ Linked to `creem.io/payment/prod_5Aha8NpKKi8AUd2sLaPRgM` |
 | ColorPeek Creem purchase link ($19) | 🚧 New purchase link needed |
 
 ## ⚠️ Pending — Assets
