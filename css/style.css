@@ -372,6 +372,14 @@ section {
   color: var(--color-primary-light);
 }
 
+.btn-coming-soon {
+  background: var(--color-bg-alt);
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-border);
+  cursor: default;
+  pointer-events: none;
+}
+
 .btn-lg {
   padding: var(--space-4) var(--space-8);
   font-size: var(--text-lg);
