@@ -4,14 +4,13 @@
 
 ## ✅ Done
 
-### Website (20 pages)
+### Website (17 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
-| Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CookieClear, ColorPeek), shared values, no hero |
+| Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
 | SnapMark product | ✅ | Features, pricing (Free + $39 lifetime), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark` |
 | ClearJSON product | ✅ | Features, pricing (Free + $29 lifetime), comparison table, FAQ |
-| CookieClear product | ✅ | Features, FAQ. Completely free — no Pro tier. MV3-native, privacy-first. **CWS blocked (spam policy), appeal pending.** |
-| CrumbKit product | ✅ | Clean rebrand of CookieClear. Features, FAQ. Free, MV3-native. New CWS item, ready for submission. |
+| CrumbKit product | ✅ | Clean rebrand of the original CookieClear project. Features, FAQ. Free, MV3-native. New CWS item, ready for submission. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
 | SnapMark terms | ✅ | Updated July 9 2026: 10 sections, MIT license, Creem payment |
 | SnapMark refund | ✅ | 14-day refund: technical issues, feature discrepancies, billing errors |
@@ -19,8 +18,6 @@
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
 | ClearJSON refund | ✅ | 14-day refund: technical issues, feature discrepancies, billing errors |
 | ColorPeek refund | ✅ | 14-day refund: technical issues, feature discrepancies, billing errors — aligned with SnapMark/ClearJSON |
-| CookieClear privacy | ✅ | Zero data collection, MIT open source, zero network requests |
-| CookieClear terms | ✅ | Free, MIT license, no payment processing |
 | CrumbKit privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CrumbKit terms | ✅ | Free, MIT license, no payment processing |
 | Support page | ✅ | support@wayknow.tech, FAQ links, refund policy |
@@ -37,9 +34,8 @@
 | SnapMark real logo | ✅ | 128px PNG from extension icons |
 | Pricing accuracy | ✅ | Verified against PRODUCT.md and STATUS.md from extension |
 | No subscription residual | ✅ | All pages — terms, pricing, FAQ — consistent |
-| Feature accuracy | ✅ | SnapMark: 8 tools, 5 capture modes, Timer Pro-only, color picker Pro-only (6 presets free). ClearJSON: JWT decode, regex search, 10 free themes. CookieClear/CrumbKit: privacy score, classification, undo, whitelist |
-| CookieClear logo | ✅ | 128px PNG from extension icons |
-| CrumbKit logo | ✅ | 128px PNG from extension icons, same as CookieClear |
+| Feature accuracy | ✅ | SnapMark: 8 tools, 5 capture modes, Timer Pro-only, color picker Pro-only (6 presets free). ClearJSON: JWT decode, regex search, 10 free themes. CrumbKit: privacy score, classification, undo, whitelist |
+| CrumbKit logo | ✅ | 128px PNG from extension icons |
 | Email consistency | ✅ | All pages use `support@wayknow.tech` |
 | Date consistency | ✅ | Privacy policies "Last updated: July 3, 2026"; other pages "Last updated: June 25, 2026" |
 
@@ -57,7 +53,6 @@
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
-| CookieClear CWS submission | ❌ | v1.0.0 rejected (keyword spam). Hard-blocked — appeal submitted 2026-07-09. 76 tests passing. CTAs show "Coming Soon" |
 | CrumbKit CWS submission | 🔜 | v1.0.0 ready. Clean rebrand with new item ID, zero competitor names. GitHub: `wayknow/crumbkit`. Ready to submit. |
 
 ## ⚠️ Pending — Requires External URLs
@@ -66,7 +61,6 @@
 |------|---------------|
 | SnapMark Chrome Web Store link | ✅ Updated CWS link to v1.2.0 `snapmark-full-page-screen`. Creem purchase link also live |
 | ClearJSON Chrome Web Store link | ✅ Replaced all `#` placeholders with real CWS URL |
-| CookieClear Chrome Web Store link | ⏳ Replace 2 `#` placeholders in `cookieclear.html` after CWS approval |
 | CrumbKit Chrome Web Store link | ⏳ Replace 2 `#` placeholders in `crumbkit.html` after CWS approval |
 | CrumbKit GitHub repo | ✅ `github.com/wayknow/crumbkit` — pushed and live |
 | Creem purchase link (SnapMark $39) | ✅ Linked to `creem.io/payment/prod_6nImGVxcMKQqPKdooVA8ro`. Creem Payout activated 2026-07-11 |

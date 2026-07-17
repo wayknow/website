@@ -19,14 +19,11 @@ wayknow/
 ├── index.html                  # 首页 — 产品卡片 + 品牌价值观
 ├── snapmark.html               # SnapMark 产品页（截图+标注，$39 终身）
 ├── clearjson.html              # ClearJSON 产品页（JSON 查看器，$29 终身）
-├── cookieclear.html            # CookieClear 产品页（Cookie 编辑器，完全免费）
 ├── snapmark-privacy.html       # SnapMark 隐私政策
 ├── snapmark-terms.html         # SnapMark 服务条款
 ├── clearjson-privacy.html      # ClearJSON 隐私政策
 ├── clearjson-terms.html        # ClearJSON 服务条款
-├── cookieclear-privacy.html    # CookieClear 隐私政策
-├── cookieclear-terms.html      # CookieClear 服务条款
-├── crumbkit.html               # CrumbKit 产品页（Cookie 编辑器，完全免费，CookieClear 的合规新版）
+├── crumbkit.html               # CrumbKit 产品页（Cookie 编辑器，完全免费，原 CookieClear 的合规新版）
 ├── crumbkit-privacy.html       # CrumbKit 隐私政策
 ├── crumbkit-terms.html         # CrumbKit 服务条款
 ├── colorpeek.html              # ColorPeek 产品页（macOS 取色器，$19 终身）
@@ -51,11 +48,9 @@ wayknow/
 |------|------|------|----------|----------|
 | SnapMark | 截图 + 标注 | 免费 + $39 终身 | `snapmark.html` | `../snapmark` |
 | ClearJSON | JSON 查看器 | 免费 + $29 终身 | `clearjson.html` | `../clearjson` |
-| CookieClear | Cookie 编辑器 | 完全免费 | `cookieclear.html` | `../cookieclear` |
 | CrumbKit | Cookie 编辑器（合规新版） | 完全免费 | `crumbkit.html` | `../crumbkit` |
 | ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 
-CookieClear 因 CWS spam 政策被屏蔽（申诉中）。CrumbKit 是全新品牌的合规版本。CookieClear/CrumbKit 是获客渠道（免费），SnapMark 和 ClearJSON 是收入来源（买断制）。
 
 ## 关键约定
 
@@ -110,4 +105,4 @@ ssh ubuntu@43.160.219.45 "cd /var/www/html && sudo git pull"
 - 提交信息包含改动说明 + `Co-Authored-By: Claude <noreply@anthropic.com>`
 - 新增产品页面时检查 SEO.md 确保 SEO 配置完整
 - 推送前检查是否有残留的 `#` 占位符（CWS 链接、Creem 链接）
-- 子项目（snapmark/clearjson/cookieclear）的 `.md` 和 `CLAUDE.md` 是官网内容的最新参考源
+- 子项目（snapmark/clearjson/crumbkit）的 `.md` 和 `CLAUDE.md` 是官网内容的最新参考源

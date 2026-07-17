@@ -12,7 +12,6 @@ Official website for WayKnow, a collection of privacy-first Chrome browser exten
 |---------|-------------|---------|
 | [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension (8 annotation tools, 5 capture modes, license server live) | Free + $39 lifetime |
 | [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, JWT decode, regex search, large files) | Free + $29 lifetime |
-| [CookieClear](./cookieclear.html) | Cookie editor Chrome extension (privacy score, import/export, domain whitelist, undo, dark mode) | Always Free (CWS blocked, appeal pending) |
 | [CrumbKit](./crumbkit.html) | Cookie editor Chrome extension — clean rebrand of CookieClear, new CWS submission | Always Free |
 | [ColorPeek](./colorpeek.html) | macOS color picker for developers (menu bar, 8 formats, Tailwind CSS, SCSS, SwiftUI Color) | Free + $19 lifetime |
 
@@ -29,7 +28,6 @@ Official website for WayKnow, a collection of privacy-first Chrome browser exten
 | No subscription pricing | Both products: Free + one-time lifetime purchase only |
 | SnapMark Pro $39 | Researched competitors (FireShot $99.95 lifetime, others subscription-only). Deliberately underpriced for market entry |
 | ClearJSON Pro $29 | Impulse-buy price for developer tools (CSS Scan sold 1,450+ at $69) |
-| CookieClear always free | Free acquisition channel for product family. No validated paid demand in cookie editor market |
 | CrumbKit rebrand | CookieClear CWS item blocked (spam policy, appeal pending). CrumbKit is a clean rebrand with new item ID, zero competitor names, ready for fresh CWS submission |
 
 ## Site Structure
@@ -39,15 +37,12 @@ wayknow/
 ├── index.html                  # Homepage — product cards + shared values
 ├── snapmark.html               # SnapMark product page (features, pricing, comparison, FAQ)
 ├── clearjson.html              # ClearJSON product page (features, pricing, comparison, FAQ)
-├── cookieclear.html            # CookieClear product page (free, MV3-native, privacy-first)
 ├── snapmark-privacy.html       # SnapMark privacy policy (Creem compliance)
 ├── snapmark-terms.html         # SnapMark terms of service
 ├── snapmark-refund.html        # SnapMark refund policy
 ├── clearjson-privacy.html      # ClearJSON privacy policy (Creem compliance)
 ├── clearjson-terms.html        # ClearJSON terms of service
 ├── clearjson-refund.html       # ClearJSON refund policy
-├── cookieclear-privacy.html    # CookieClear privacy policy (zero data collection)
-├── cookieclear-terms.html      # CookieClear terms of service (MIT license)
 ├── crumbkit.html               # CrumbKit product page (free, MV3-native, privacy-first)
 ├── crumbkit-privacy.html       # CrumbKit privacy policy (zero data collection)
 ├── crumbkit-terms.html         # CrumbKit terms of service (MIT license)

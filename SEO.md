@@ -33,7 +33,6 @@
 | index.html | ✅ | ✅ | ✅ | Organization | wayknow-logo.svg |
 | snapmark.html | ✅ | ✅ | ✅ | SoftwareApplication | snapmark-logo.png |
 | clearjson.html | ✅ | ✅ | ✅ | SoftwareApplication | clearjson-logo.svg |
-| cookieclear.html | ✅ | ✅ | ✅ | SoftwareApplication (CWS blocked, appeal pending) | cookieclear-logo.png |
 | crumbkit.html | ✅ | ✅ | ✅ | SoftwareApplication | crumbkit-logo.png |
 | snapmark-privacy.html | ✅ | — | — | — | snapmark-logo.png |
 | snapmark-terms.html | ✅ | — | — | — | snapmark-logo.png |
@@ -41,8 +40,6 @@
 | clearjson-privacy.html | ✅ | — | — | — | clearjson-logo.svg |
 | clearjson-terms.html | ✅ | — | — | — | clearjson-logo.svg |
 | clearjson-refund.html | ✅ | — | — | — | clearjson-logo.svg |
-| cookieclear-privacy.html | ✅ | — | — | — | cookieclear-logo.png |
-| cookieclear-terms.html | ✅ | — | — | — | cookieclear-logo.png |
 | crumbkit-privacy.html | ✅ | — | — | — | crumbkit-logo.png |
 | crumbkit-terms.html | ✅ | — | — | — | crumbkit-logo.png |
 | support.html | ✅ | ✅ | ✅ | — | wayknow-logo.svg |
@@ -113,7 +110,7 @@ Sitemap: https://wayknow.tech/sitemap.xml
 <meta name="twitter:image" content="https://wayknow.tech/assets/wayknow-logo.svg">
 ```
 
-### 产品页（snapmark / clearjson / cookieclear / crumbkit）
+### 产品页（snapmark / clearjson / clearjson / crumbkit）
 
 结构与首页相同，各有产品特定的 title、description、image。均包含 `og:image:width` 和 `og:image:height`。
 
@@ -146,7 +143,7 @@ Sitemap: https://wayknow.tech/sitemap.xml
 
 ### 产品页 — SoftwareApplication
 
-snapmark（$39）、clearjson（$29）、cookieclear（$0）、crumbkit（$0）各有 SoftwareApplication + Offer 结构化数据。
+snapmark（$39）、clearjson（$29）、crumbkit（$0）各有 SoftwareApplication + Offer 结构化数据。
 
 ---
 
