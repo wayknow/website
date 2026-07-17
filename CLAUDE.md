@@ -26,6 +26,9 @@ wayknow/
 ├── clearjson-terms.html        # ClearJSON 服务条款
 ├── cookieclear-privacy.html    # CookieClear 隐私政策
 ├── cookieclear-terms.html      # CookieClear 服务条款
+├── crumbkit.html               # CrumbKit 产品页（Cookie 编辑器，完全免费，CookieClear 的合规新版）
+├── crumbkit-privacy.html       # CrumbKit 隐私政策
+├── crumbkit-terms.html         # CrumbKit 服务条款
 ├── colorpeek.html              # ColorPeek 产品页（macOS 取色器，$19 终身）
 ├── colorpeek-privacy.html      # ColorPeek 隐私政策
 ├── colorpeek-terms.html        # ColorPeek 服务条款
@@ -49,9 +52,10 @@ wayknow/
 | SnapMark | 截图 + 标注 | 免费 + $39 终身 | `snapmark.html` | `../snapmark` |
 | ClearJSON | JSON 查看器 | 免费 + $29 终身 | `clearjson.html` | `../clearjson` |
 | CookieClear | Cookie 编辑器 | 完全免费 | `cookieclear.html` | `../cookieclear` |
+| CrumbKit | Cookie 编辑器（合规新版） | 完全免费 | `crumbkit.html` | `../crumbkit` |
 | ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 
-CookieClear 是获客渠道（免费），SnapMark 和 ClearJSON 是收入来源（买断制）。
+CookieClear 因 CWS spam 政策被屏蔽（申诉中）。CrumbKit 是全新品牌的合规版本。CookieClear/CrumbKit 是获客渠道（免费），SnapMark 和 ClearJSON 是收入来源（买断制）。
 
 ## 关键约定
 

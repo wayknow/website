@@ -233,7 +233,24 @@
 
 ---
 
-## 19. ClearJSON: No Subscription — Lifetime Only
+## 19. CrumbKit: Clean Rebrand for CWS Resubmission
+
+**Decision**: Create a new brand ("CrumbKit") and new CWS item instead of waiting for CookieClear's appeal verdict.
+
+**Why**: CookieClear's CWS item was hard-blocked (resubmission disabled, appeal only). The appeal was submitted 2026-07-09 with no response after 8+ days. Rather than wait indefinitely for a single-appeal verdict, we created a clean rebrand with a new CWS item ID.
+
+**What changed**:
+- Name: CookieClear → CrumbKit ("crumb" = cookie crumb, "kit" = developer toolkit)
+- New GitHub repo: `wayknow/crumbkit`
+- New website pages: `crumbkit.html`, `crumbkit-privacy.html`, `crumbkit-terms.html`
+- All store assets regenerated with CrumbKit branding
+- Zero competitor names or "replacement" wording — positioned purely on its own merits
+
+**Codebase**: Derived from CookieClear (same features, same 76-test suite). All branding, URLs, storage keys, and export headers use CrumbKit.
+
+---
+
+## 20. ClearJSON: No Subscription — Lifetime Only
 
 **Decision**: ClearJSON Pro is $29 lifetime only. Removed the subscription option ($2/mo, $20/yr) that appeared in early planning.
 
