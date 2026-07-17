@@ -4,7 +4,7 @@
 
 ## ✅ Done
 
-### Website (17 pages)
+### Website (20 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CookieClear, ColorPeek), shared values, no hero |
