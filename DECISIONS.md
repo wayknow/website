@@ -248,6 +248,8 @@
 
 **Codebase**: Derived from CookieClear (same features, same 76-test suite). All branding, URLs, storage keys, and export headers use CrumbKit.
 
+**Outcome**: CrumbKit v1.0.0 was published on Chrome Web Store on 2026-07-20. Submitted with `tabs` permission in manifest — passed review. `tabs` removed proactively in repo for the next update. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl).
+
 ---
 
 ## 20. ClearJSON: No Subscription — Lifetime Only

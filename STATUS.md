@@ -1,6 +1,6 @@
 # Project Status
 
-> Last updated: 2026-07-13
+> Last updated: 2026-07-20
 
 ## ✅ Done
 
@@ -10,7 +10,7 @@
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
 | SnapMark product | ✅ | Features, pricing (Free + $39 lifetime), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark` |
 | ClearJSON product | ✅ | Features, pricing (Free + $29 lifetime), comparison table, FAQ |
-| CrumbKit product | ✅ | Clean rebrand of the original CookieClear project. Features, FAQ. Free, MV3-native. New CWS item, ready for submission. |
+| CrumbKit product | ✅ | Clean rebrand of the original CookieClear project. Features, FAQ. Free, MV3-native. Published 2026-07-20. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
 | SnapMark terms | ✅ | Updated July 9 2026: 10 sections, MIT license, Creem payment |
 | SnapMark refund | ✅ | 14-day refund: technical issues, feature discrepancies, billing errors |
