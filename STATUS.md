@@ -53,7 +53,7 @@
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
-| CrumbKit CWS submission | ⏳ | v1.0.0 submitted 2026-07-17, under review. `tabs` permission proactively removed 2026-07-20 (learned from CookieClear appeal). Updated .zip ready if review flags it. |
+| CrumbKit CWS submission | ✅ | v1.0.0 published 2026-07-20. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl). Submitted with `tabs` in manifest — passed review anyway. `tabs` removed proactively in repo for next update. |
 
 ## ⚠️ Pending — Requires External URLs
 
@@ -61,7 +61,7 @@
 |------|---------------|
 | SnapMark Chrome Web Store link | ✅ Updated CWS link to v1.2.0 `snapmark-full-page-screen`. Creem purchase link also live |
 | ClearJSON Chrome Web Store link | ✅ Replaced all `#` placeholders with real CWS URL |
-| CrumbKit Chrome Web Store link | ⏳ Replace 2 `#` placeholders in `crumbkit.html` after CWS approval |
+| CrumbKit Chrome Web Store link | ✅ Replaced "Coming Soon" buttons with real CWS link |
 | CrumbKit GitHub repo | ✅ `github.com/wayknow/crumbkit` — pushed and live |
 | Creem purchase link (SnapMark $39) | ✅ Linked to `creem.io/payment/prod_6nImGVxcMKQqPKdooVA8ro`. Creem Payout activated 2026-07-11 |
 | Creem purchase link (ClearJSON $29) | ✅ Linked to `creem.io/payment/prod_5Aha8NpKKi8AUd2sLaPRgM` |
