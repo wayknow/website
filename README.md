@@ -12,7 +12,7 @@ Official website for WayKnow, a collection of privacy-first Chrome browser exten
 |---------|-------------|---------|
 | [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension (8 annotation tools, 5 capture modes, license server live) | Free + $39 lifetime |
 | [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, JWT decode, regex search, large files) | Free + $29 lifetime |
-| [CrumbKit](./crumbkit.html) | Cookie editor Chrome extension — clean rebrand of CookieClear, new CWS submission | Always Free |
+| [CrumbKit](./crumbkit.html) | Cookie editor Chrome extension (privacy-first, MV3 native, published 2026-07-20) | Always Free |
 | [ColorPeek](./colorpeek.html) | macOS color picker for developers (menu bar, 8 formats, Tailwind CSS, SCSS, SwiftUI Color) | Free + $19 lifetime |
 
 ## Key Design Decisions
@@ -28,7 +28,7 @@ Official website for WayKnow, a collection of privacy-first Chrome browser exten
 | No subscription pricing | Both products: Free + one-time lifetime purchase only |
 | SnapMark Pro $39 | Researched competitors (FireShot $99.95 lifetime, others subscription-only). Deliberately underpriced for market entry |
 | ClearJSON Pro $29 | Impulse-buy price for developer tools (CSS Scan sold 1,450+ at $69) |
-| CrumbKit rebrand | CookieClear CWS item blocked (spam policy, appeal pending). CrumbKit is a clean rebrand with new item ID, zero competitor names, ready for fresh CWS submission |
+| CrumbKit rebrand | CookieClear CWS item was blocked (spam policy). CrumbKit is a clean rebrand with new CWS item ID, published 2026-07-20 |
 
 ## Site Structure
 
@@ -57,7 +57,7 @@ wayknow/
 │   └── main.js                 # Header/footer injection, nav highlight, mobile menu, FAQ
 ├── assets/
 │   ├── snapmark-logo.png       # Real SnapMark icon (128px, from extension)
-│   └── clearjson-logo.svg      # ClearJSON logo (placeholder — replace when real icon available)
+│   └── clearjson-logo.svg      # ClearJSON logo (real SVG icon from extension)
 ├── README.md
 ├── STATUS.md
 ├── DECISIONS.md                # Key decisions and rationale
@@ -83,7 +83,7 @@ User → Cloudflare DNS/CDN (SSL) → Tencent Cloud Singapore 2C2G Ubuntu → Ng
 
 - **Domain**: `wayknow.tech` (Tencent Cloud registrar, Cloudflare DNS)
 - **Server**: Tencent Cloud Lightweight 2C2G, Ubuntu Server, Singapore
-- **API**: `api.wayknow.tech` — Cloudflare Workers + D1 (SnapMark license server live; ClearJSON planned)
+- **API**: `api.wayknow.tech` — Cloudflare Workers + D1 (SnapMark license server live; ClearJSON license server live)
 - **SSL**: Cloudflare Flexible mode + Always Use HTTPS
 - **Email**: Cloudflare Email Routing (`support@wayknow.tech` → Gmail)
 - **Repo**: `github.com/wayknow/website` (private)

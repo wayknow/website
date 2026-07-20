@@ -7,7 +7,7 @@
 - **技术栈**：纯静态 HTML/CSS/JS，零框架，零构建步骤
 - **设计系统**：CSS 自定义属性，深蓝 + teal 暗色主题，768px 响应式断点
 - **部署**：`git push` → 服务器 `git pull`，Tencent Cloud 新加坡 + Cloudflare CDN
-- **当前状态**：10 个页面，3 款产品，SEO 已优化
+- **当前状态**：17 个页面，4 款产品，SEO 已优化
 - **详细状态**：[STATUS.md](STATUS.md)
 - **决策记录**：[DECISIONS.md](DECISIONS.md)
 - **部署指南**：[DEPLOY.md](DEPLOY.md)
@@ -21,20 +21,23 @@ wayknow/
 ├── clearjson.html              # ClearJSON 产品页（JSON 查看器，$29 终身）
 ├── snapmark-privacy.html       # SnapMark 隐私政策
 ├── snapmark-terms.html         # SnapMark 服务条款
+├── snapmark-refund.html        # SnapMark 退款政策
 ├── clearjson-privacy.html      # ClearJSON 隐私政策
 ├── clearjson-terms.html        # ClearJSON 服务条款
+├── clearjson-refund.html       # ClearJSON 退款政策
 ├── crumbkit.html               # CrumbKit 产品页（Cookie 编辑器，完全免费，原 CookieClear 的合规新版）
 ├── crumbkit-privacy.html       # CrumbKit 隐私政策
 ├── crumbkit-terms.html         # CrumbKit 服务条款
 ├── colorpeek.html              # ColorPeek 产品页（macOS 取色器，$19 终身）
 ├── colorpeek-privacy.html      # ColorPeek 隐私政策
 ├── colorpeek-terms.html        # ColorPeek 服务条款
+├── colorpeek-refund.html       # ColorPeek 退款政策
 ├── support.html                 # 通用支持页面
 ├── css/style.css               # ~1000 行 CSS 设计系统
 ├── js/main.js                  # 导航高亮、移动端菜单、FAQ accordion、平滑滚动
 ├── assets/                     # 产品图标
 ├── robots.txt                  # SEO
-├── sitemap.xml                 # SEO（14 个 URL）
+├── sitemap.xml                 # SEO（17 个 URL）
 ├── README.md
 ├── STATUS.md
 ├── DECISIONS.md
@@ -49,6 +52,7 @@ wayknow/
 | SnapMark | 截图 + 标注 | 免费 + $39 终身 | `snapmark.html` | `../snapmark` |
 | ClearJSON | JSON 查看器 | 免费 + $29 终身 | `clearjson.html` | `../clearjson` |
 | CrumbKit | Cookie 编辑器（合规新版） | 完全免费 | `crumbkit.html` | `../crumbkit` |
+| ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 | ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 
 
@@ -94,8 +98,8 @@ ssh ubuntu@43.160.219.45 "cd /var/www/html && sudo git pull"
 1. 创建产品页（`product.html`）、隐私政策（`product-privacy.html`）、服务条款（`product-terms.html`）
 2. 复制 `assets/product-logo.png`（128px）
 3. 更新 `index.html`：产品卡片 + nav + footer
-4. 更新其他 9 个 HTML 的 nav 和 footer（加新产品的导航链接和 legal 链接）
-5. 更新 `sitemap.xml`（3 个新 URL）
+4. 更新其他所有 HTML 的 nav 和 footer（加新产品的导航链接和 legal 链接）
+5. 更新 `sitemap.xml`（添加新 URL）
 6. 更新 `README.md`、`STATUS.md`、`DECISIONS.md`
 7. git commit + push + 服务器 pull
 

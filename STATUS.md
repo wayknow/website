@@ -55,23 +55,11 @@
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
 | CrumbKit CWS submission | ✅ | v1.0.0 published 2026-07-20. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl). Submitted with `tabs` in manifest — passed review anyway. `tabs` removed proactively in repo for next update. |
 
-## ⚠️ Pending — Requires External URLs
-
-| Item | What's needed |
-|------|---------------|
-| SnapMark Chrome Web Store link | ✅ Updated CWS link to v1.2.0 `snapmark-full-page-screen`. Creem purchase link also live |
-| ClearJSON Chrome Web Store link | ✅ Replaced all `#` placeholders with real CWS URL |
-| CrumbKit Chrome Web Store link | ✅ Replaced "Coming Soon" buttons with real CWS link |
-| CrumbKit GitHub repo | ✅ `github.com/wayknow/crumbkit` — pushed and live |
-| Creem purchase link (SnapMark $39) | ✅ Linked to `creem.io/payment/prod_6nImGVxcMKQqPKdooVA8ro`. Creem Payout activated 2026-07-11 |
-| Creem purchase link (ClearJSON $29) | ✅ Linked to `creem.io/payment/prod_5Aha8NpKKi8AUd2sLaPRgM` |
-| ColorPeek Creem purchase link ($19) | 🚧 New purchase link needed. CTAs show "Coming Soon" |
-
-## ⚠️ Pending — Assets
+## 🚧 Pending
 
 | Item | Notes |
 |------|-------|
-| ClearJSON logo | ✅ Using real SVG icon from extension |
+| ColorPeek Creem purchase link ($19) | CTAs show "Coming Soon". Needs Creem purchase link before launch. |
 | Product screenshots | Optional — add real screenshots to product pages for better conversion |
 
 ## 🔮 Future Ideas
