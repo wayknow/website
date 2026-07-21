@@ -23,7 +23,7 @@
 ### 全局
 
 - **robots.txt**：允许所有爬虫，禁止 `/assets/`，指向 sitemap
-- **sitemap.xml**：17 个 URL（首页 + 4 个产品页 + 1 个支持页 + 11 个 legal 页）
+- **sitemap.xml**：15 个 URL（首页 + 4 个产品页 + 1 个支持页 + 9 个 legal 页）
 - **header/footer**：所有页面使用静态 HTML，搜索引擎可直接解析导航链接
 
 ### 各页面 SEO 覆盖
@@ -36,10 +36,8 @@
 | crumbkit.html | ✅ | ✅ | ✅ | SoftwareApplication | crumbkit-logo.png |
 | snapmark-privacy.html | ✅ | — | — | — | snapmark-logo.png |
 | snapmark-terms.html | ✅ | — | — | — | snapmark-logo.png |
-| snapmark-refund.html | ✅ | — | — | — | snapmark-logo.png |
 | clearjson-privacy.html | ✅ | — | — | — | clearjson-logo.svg |
 | clearjson-terms.html | ✅ | — | — | — | clearjson-logo.svg |
-| clearjson-refund.html | ✅ | — | — | — | clearjson-logo.svg |
 | crumbkit-privacy.html | ✅ | — | — | — | crumbkit-logo.png |
 | crumbkit-terms.html | ✅ | — | — | — | crumbkit-logo.png |
 | support.html | ✅ | ✅ | ✅ | — | wayknow-logo.svg |
@@ -80,13 +78,13 @@ Sitemap: https://wayknow.tech/sitemap.xml
 
 ## 3. sitemap.xml
 
-包含全部 17 个页面 URL，含 `changefreq` 和 `priority`。产品页 priority 0.9（weekly），legal 页 priority 0.3（monthly），首页 priority 1.0。
+包含全部 15 个页面 URL，含 `changefreq` 和 `priority`。产品页 priority 0.9（weekly），legal 页 priority 0.3（monthly），首页 priority 1.0。
 
 ---
 
 ## 4. header/footer 静态化
 
-所有 17 个 HTML 页面的 `<header>` 和 `<footer>` 都是静态 HTML。`main.js` 只负责导航高亮、移动端菜单、FAQ accordion、平滑滚动、动态年份。
+所有 15 个 HTML 页面的 `<header>` 和 `<footer>` 都是静态 HTML。`main.js` 只负责导航高亮、移动端菜单、FAQ accordion、平滑滚动、动态年份。
 
 ---
 
@@ -119,7 +117,7 @@ Sitemap: https://wayknow.tech/sitemap.xml
 
 ## 6. canonical 链接
 
-全部 17 个页面都有 canonical，指向各自的标准 URL（`https://wayknow.tech/` + 路径）。防止 `www.wayknow.tech` 被当作重复内容。
+全部 15 个页面都有 canonical，指向各自的标准 URL（`https://wayknow.tech/` + 路径）。防止 `www.wayknow.tech` 被当作重复内容。
 
 ---
 

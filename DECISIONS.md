@@ -315,10 +315,10 @@
 
 ## 24. Refund Pages: .policy-content Layout (2026-07-13)
 
-**Decision**: All refund pages (SnapMark, ClearJSON, ColorPeek) use the same `<article class="policy-content">` layout as the privacy/terms pages.
+**Decision**: Refund pages use the same `<article class="policy-content">` layout as the privacy/terms pages.
 
-**Why**: The refund pages were initially built with a bare `<div class="container" style="max-width:720px">` wrapper, which gave no top margin on `<h2>` headings — titles sat flush against preceding paragraphs. The `.policy-content` class provides `margin-top: var(--space-10)` on h2s plus a bottom border separator.
+**Why**: The `.policy-content` class provides `margin-top: var(--space-10)` on h2s plus a bottom border separator.
 
-**ColorPeek refund page**: Created 2026-07-13, aligned with SnapMark/ClearJSON on 2026-07-13. Same structured policy: eligible reasons (technical issues, feature discrepancies, billing errors), non-refundable situations, how to request, processing, chargebacks.
+**SnapMark/ClearJSON refund pages**: Removed 2026-07-13 — refund policies consolidated into `support.html` to align with competitor practices. Only ColorPeek retains a standalone refund page (14-day: technical issues, feature discrepancies, billing errors, non-refundable situations, how to request, processing, chargebacks).
 
-**Impact**: Unified look-and-feel across all 17 legal pages. All footers updated to include ColorPeek Refund link.
+**Impact**: Only 1 standalone refund page (ColorPeek). SnapMark and ClearJSON refund info lives on `support.html`.
