@@ -21,7 +21,7 @@
 | Support page | ✅ | support@wayknow.tech, FAQ links, refund summaries for all products |
 | CrumbKit privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CrumbKit terms | ✅ | Free, MIT license, no payment processing |
-| ColorPeek product | ✅ | Features, pricing (Free + $19 lifetime), comparison table, FAQ. macOS desktop app |
+| ColorPeek product | ✅ | Features, pricing (Free + $19 lifetime), comparison table, FAQ, download DMG. Creem payment live. macOS desktop app |
 | ColorPeek privacy | ✅ | Zero data collection, Pro license verification only |
 | ColorPeek terms | ✅ | Lifetime-only, 3-Mac activation, 14-day refund |
 
@@ -59,7 +59,7 @@
 
 | Item | Notes |
 |------|-------|
-| ColorPeek Creem purchase link ($19) | CTAs show "Coming Soon". Needs Creem purchase link before launch. |
+| ColorPeek Creem purchase link ($19) | ✅ Linked to `creem.io/payment/prod_w1VD8FO1zNXbPgQqkJ8zA`. DMG download section live. License server deployed at `api.wayknow.tech/colorpeek`. |
 | Product screenshots | Optional — add real screenshots to product pages for better conversion |
 
 ## 🔮 Future Ideas
