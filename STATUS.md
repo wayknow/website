@@ -18,7 +18,7 @@
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
 | ClearJSON refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
 | ColorPeek refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
-| Support page | ✅ | support@wayknow.tech, FAQ links, refund policy (SnapMark & ClearJSON refunds consolidated here) |
+| Support page | ✅ | support@wayknow.tech, FAQ links, refund summaries for all products |
 | CrumbKit privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CrumbKit terms | ✅ | Free, MIT license, no payment processing |
 | ColorPeek product | ✅ | Features, pricing (Free + $19 lifetime), comparison table, FAQ. macOS desktop app |
