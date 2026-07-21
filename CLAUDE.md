@@ -7,7 +7,7 @@
 - **技术栈**：纯静态 HTML/CSS/JS，零框架，零构建步骤
 - **设计系统**：CSS 自定义属性，深蓝 + teal 暗色主题，768px 响应式断点
 - **部署**：`git push` → 服务器 `git pull`，Tencent Cloud 新加坡 + Cloudflare CDN
-- **当前状态**：15 个页面，4 款产品，SEO 已优化
+- **当前状态**：17 个页面，4 款产品，SEO 已优化
 - **详细状态**：[STATUS.md](STATUS.md)
 - **决策记录**：[DECISIONS.md](DECISIONS.md)
 - **部署指南**：[DEPLOY.md](DEPLOY.md)
@@ -21,8 +21,10 @@ wayknow/
 ├── clearjson.html              # ClearJSON 产品页（JSON 查看器，$29 终身）
 ├── snapmark-privacy.html       # SnapMark 隐私政策
 ├── snapmark-terms.html         # SnapMark 服务条款
+├── snapmark-refund.html        # SnapMark 退款政策
 ├── clearjson-privacy.html      # ClearJSON 隐私政策
 ├── clearjson-terms.html        # ClearJSON 服务条款
+├── clearjson-refund.html       # ClearJSON 退款政策
 ├── crumbkit.html               # CrumbKit 产品页（Cookie 编辑器，完全免费，原 CookieClear 的合规新版）
 ├── crumbkit-privacy.html       # CrumbKit 隐私政策
 ├── crumbkit-terms.html         # CrumbKit 服务条款
@@ -35,7 +37,7 @@ wayknow/
 ├── js/main.js                  # 导航高亮、移动端菜单、FAQ accordion、平滑滚动
 ├── assets/                     # 产品图标
 ├── robots.txt                  # SEO
-├── sitemap.xml                 # SEO（15 个 URL）
+├── sitemap.xml                 # SEO（17 个 URL）
 ├── README.md
 ├── STATUS.md
 ├── DECISIONS.md

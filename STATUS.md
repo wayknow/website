@@ -4,7 +4,7 @@
 
 ## ✅ Done
 
-### Website (15 pages)
+### Website (17 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
@@ -13,9 +13,11 @@
 | CrumbKit product | ✅ | Clean rebrand of the original CookieClear project. Features, FAQ. Free, MV3-native. Published 2026-07-20. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
 | SnapMark terms | ✅ | Updated July 9 2026: 10 sections, MIT license, Creem payment |
+| SnapMark refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
 | ClearJSON privacy | ✅ | Zero data collection, Pro license verification (api.wayknow.tech), email consistent |
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
-| ColorPeek refund | ✅ | 14-day refund: technical issues, feature discrepancies, billing errors |
+| ClearJSON refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
+| ColorPeek refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
 | Support page | ✅ | support@wayknow.tech, FAQ links, refund policy (SnapMark & ClearJSON refunds consolidated here) |
 | CrumbKit privacy | ✅ | Zero data collection, MIT open source, zero network requests |
 | CrumbKit terms | ✅ | Free, MIT license, no payment processing |

@@ -39,8 +39,10 @@ wayknow/
 ├── clearjson.html              # ClearJSON product page (features, pricing, comparison, FAQ)
 ├── snapmark-privacy.html       # SnapMark privacy policy (Creem compliance)
 ├── snapmark-terms.html         # SnapMark terms of service
+├── snapmark-refund.html        # SnapMark refund policy
 ├── clearjson-privacy.html      # ClearJSON privacy policy (Creem compliance)
 ├── clearjson-terms.html        # ClearJSON terms of service
+├── clearjson-refund.html       # ClearJSON refund policy
 ├── crumbkit.html               # CrumbKit product page (free, MV3-native, privacy-first)
 ├── crumbkit-privacy.html       # CrumbKit privacy policy (zero data collection)
 ├── crumbkit-terms.html         # CrumbKit terms of service (MIT license)

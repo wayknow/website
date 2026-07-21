@@ -313,12 +313,12 @@
 
 ---
 
-## 24. Refund Pages: .policy-content Layout (2026-07-13)
+## 24. Refund Pages: Conditional Refund, .policy-content Layout (2026-07-13)
 
-**Decision**: Refund pages use the same `<article class="policy-content">` layout as the privacy/terms pages.
+**Decision**: All refund pages (SnapMark, ClearJSON, ColorPeek) use the same `<article class="policy-content">` layout as the privacy/terms pages, with a consistent conditional refund policy.
 
 **Why**: The `.policy-content` class provides `margin-top: var(--space-10)` on h2s plus a bottom border separator.
 
-**SnapMark/ClearJSON refund pages**: Removed 2026-07-13 — refund policies consolidated into `support.html` to align with competitor practices. Only ColorPeek retains a standalone refund page (14-day: technical issues, feature discrepancies, billing errors, non-refundable situations, how to request, processing, chargebacks).
+**Refund policy**: 14-day conditional (not no-questions-asked). Eligible reasons: technical issues (can't resolve within 5 business days), feature discrepancies, billing errors. Non-refundable: over 14 days, key sharing/abuse, fraud, external factors outside our control.
 
-**Impact**: Only 1 standalone refund page (ColorPeek). SnapMark and ClearJSON refund info lives on `support.html`.
+**Impact**: 3 standalone refund pages (SnapMark, ClearJSON, ColorPeek) with identical structure and policy logic. CrumbKit is free — no refund page needed. `support.html` has summary for all products.
