@@ -332,17 +332,17 @@
 **Changes**:
 1. **Blog link** in nav and footer on all 18 pages. Blog page (`blog.html`) with 3 placeholder posts and newsletter signup.
 2. **Newsletter signup** on homepage (between products and values) and blog page. Form posts to `api.wayknow.tech/subscribe` (Cloudflare Worker endpoint to be created).
-3. **CWS install links** on product cards: "Install Free" for SnapMark/ClearJSON/CrumbKit (opens CWS), "Download Free" for ColorPeek (jumps to download section).
+3. **Product card CTA** on homepage, iterated through 3 designs:
+   - v1: Two buttons stacked vertically ("Learn More" + "Install Free") — cluttered, non-standard
+   - v2: Two buttons side-by-side — still competing CTAs, industry standard is single button
+   - **v3 (final)**: Single "Install Free →" / "Download Free →" button per card. Product name + icon are clickable links to product page. Matches CWS pattern — card educates, one CTA converts.
 
-**Why**: Blog is key for SEO — product pages alone can't rank for comparison keywords like "GoFullPage alternative." Newsletter captures visitor emails for future product launches (own traffic, not dependent on platforms). Direct CWS links reduce bounce rate — visitors can install without navigating through the product page.
+**Why**: Blog is key for SEO — product pages alone can't rank for comparison keywords like "GoFullPage alternative." Newsletter captures visitor emails for future product launches (own traffic, not dependent on platforms). Direct CWS links reduce bounce rate — visitors can install without navigating through the product page. Single-button CTA avoids competing CTAs; the card's content (description, feature tags, icon, name) already does the "Learn More" job.
 
 ---
 
+## 26. Product Card Icon as Clickable Link (2026-07-22)
 
-**Decision**: All refund pages (SnapMark, ClearJSON, ColorPeek) use the same `<article class="policy-content">` layout as the privacy/terms pages, with a consistent conditional refund policy.
+**Decision**: Made product card icons (`<a class="product-icon">`) clickable, linking to the product detail page — not just the product name text.
 
-**Why**: The `.policy-content` class provides `margin-top: var(--space-10)` on h2s plus a bottom border separator.
-
-**Refund policy**: 14-day conditional (not no-questions-asked). Eligible reasons: technical issues (can't resolve within 5 business days), feature discrepancies, billing errors. Non-refundable: over 14 days, key sharing/abuse, fraud, external factors outside our control.
-
-**Impact**: 3 standalone refund pages (SnapMark, ClearJSON, ColorPeek) with identical structure and policy logic. CrumbKit is free — no refund page needed. `support.html` has summary for all products.
+**Why**: Larger click target (Fitts's Law). Users naturally click icons; if only the text is clickable, they'll miss it. Chrome Web Store itself makes icons clickable. The `.product-icon` class uses `display: flex` so changing from `<div>` to `<a>` had zero visual impact.

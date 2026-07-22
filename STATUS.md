@@ -63,7 +63,7 @@
 |------|-------|
 | ColorPeek Creem purchase link ($19) | ✅ Linked to `creem.io/payment/prod_w1VD8FO1zNXbPgQqkJ8zA`. DMG download section live. License server deployed at `api.wayknow.tech/colorpeek`. |
 | Product screenshots | Optional — add real screenshots to product pages for better conversion |
-| Homepage CWS links | ✅ Added direct "Install Free" / "Download Free" buttons to all 4 product cards (2026-07-22) |
+| Homepage product card CTAs | ✅ Single "Install Free →" / "Download Free →" button per card. Product name + icon are clickable links to product page. Matches CWS/industry standard — card educates, one CTA converts (2026-07-22) |
 
 ## 🔮 Future Ideas
 
