@@ -1,10 +1,10 @@
 # WayKnow Website
 
-> Static website for WayKnow browser tools — `wayknow.tech`
+> Static website for WayKnow local-first tools — `wayknow.tech`
 
 ## Overview
 
-Official website for WayKnow, a collection of privacy-first Chrome browser extensions. Pure static HTML/CSS/JS, deployed on Tencent Cloud Singapore behind Cloudflare CDN.
+Official website for WayKnow, a collection of privacy-first local tools (Chrome extensions + macOS apps). Pure static HTML/CSS/JS, deployed on Tencent Cloud Singapore behind Cloudflare CDN.
 
 ## Products
 
@@ -46,6 +46,7 @@ wayknow/
 ├── crumbkit.html               # CrumbKit product page (free, MV3-native, privacy-first)
 ├── crumbkit-privacy.html       # CrumbKit privacy policy (zero data collection)
 ├── crumbkit-terms.html         # CrumbKit terms of service (MIT license)
+├── blog.html                     # Blog page (product updates, tips, newsletter signup)
 ├── support.html                 # Support page (contact, FAQ links, refund policy)
 ├── colorpeek.html               # ColorPeek product page (macOS color picker, $19 lifetime)
 ├── colorpeek-privacy.html       # ColorPeek privacy policy

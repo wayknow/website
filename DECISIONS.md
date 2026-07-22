@@ -322,3 +322,27 @@
 **Refund policy**: 14-day conditional (not no-questions-asked). Eligible reasons: technical issues (can't resolve within 5 business days), feature discrepancies, billing errors. Non-refundable: over 14 days, key sharing/abuse, fraud, external factors outside our control.
 
 **Impact**: 3 standalone refund pages (SnapMark, ClearJSON, ColorPeek) with identical structure and policy logic. CrumbKit is free — no refund page needed. `support.html` has summary for all products.
+
+---
+
+## 25. Blog, Newsletter, and CWS Links on Homepage (2026-07-22)
+
+**Decision**: Added blog page, email newsletter signup, and direct CWS install links to product cards on the homepage.
+
+**Changes**:
+1. **Blog link** in nav and footer on all 18 pages. Blog page (`blog.html`) with 3 placeholder posts and newsletter signup.
+2. **Newsletter signup** on homepage (between products and values) and blog page. Form posts to `api.wayknow.tech/subscribe` (Cloudflare Worker endpoint to be created).
+3. **CWS install links** on product cards: "Install Free" for SnapMark/ClearJSON/CrumbKit (opens CWS), "Download Free" for ColorPeek (jumps to download section).
+
+**Why**: Blog is key for SEO — product pages alone can't rank for comparison keywords like "GoFullPage alternative." Newsletter captures visitor emails for future product launches (own traffic, not dependent on platforms). Direct CWS links reduce bounce rate — visitors can install without navigating through the product page.
+
+---
+
+
+**Decision**: All refund pages (SnapMark, ClearJSON, ColorPeek) use the same `<article class="policy-content">` layout as the privacy/terms pages, with a consistent conditional refund policy.
+
+**Why**: The `.policy-content` class provides `margin-top: var(--space-10)` on h2s plus a bottom border separator.
+
+**Refund policy**: 14-day conditional (not no-questions-asked). Eligible reasons: technical issues (can't resolve within 5 business days), feature discrepancies, billing errors. Non-refundable: over 14 days, key sharing/abuse, fraud, external factors outside our control.
+
+**Impact**: 3 standalone refund pages (SnapMark, ClearJSON, ColorPeek) with identical structure and policy logic. CrumbKit is free — no refund page needed. `support.html` has summary for all products.

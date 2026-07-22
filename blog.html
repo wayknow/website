@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WayKnow Blog — Behind the scenes of building privacy-first local tools. Tips, updates, and product stories.">
+  <title>Blog — WayKnow</title>
+  <link rel="canonical" href="https://wayknow.tech/blog.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog — WayKnow">
+  <meta property="og:description" content="Behind the scenes of building privacy-first local tools. Tips, updates, and product stories.">
+  <meta property="og:url" content="https://wayknow.tech/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WayKnow">
+  <meta property="og:image" content="https://wayknow.tech/assets/wayknow-logo.svg">
+  <meta property="og:image:width" content="128">
+  <meta property="og:image:height" content="128">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — WayKnow">
+  <meta name="twitter:description" content="Behind the scenes of building privacy-first local tools. Tips, updates, and product stories.">
+  <meta name="twitter:image" content="https://wayknow.tech/assets/wayknow-logo.svg">
+  <link rel="icon" type="image/svg+xml" href="/assets/wayknow-logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <span class="dot"></span> WayKnow
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/snapmark.html">SnapMark</a></li>
+        <li><a href="/clearjson.html">ClearJSON</a></li>
+        <li><a href="/crumbkit.html">CrumbKit</a></li>
+        <li><a href="/colorpeek.html">ColorPeek</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Blog</h1>
+        <p class="subtitle">Behind the scenes of building privacy-first local tools</p>
+      </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section>
+      <div class="container" style="max-width: 720px;">
+        <div class="blog-list">
+          <!-- Post template — add new posts here -->
+          <article class="blog-post-card" style="padding: var(--space-8) 0; border-bottom: 1px solid var(--color-border);">
+            <time datetime="2026-07-21" style="font-size: 0.8125rem; color: var(--color-text-muted);">July 21, 2026</time>
+            <h2 style="font-size: 1.375rem; margin: var(--space-2) 0 var(--space-3);">
+              <a href="#" style="color: var(--color-text); text-decoration: none;">ColorPeek Is Here — A macOS Color Picker Built for Developers</a>
+            </h2>
+            <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-4);">Our fourth product is a native macOS app. Here's why we built it, what makes it different from the built-in picker, and why we chose SwiftUI over Electron.</p>
+            <a href="#" class="btn btn-outline btn-sm">Read More</a>
+          </article>
+
+          <article class="blog-post-card" style="padding: var(--space-8) 0; border-bottom: 1px solid var(--color-border);">
+            <time datetime="2026-07-03" style="font-size: 0.8125rem; color: var(--color-text-muted);">July 3, 2026</time>
+            <h2 style="font-size: 1.375rem; margin: var(--space-2) 0 var(--space-3);">
+              <a href="#" style="color: var(--color-text); text-decoration: none;">CrumbKit — Why We Rebuilt Our Cookie Editor from Scratch</a>
+            </h2>
+            <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-4);">The story behind CrumbKit: why we sunset CookieClear, what we learned about Chrome Web Store compliance, and how the new version is better in every way.</p>
+            <a href="#" class="btn btn-outline btn-sm">Read More</a>
+          </article>
+
+          <article class="blog-post-card" style="padding: var(--space-8) 0; border-bottom: 1px solid var(--color-border);">
+            <time datetime="2026-06-15" style="font-size: 0.8125rem; color: var(--color-text-muted);">June 15, 2026</time>
+            <h2 style="font-size: 1.375rem; margin: var(--space-2) 0 var(--space-3);">
+              <a href="#" style="color: var(--color-text); text-decoration: none;">Why "Local-First" Matters — No Servers, No Tracking, No BS</a>
+            </h2>
+            <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-4);">Every WayKnow tool runs entirely on your machine. Here's our philosophy on why local-first is the right approach for developer tools — and why it's also the harder path.</p>
+            <a href="#" class="btn btn-outline btn-sm">Read More</a>
+          </article>
+        </div>
+
+        <!-- Pagination placeholder -->
+        <div style="text-align: center; padding: var(--space-8) 0; color: var(--color-text-muted); font-size: 0.875rem;">
+          More posts coming soon
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section>
+      <div class="container">
+        <div class="newsletter-section">
+          <h3>Get Notified When We Ship New Tools</h3>
+          <p class="sub">No spam, no marketing fluff. Just product launches and occasional behind-the-scenes posts.</p>
+          <form class="newsletter-form" action="https://api.wayknow.tech/subscribe" method="POST">
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="dot"></span> WayKnow
+        </a>
+        <p>Privacy-first local tools.<br>100% local processing, zero data uploads, no sign-up required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/snapmark.html">SnapMark</a></li>
+          <li><a href="/clearjson.html">ClearJSON</a></li>
+        <li><a href="/crumbkit.html">CrumbKit</a></li>
+          <li><a href="/colorpeek.html">ColorPeek</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/snapmark-privacy.html">SnapMark Privacy</a></li>
+          <li><a href="/snapmark-terms.html">SnapMark Terms</a></li>
+          <li><a href="/snapmark-refund.html">SnapMark Refund</a></li>
+          <li><a href="/clearjson-privacy.html">ClearJSON Privacy</a></li>
+          <li><a href="/clearjson-terms.html">ClearJSON Terms</a></li>
+          <li><a href="/clearjson-refund.html">ClearJSON Refund</a></li>
+          <li><a href="/crumbkit-privacy.html">CrumbKit Privacy</a></li>
+          <li><a href="/crumbkit-terms.html">CrumbKit Terms</a></li>
+          <li><a href="/colorpeek-privacy.html">ColorPeek Privacy</a></li>
+          <li><a href="/colorpeek-terms.html">ColorPeek Terms</a></li>
+          <li><a href="/colorpeek-refund.html">ColorPeek Refund</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> WayKnow. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 
 ## ✅ Done
 
-### Website (17 pages)
+### Website (18 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
@@ -24,6 +24,8 @@
 | ColorPeek product | ✅ | Features, pricing (Free + $19 lifetime), comparison table, FAQ, download DMG. Creem payment live. macOS desktop app |
 | ColorPeek privacy | ✅ | Zero data collection, Pro license verification only |
 | ColorPeek terms | ✅ | Lifetime-only, 3-Mac activation, 14-day refund |
+| Blog page | ✅ | 3 placeholder posts, newsletter signup, proper SEO. `blog.html` |
+| Newsletter signup | ✅ | On homepage and blog page. Posts to `api.wayknow.tech/subscribe` |
 
 ### Design & Content
 | Item | Status | Notes |
@@ -61,12 +63,13 @@
 |------|-------|
 | ColorPeek Creem purchase link ($19) | ✅ Linked to `creem.io/payment/prod_w1VD8FO1zNXbPgQqkJ8zA`. DMG download section live. License server deployed at `api.wayknow.tech/colorpeek`. |
 | Product screenshots | Optional — add real screenshots to product pages for better conversion |
+| Homepage CWS links | ✅ Added direct "Install Free" / "Download Free" buttons to all 4 product cards (2026-07-22) |
 
 ## 🔮 Future Ideas
 
 | Idea | Notes |
 |------|-------|
-| Blog section | Product updates, Chrome extension tips |
+| Blog section ✅ | Product updates, Chrome extension tips. Blog page created with CWS install buttons on product cards and newsletter signup (2026-07-22) |
 | Product Hunt launch page | Dedicated landing page for launches |
 | More product cards | Add new WayKnow products as they ship |
 | Privacy-friendly analytics | Consider Plausible or self-hosted Umami if traffic becomes interesting |
