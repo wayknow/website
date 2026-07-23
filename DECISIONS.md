@@ -346,3 +346,20 @@
 **Decision**: Made product card icons (`<a class="product-icon">`) clickable, linking to the product detail page — not just the product name text.
 
 **Why**: Larger click target (Fitts's Law). Users naturally click icons; if only the text is clickable, they'll miss it. Chrome Web Store itself makes icons clickable. The `.product-icon` class uses `display: flex` so changing from `<div>` to `<a>` had zero visual impact.
+
+---
+
+## 27. SnapMark v1.3.0: Clean & Capture + Edge Store (2026-07-23)
+
+**Decision**: Updated SnapMark from v1.2.0 (5 capture modes) to v1.3.0 (6 capture modes). Added Clean & Capture feature and Microsoft Edge Add-ons store link.
+
+**Changes**:
+1. **6th capture mode: Clean & Capture** (Pro-only) — Click to remove ads, banners, sidebars from screenshots. Red highlight + fade animation + Undo.
+2. **Edge store link** — Added "Get for Microsoft Edge (coming soon)" button on product page hero. [Edge Add-ons link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj).
+3. **CWS listing updated** to v1.3.0 with Clean & Capture in the feature set.
+
+**Website impact**:
+- `snapmark.html`: Meta descriptions (5→6 capture modes), feature grid (added Clean & Capture), pricing table (added Clean & Capture line), FAQ updated, Edge store button added
+- `index.html`: SnapMark card tag (5→6 capture modes)
+- `README.md`: Product table updated (6 capture modes)
+- `STATUS.md`: Feature accuracy and CWS submission updated

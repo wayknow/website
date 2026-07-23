@@ -1,6 +1,6 @@
 # Project Status
 
-> Last updated: 2026-07-21
+> Last updated: 2026-07-23
 
 ## ✅ Done
 
@@ -8,7 +8,7 @@
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
-| SnapMark product | ✅ | Features, pricing (Free + $39 lifetime), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark` |
+| SnapMark product | ✅ | v1.3.0: 6 capture modes (incl. Clean & Capture), 8 annotation tools, Edge store link, pricing (Free + $39 lifetime), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark` |
 | ClearJSON product | ✅ | Features, pricing (Free + $29 lifetime), comparison table, FAQ |
 | CrumbKit product | ✅ | Clean rebrand of the original CookieClear project. Features, FAQ. Free, MV3-native. Published 2026-07-20. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
@@ -36,7 +36,7 @@
 | SnapMark real logo | ✅ | 128px PNG from extension icons |
 | Pricing accuracy | ✅ | Verified against PRODUCT.md and STATUS.md from extension |
 | No subscription residual | ✅ | All pages — terms, pricing, FAQ — consistent |
-| Feature accuracy | ✅ | SnapMark: 8 tools, 5 capture modes, Timer Pro-only, color picker Pro-only (6 presets free). ClearJSON: JWT decode, regex search, 10 free themes. CrumbKit: privacy score, classification, undo, whitelist |
+| Feature accuracy | ✅ | SnapMark: 6 capture modes (incl. Clean & Capture), 8 annotation tools, Timer Pro-only, color picker Pro-only (6 presets free). ClearJSON: JWT decode, regex search, 10 free themes. CrumbKit: privacy score, classification, undo, whitelist |
 | CrumbKit logo | ✅ | 128px PNG from extension icons |
 | Email consistency | ✅ | All pages use `support@wayknow.tech` |
 | Date consistency | ✅ | Privacy policies "Last updated: July 3, 2026"; other pages "Last updated: June 25, 2026" |
@@ -51,7 +51,8 @@
 | Cloudflare CDN | ✅ | Global edge caching |
 | Email forwarding | ✅ | `support@wayknow.tech` → Gmail via Cloudflare |
 | CLAUDE.md | ✅ | Project context for Claude Code (aligned with ClearJSON's format) |
-| SnapMark CWS submission | ✅ | v1.2.0 approved 2026-07-11. [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). SEO title/description optimized, Creem Payout activated, full payment pipeline live |
+| SnapMark CWS submission | ✅ | v1.3.0 approved. [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). 6 capture modes (added Clean & Capture Pro-only), 8 annotation tools, SEO title/description optimized, Creem Payout activated, full payment pipeline live |
+| SnapMark Edge Add-ons | ✅ | [Edge link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj). Listing "coming soon" — published in CWS, pending Edge review |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |

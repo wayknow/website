@@ -10,7 +10,7 @@ Official website for WayKnow, a collection of privacy-first local tools (Chrome 
 
 | Product | Description | Pricing |
 |---------|-------------|---------|
-| [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension (8 annotation tools, 5 capture modes, license server live) | Free + $39 lifetime |
+| [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension (6 capture modes, 8 annotation tools, license server live) | Free + $39 lifetime |
 | [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, JWT decode, regex search, large files) | Free + $29 lifetime |
 | [CrumbKit](./crumbkit.html) | Cookie editor Chrome extension (privacy-first, MV3 native, published 2026-07-20) | Always Free |
 | [ColorPeek](./colorpeek.html) | macOS color picker for developers (menu bar, 8 formats, Tailwind CSS, SCSS, SwiftUI Color) | Free + $19 lifetime |
