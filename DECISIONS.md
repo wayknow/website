@@ -351,7 +351,7 @@
 
 ## 27. SnapMark v1.3.0: Clean & Capture + Edge Store (2026-07-23)
 
-**Decision**: Updated SnapMark from v1.2.0 (5 capture modes) to v1.3.0 (6 capture modes). Added Clean & Capture feature and Microsoft Edge Add-ons store link.
+**Decision**: Updated SnapMark from v1.2.0 (5 capture modes) to v1.3.0 (7 capture modes). Added Clean & Capture feature and Microsoft Edge Add-ons store link.
 
 **Changes**:
 1. **6th capture mode: Clean & Capture** (Pro-only) — Click to remove ads, banners, sidebars from screenshots. Red highlight + fade animation + Undo.
@@ -359,7 +359,21 @@
 3. **CWS listing updated** to v1.3.0 with Clean & Capture in the feature set.
 
 **Website impact**:
-- `snapmark.html`: Meta descriptions (5→6 capture modes), feature grid (added Clean & Capture), pricing table (added Clean & Capture line), FAQ updated, Edge store button added
-- `index.html`: SnapMark card tag (5→6 capture modes)
-- `README.md`: Product table updated (6 capture modes)
+- `snapmark.html`: Meta descriptions (5→7 capture modes), feature grid (added Clean & Capture), pricing table (added Clean & Capture line), FAQ updated, Edge store button added
+- `index.html`: SnapMark card tag (5→7 capture modes)
+- `README.md`: Product table updated (7 capture modes)
 - `STATUS.md`: Feature accuracy and CWS submission updated
+
+---
+
+## 28. SnapMark: Batch Capture (7th Mode) (2026-07-25)
+
+**Decision**: Added Batch Capture as the 7th capture mode in SnapMark (Pro-only). Capture mode count: 5→6→7.
+
+**What it does**: Paste multiple URLs (up to 20) and capture them all automatically. Use cases: competitive analysis, design inspiration collection, batch documentation.
+
+**Website impact**:
+- `snapmark.html`: Meta descriptions 6→7, section title "Seven Capture Modes", feature grid (added Batch Capture card), pricing table (free: "no Timer, Clean, Batch" / Pro: added "Batch Capture"), comparison table (added row), FAQ updated
+- `index.html`: SnapMark card tag 6→7 capture modes
+- `README.md`: Product table updated
+- `STATUS.md`: Updated all capture mode references
