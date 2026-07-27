@@ -33,11 +33,20 @@ wayknow/
 ├── colorpeek-terms.html        # ColorPeek 服务条款
 ├── colorpeek-refund.html       # ColorPeek 退款政策
 ├── support.html                 # 通用支持页面
+├── blog.html                   # Blog 列表页（5 篇博文 + newsletter signup）
+├── blog/                       # 博客文章
+│   ├── json-formatter-alternatives.html
+│   ├── snapmark-screenshot-tool.html
+│   ├── crumbkit-cookie-editor.html
+│   ├── colorpeek-mac-color-picker.html
+│   └── local-first-matters.html
 ├── css/style.css               # ~1000 行 CSS 设计系统
 ├── js/main.js                  # 导航高亮、移动端菜单、FAQ accordion、平滑滚动
 ├── assets/                     # 产品图标
+├── download/                   # 产品下载文件
+│   └── ColorPeek.dmg
 ├── robots.txt                  # SEO
-├── sitemap.xml                 # SEO（17 个 URL）
+├── sitemap.xml                 # SEO（23 个 URL）
 ├── README.md
 ├── STATUS.md
 ├── DECISIONS.md
@@ -52,7 +61,6 @@ wayknow/
 | SnapMark | 截图 + 标注 | 免费 + $39 终身 | `snapmark.html` | `../snapmark` |
 | ClearJSON | JSON 查看器 | 免费 + $29 终身 | `clearjson.html` | `../clearjson` |
 | CrumbKit | Cookie 编辑器（合规新版） | 完全免费 | `crumbkit.html` | `../crumbkit` |
-| ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 | ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 
 

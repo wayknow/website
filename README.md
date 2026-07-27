@@ -46,7 +46,13 @@ wayknow/
 ├── crumbkit.html               # CrumbKit product page (free, MV3-native, privacy-first)
 ├── crumbkit-privacy.html       # CrumbKit privacy policy (zero data collection)
 ├── crumbkit-terms.html         # CrumbKit terms of service (MIT license)
-├── blog.html                     # Blog page (product updates, tips, newsletter signup)
+├── blog.html                     # Blog listing (5 posts, newsletter signup)
+├── blog/                         # Blog post pages
+│   ├── json-formatter-alternatives.html
+│   ├── snapmark-screenshot-tool.html
+│   ├── crumbkit-cookie-editor.html
+│   ├── colorpeek-mac-color-picker.html
+│   └── local-first-matters.html
 ├── support.html                 # Support page (contact, FAQ links, refund policy)
 ├── colorpeek.html               # ColorPeek product page (macOS color picker, $19 lifetime)
 ├── colorpeek-privacy.html       # ColorPeek privacy policy
@@ -58,7 +64,12 @@ wayknow/
 │   └── main.js                 # Header/footer injection, nav highlight, mobile menu, FAQ
 ├── assets/
 │   ├── snapmark-logo.png       # Real SnapMark icon (128px, from extension)
-│   └── clearjson-logo.svg      # ClearJSON logo (real SVG icon from extension)
+│   ├── clearjson-logo.png       # ClearJSON logo
+│   ├── crumbkit-logo.png        # CrumbKit logo
+│   ├── colorpeek-logo.png       # ColorPeek logo
+│   └── wayknow-logo.svg         # Site favicon
+├── download/
+│   └── ColorPeek.dmg            # ColorPeek macOS app
 ├── README.md
 ├── STATUS.md
 ├── DECISIONS.md                # Key decisions and rationale

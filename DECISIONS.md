@@ -368,7 +368,17 @@
 
 ## 28. SnapMark: Batch Capture (7th Mode) (2026-07-25)
 
-[…]
+**Decision**: Added Batch Capture as the 7th capture mode in SnapMark (Pro-only). Capture mode count: 5→6→7.
+
+**What it does**: Paste multiple URLs (up to 20) and capture them all automatically. Use cases: competitive analysis, design inspiration collection, batch documentation.
+
+**Website impact**:
+- `snapmark.html`: Meta descriptions 6→7, section title "Seven Capture Modes", feature grid (added Batch Capture card), pricing table (free: "no Timer, Clean, Batch" / Pro: added "Batch Capture"), comparison table (added row), FAQ updated
+- `index.html`: SnapMark card tag 6→7 capture modes
+- `README.md`: Product table updated
+- `STATUS.md`: Updated all capture mode references
+
+---
 
 ## 29. Blog Content Strategy: Competitive Comparison + Brand Philosophy (2026-07-27)
 
@@ -395,13 +405,3 @@
 - `blog.html` updated with real links (all `#` placeholders removed)
 - `sitemap.xml` updated with 5 new blog post URLs
 - Total page count: 18 → 23
-
-**Decision**: Added Batch Capture as the 7th capture mode in SnapMark (Pro-only). Capture mode count: 5→6→7.
-
-**What it does**: Paste multiple URLs (up to 20) and capture them all automatically. Use cases: competitive analysis, design inspiration collection, batch documentation.
-
-**Website impact**:
-- `snapmark.html`: Meta descriptions 6→7, section title "Seven Capture Modes", feature grid (added Batch Capture card), pricing table (free: "no Timer, Clean, Batch" / Pro: added "Batch Capture"), comparison table (added row), FAQ updated
-- `index.html`: SnapMark card tag 6→7 capture modes
-- `README.md`: Product table updated
-- `STATUS.md`: Updated all capture mode references
