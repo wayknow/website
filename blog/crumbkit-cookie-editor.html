@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EditThisCookie had 3M users before Chrome removed it. A fake clone scammed 50K people. Here's the story behind CrumbKit — a free, open-source cookie editor built to last.">
+  <title>CrumbKit — Why We Rebuilt Our Cookie Editor from Scratch | WayKnow Blog</title>
+  <link rel="canonical" href="https://wayknow.tech/blog/crumbkit-cookie-editor.html">
+  <meta property="og:title" content="CrumbKit — Why We Rebuilt Our Cookie Editor from Scratch">
+  <meta property="og:description" content="EditThisCookie was removed from Chrome. A fake clone scammed 50K users. We built CrumbKit to break the cycle.">
+  <meta property="og:url" content="https://wayknow.tech/blog/crumbkit-cookie-editor.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="WayKnow">
+  <meta property="og:image" content="https://wayknow.tech/assets/crumbkit-logo.png">
+  <meta property="article:published_time" content="2026-07-27">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CrumbKit — Why We Rebuilt Our Cookie Editor from Scratch">
+  <meta name="twitter:description" content="EditThisCookie was removed from Chrome. A fake clone scammed 50K users. We built CrumbKit to break the cycle.">
+  <meta name="twitter:image" content="https://wayknow.tech/assets/crumbkit-logo.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/wayknow-logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "CrumbKit — Why We Rebuilt Our Cookie Editor from Scratch",
+    "datePublished": "2026-07-27",
+    "author": {"@type": "Person", "name": "wayknow"},
+    "description": "EditThisCookie had 3M users before Chrome removed it. A fake clone scammed 50K people. Here's the story behind CrumbKit."
+  }
+  </script>
+  <style>
+    .blog-article { max-width: 720px; margin: 0 auto; padding: var(--space-8) 0; }
+    .blog-article h2 { font-size: 1.5rem; margin: var(--space-8) 0 var(--space-4); }
+    .blog-article p { line-height: 1.8; margin-bottom: var(--space-5); color: var(--color-text-secondary); }
+    .blog-article ul, .blog-article ol { margin-bottom: var(--space-5); padding-left: var(--space-6); }
+    .blog-article li { line-height: 1.8; color: var(--color-text-secondary); margin-bottom: var(--space-2); }
+    .blog-article strong { color: var(--color-text); }
+    .blog-article table { width: 100%; border-collapse: collapse; margin-bottom: var(--space-5); }
+    .blog-article th { text-align: left; padding: var(--space-2) var(--space-4); border-bottom: 2px solid var(--color-border); font-size: 0.875rem; }
+    .blog-article td { padding: var(--space-2) var(--space-4); border-bottom: 1px solid var(--color-border); font-size: 0.875rem; color: var(--color-text-secondary); }
+    .blog-article blockquote { border-left: 3px solid var(--color-primary); padding-left: var(--space-4); margin: var(--space-5) 0; color: var(--color-text-muted); }
+    .blog-article .article-meta { font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-8); }
+    .blog-article .cta-box { background: var(--color-bg-alt); border-radius: 8px; padding: var(--space-6); margin: var(--space-8) 0; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo"><span class="dot"></span> WayKnow</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/snapmark.html">SnapMark</a></li>
+        <li><a href="/clearjson.html">ClearJSON</a></li>
+        <li><a href="/crumbkit.html">CrumbKit</a></li>
+        <li><a href="/colorpeek.html">ColorPeek</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <a href="/blog.html" style="color: var(--color-text-muted); font-size: 0.875rem;">← Back to Blog</a>
+        <h1 style="margin-top: var(--space-4);">CrumbKit — Why We Rebuilt Our Cookie Editor from Scratch</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <article class="blog-article">
+          <p class="article-meta">Published July 27, 2026 · 5 min read</p>
+
+          <h2>What happened to EditThisCookie?</h2>
+
+          <p>For over a decade, <strong>EditThisCookie</strong> was the go-to cookie manager for Chrome. 3 million users. 11,000+ reviews. It did one thing and did it well: let you view, edit, import, and export cookies for any site.</p>
+
+          <p>Then Chrome's Manifest V2 deprecation hit. Over 50,000 extensions were removed or disabled. EditThisCookie was one of them.</p>
+
+          <p>Within weeks, a fake clone appeared on the Chrome Web Store — using a similar name and icon. <strong>It scammed 50,000 people</strong> before being taken down. The original author never migrated to Manifest V3. The 3 million users were left with nothing.</p>
+
+          <p>This pattern isn't unique to cookie editors. Popular extension gets removed → shady clones rush in → users get their data harvested. We've seen it with JSON Formatter (sold, injected ads), screenshot tools (forced cloud upload), and dozens of others.</p>
+
+          <h2>What are people using now?</h2>
+
+          <p>After EditThisCookie disappeared, a few alternatives stepped up:</p>
+
+          <table>
+            <thead><tr><th>Alternative</th><th>Pricing</th><th>The catch</th></tr></thead>
+            <tbody>
+              <tr><td>Cookie-Editor</td><td>Free, open source</td><td>Bare-bones — no import/export, no search, no classification</td></tr>
+              <tr><td>CookieJar</td><td>$4.99/month</td><td>Subscription for a tool that reads local browser data</td></tr>
+              <tr><td>EditThisCookie (clone)</td><td>Free</td><td>Who knows what it does with your data? Not open source</td></tr>
+            </tbody>
+          </table>
+
+          <p>None of them hit all three: <strong>free, open source, and actually useful.</strong></p>
+
+          <h2>Why we built CrumbKit</h2>
+
+          <p>We originally built a cookie editor called CookieClear. It passed all our tests, looked great, and was ready to ship. Then the Chrome Web Store <strong>hard-blocked it for keyword spam</strong> — we had used competitor names in the store listing. One appeal, one chance. We cleaned everything, submitted the appeal, and won. The block was lifted.</p>
+
+          <p>But here's the thing: even with the block lifted, the item ID had a spam violation on its record. In the Chrome Web Store, that affects your search ranking. Permanently.</p>
+
+          <p>So we did something painful but obvious: <strong>we killed CookieClear and rebuilt it as CrumbKit.</strong> Same code, same features, same commitment to privacy. But a clean item ID, a clean record, and a name that says what it is — "cookie crumbs" + "toolkit."</p>
+
+          <p>Lesson learned: <strong>never put competitor names in your Chrome Web Store listing.</strong> Not in the title, not in the description, not in the promo images. The first rejection was our fault. CrumbKit's store listing mentions no competitor by name.</p>
+
+          <h2>What CrumbKit does</h2>
+
+          <p>Everything you'd expect from a cookie editor, plus a few things you wouldn't:</p>
+
+          <ul>
+            <li><strong>View, create, edit, delete</strong> — full CRUD for every cookie on the current site</li>
+            <li><strong>Privacy Score</strong> — 0–100 score with color-coded gauge, powered by a bundled Disconnect.me tracker database (100% offline)</li>
+            <li><strong>Cookie classification</strong> — auto-labels every cookie: Essential, Functional, Analytics, Advertising, or Social</li>
+            <li><strong>Import & export</strong> — JSON, Netscape (curl/wget), and cURL formats. Parser handles real-world edge cases</li>
+            <li><strong>Batch delete + whitelist</strong> — clear all cookies for a site, protect important ones</li>
+            <li><strong>Undo support</strong> — up to 50 actions, Ctrl+Z to reverse</li>
+            <li><strong>Real-time search</strong> — type to filter, find what you need in a list of hundreds</li>
+            <li><strong>Dark & light mode</strong> — follows system preference, toggle anytime</li>
+          </ul>
+
+          <h2>Completely free. No, really.</h2>
+
+          <p>CrumbKit has no Pro tier, no ads, no data collection, no sign-up. It's MIT open source — every line of code is public and auditable.</p>
+
+          <blockquote>Why free? Because CrumbKit is our acquisition tool. We make money from <a href="/snapmark.html">SnapMark</a> ($39 lifetime screenshot tool) and <a href="/clearjson.html">ClearJSON</a> ($29 lifetime JSON viewer). CrumbKit is how people discover the WayKnow ecosystem. It costs us almost nothing to maintain — the <code>chrome.cookies</code> API hasn't changed in 10 years, and the entire extension is 1,700 lines of vanilla JavaScript with zero dependencies.</blockquote>
+
+          <p>The tracker database (from Disconnect.me) is bundled with the extension, so classification works offline. Open Chrome DevTools on any page with CrumbKit installed and check the Network tab — you'll see zero requests from the extension.</p>
+
+          <h2>What to look for in a cookie editor</h2>
+
+          <p>If you're comparing options, here's what matters:</p>
+
+          <ol>
+            <li><strong>Is it open source?</strong> A cookie editor can see every cookie on every site you visit. You should be able to verify what the code does.</li>
+            <li><strong>Does it make network requests?</strong> There's no reason a cookie editor needs to talk to a server. If it does, ask why.</li>
+            <li><strong>Is it Manifest V3?</strong> MV2 extensions are being phased out. If it's still MV2, it will stop working.</li>
+            <li><strong>Does it have a business model you can see?</strong> If an extension is free with no visible revenue, you're probably the product.</li>
+          </ol>
+
+          <div class="cta-box">
+            <strong>Get CrumbKit:</strong>
+            <p><a href="https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl" class="btn btn-primary" target="_blank" rel="noopener">Install on Chrome Web Store — Free</a></p>
+            <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-top: var(--space-3);">
+              MIT open source on <a href="https://github.com/wayknow/crumbkit">GitHub</a>. Also check out <a href="/snapmark.html">SnapMark</a> and <a href="/clearjson.html">ClearJSON</a>.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo"><span class="dot"></span> WayKnow</a>
+        <p>Privacy-first browser tools.<br>100% local processing, zero data uploads, no sign-up required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/snapmark.html">SnapMark</a></li>
+          <li><a href="/clearjson.html">ClearJSON</a></li>
+          <li><a href="/crumbkit.html">CrumbKit</a></li>
+          <li><a href="/colorpeek.html">ColorPeek</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/snapmark-privacy.html">SnapMark Privacy</a></li>
+          <li><a href="/snapmark-terms.html">SnapMark Terms</a></li>
+          <li><a href="/snapmark-refund.html">SnapMark Refund</a></li>
+          <li><a href="/clearjson-privacy.html">ClearJSON Privacy</a></li>
+          <li><a href="/clearjson-terms.html">ClearJSON Terms</a></li>
+          <li><a href="/clearjson-refund.html">ClearJSON Refund</a></li>
+          <li><a href="/crumbkit-privacy.html">CrumbKit Privacy</a></li>
+          <li><a href="/crumbkit-terms.html">CrumbKit Terms</a></li>
+          <li><a href="/colorpeek-privacy.html">ColorPeek Privacy</a></li>
+          <li><a href="/colorpeek-terms.html">ColorPeek Terms</a></li>
+          <li><a href="/colorpeek-refund.html">ColorPeek Refund</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> WayKnow. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

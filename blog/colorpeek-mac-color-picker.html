@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The macOS color picker hasn't changed in 20 years. We built ColorPeek to fix that — a native SwiftUI app for developers, with 8 formats, zero cloud, and a $19 lifetime price.">
+  <title>ColorPeek Is Here — A macOS Color Picker Built for Developers | WayKnow Blog</title>
+  <link rel="canonical" href="https://wayknow.tech/blog/colorpeek-mac-color-picker.html">
+  <meta property="og:title" content="ColorPeek Is Here — A macOS Color Picker Built for Developers">
+  <meta property="og:description" content="The macOS color picker hasn't changed in 20 years. We built a native SwiftUI app with 8 formats, zero cloud, and a $19 lifetime price.">
+  <meta property="og:url" content="https://wayknow.tech/blog/colorpeek-mac-color-picker.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="WayKnow">
+  <meta property="og:image" content="https://wayknow.tech/assets/colorpeek-logo.png">
+  <meta property="article:published_time" content="2026-07-27">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ColorPeek Is Here — A macOS Color Picker Built for Developers">
+  <meta name="twitter:description" content="The macOS color picker hasn't changed in 20 years. We built a native SwiftUI app with 8 formats, zero cloud, and a $19 lifetime price.">
+  <meta name="twitter:image" content="https://wayknow.tech/assets/colorpeek-logo.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/wayknow-logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "ColorPeek Is Here — A macOS Color Picker Built for Developers",
+    "datePublished": "2026-07-27",
+    "author": {"@type": "Person", "name": "wayknow"},
+    "description": "The macOS color picker hasn't changed in 20 years. We built a native SwiftUI app with 8 formats, zero cloud, and a $19 lifetime price."
+  }
+  </script>
+  <style>
+    .blog-article { max-width: 720px; margin: 0 auto; padding: var(--space-8) 0; }
+    .blog-article h2 { font-size: 1.5rem; margin: var(--space-8) 0 var(--space-4); }
+    .blog-article p { line-height: 1.8; margin-bottom: var(--space-5); color: var(--color-text-secondary); }
+    .blog-article ul, .blog-article ol { margin-bottom: var(--space-5); padding-left: var(--space-6); }
+    .blog-article li { line-height: 1.8; color: var(--color-text-secondary); margin-bottom: var(--space-2); }
+    .blog-article strong { color: var(--color-text); }
+    .blog-article table { width: 100%; border-collapse: collapse; margin-bottom: var(--space-5); }
+    .blog-article th { text-align: left; padding: var(--space-2) var(--space-4); border-bottom: 2px solid var(--color-border); font-size: 0.875rem; }
+    .blog-article td { padding: var(--space-2) var(--space-4); border-bottom: 1px solid var(--color-border); font-size: 0.875rem; color: var(--color-text-secondary); }
+    .blog-article blockquote { border-left: 3px solid var(--color-primary); padding-left: var(--space-4); margin: var(--space-5) 0; color: var(--color-text-muted); }
+    .blog-article .article-meta { font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-8); }
+    .blog-article .cta-box { background: var(--color-bg-alt); border-radius: 8px; padding: var(--space-6); margin: var(--space-8) 0; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo"><span class="dot"></span> WayKnow</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/snapmark.html">SnapMark</a></li>
+        <li><a href="/clearjson.html">ClearJSON</a></li>
+        <li><a href="/crumbkit.html">CrumbKit</a></li>
+        <li><a href="/colorpeek.html">ColorPeek</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <a href="/blog.html" style="color: var(--color-text-muted); font-size: 0.875rem;">← Back to Blog</a>
+        <h1 style="margin-top: var(--space-4);">ColorPeek Is Here — A macOS Color Picker Built for Developers</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <article class="blog-article">
+          <p class="article-meta">Published July 27, 2026 · 5 min read</p>
+
+          <h2>The macOS color picker is 20 years old</h2>
+
+          <p>Open the built-in macOS color picker — the one that pops up when you press Shift+Cmd+C in most apps. It shows you a color wheel. Click around, and you get… a hex code. That's it.</p>
+
+          <p>No history of previously picked colors. No format switching. No Tailwind class names, no CSS variables, no SwiftUI Color initializers. Just a hex code.</p>
+
+          <p>This tool hasn't changed meaningfully since Mac OS X Tiger. Meanwhile, the people picking colors from their screens — developers — now work with a dozen different color formats. Tailwind. SCSS. CSS custom properties. SwiftUI Color. OKLCH. The built-in picker supports exactly one of these.</p>
+
+          <h2>What's already out there</h2>
+
+          <p>There are paid alternatives. But they're all built for designers:</p>
+
+          <table>
+            <thead><tr><th>App</th><th>Price</th><th>The problem</th></tr></thead>
+            <tbody>
+              <tr><td>Sip Pro</td><td>$59 one-time (pushing subscription)</td><td>Feature bloat — team collaboration, cloud sync, commenting. Designers want palettes; developers want a color code.</td></tr>
+              <tr><td>ColorSlurp</td><td>$29 one-time</td><td>Beautiful UI, but designer-centric. No developer formats like Tailwind or SwiftUI Color.</td></tr>
+              <tr><td>Pika</td><td>Free, MIT open source</td><td>Extremely minimal — 10 history entries, few formats. Great for quick picks, not enough for daily use.</td></tr>
+            </tbody>
+          </table>
+
+          <p>Someone is making money in this category — Sip Pro and ColorSlurp prove that. But <strong>nobody is making a color picker for developers.</strong> Everyone is chasing the Figma/Sketch designer workflow. We saw the gap and went the other way.</p>
+
+          <h2>What ColorPeek does differently</h2>
+
+          <p>ColorPeek is a menu bar app. Click the eyedropper icon, pick a color anywhere on your screen. That's the entire interaction model. No windows to manage, no dock icon, no project files.</p>
+
+          <p><strong>8 color formats, switch with one click:</strong></p>
+          <ul>
+            <li><strong>HEX</strong> — <code>#3B82F6</code></li>
+            <li><strong>RGB</strong> — <code>rgb(59, 130, 246)</code></li>
+            <li><strong>HSL</strong> — <code>hsl(217, 91%, 60%)</code></li>
+            <li><strong>OKLCH</strong> — <code>oklch(0.62 0.22 264)</code> (full sRGB → Linear RGB → XYZ → LMS → OKLab pipeline)</li>
+            <li><strong>Tailwind</strong> — <code>blue-500</code> or <code>[#3B82F6]</code> (matches against 242 Tailwind 3.4 colors via Euclidean distance)</li>
+            <li><strong>SCSS</strong> — <code>$color: #3B82F6;</code></li>
+            <li><strong>CSS var</strong> — <code>--color: #3B82F6;</code></li>
+            <li><strong>SwiftUI Color</strong> — <code>Color(red: 0.231, green: 0.510, blue: 0.965)</code></li>
+          </ul>
+
+          <p>Other things it does:</p>
+          <ul>
+            <li><strong>Unlimited history</strong> — every color you've ever picked, searchable by hex code</li>
+            <li><strong>Custom palettes</strong> — save and organize colors into named collections</li>
+            <li><strong>Quick-access strip</strong> — last 6 colors always visible in the menu bar popup</li>
+            <li><strong>Pick from images</strong> — paste a screenshot or design mockup, click to extract colors</li>
+            <li><strong>Global hotkey</strong> — Cmd+Shift+C to activate the picker from anywhere</li>
+          </ul>
+
+          <h2>Why SwiftUI and not Electron</h2>
+
+          <p>We built all our other products as Chrome extensions. ColorPeek is our first native macOS app. We chose SwiftUI over Electron for three reasons:</p>
+
+          <ol>
+            <li><strong>Menu bar apps should be invisible.</strong> Electron apps sit in the Dock by default and consume 100MB+ of RAM before doing anything. A color picker needs to be lightweight — ColorPeek uses ~25MB.</li>
+            <li><strong>NSColorSampler already exists.</strong> Apple's color sampler API is excellent — system-level magnifying glass, works across all displays and spaces. Rebuilding this in a web view would be worse at every level.</li>
+            <li><strong>Launch at login, no splash screen.</strong> A color picker you have to manually open is a color picker you won't use. ColorPeek starts with your Mac and sits in the menu bar, invisible until you need it. <code>SMAppService</code> handles this natively; Electron requires workarounds.</li>
+          </ol>
+
+          <p>The trade-off: SwiftUI means macOS-only, no Windows or Linux. That's fine. The people who care about color-picking tools on macOS are a specific, underserved audience. We'd rather serve them well than serve everyone poorly.</p>
+
+          <h2>Free vs Pro</h2>
+
+          <p>The free tier gives you 4 formats (HEX, RGB, HSL, OKLCH), 50 history entries, and the magnifying glass picker. Pro ($19, one-time) unlocks 4 more formats (Tailwind, SCSS, CSS var, SwiftUI Color), unlimited history, custom palettes, and image color picking.</p>
+
+          <blockquote>$19 once, no subscription, no account required. The license key is verified locally with a 7-day offline cache — if our server is down, ColorPeek keeps working.</blockquote>
+
+          <p>There's no forced upgrade path. If you only need hex codes, ColorPeek is a free, permanent upgrade over the built-in picker. Pro is for developers who work across multiple color formats daily.</p>
+
+          <h2>Is this a real market?</h2>
+
+          <p>The color picker market is tiny compared to screenshot tools or JSON viewers. We project $5K–10K in the first year — not a flagship revenue product. But that's not the point.</p>
+
+          <p>ColorPeek is our <strong>desktop experiment</strong>. It validates that we can build, sign, notarize, and sell a native macOS app — the same pipeline we'll use for larger desktop products later. It's also a brand entry point: someone who discovers WayKnow through ColorPeek might also need a JSON viewer or screenshot tool.</p>
+
+          <p>And honestly? We use it every day. Sometimes you build something because you need it yourself, and if other people pay for it too, that's a bonus.</p>
+
+          <div class="cta-box">
+            <strong>Get ColorPeek:</strong>
+            <p><a href="/colorpeek.html" class="btn btn-primary">Download for macOS — Free + $19 Pro</a></p>
+            <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-top: var(--space-3);">
+              Requires macOS 14.0+. MIT open source on <a href="https://github.com/wayknow/colorpeek">GitHub</a>. Also available: <a href="/snapmark.html">SnapMark</a> and <a href="/clearjson.html">ClearJSON</a>.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo"><span class="dot"></span> WayKnow</a>
+        <p>Privacy-first browser tools.<br>100% local processing, zero data uploads, no sign-up required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/snapmark.html">SnapMark</a></li>
+          <li><a href="/clearjson.html">ClearJSON</a></li>
+          <li><a href="/crumbkit.html">CrumbKit</a></li>
+          <li><a href="/colorpeek.html">ColorPeek</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/snapmark-privacy.html">SnapMark Privacy</a></li>
+          <li><a href="/snapmark-terms.html">SnapMark Terms</a></li>
+          <li><a href="/snapmark-refund.html">SnapMark Refund</a></li>
+          <li><a href="/clearjson-privacy.html">ClearJSON Privacy</a></li>
+          <li><a href="/clearjson-terms.html">ClearJSON Terms</a></li>
+          <li><a href="/clearjson-refund.html">ClearJSON Refund</a></li>
+          <li><a href="/crumbkit-privacy.html">CrumbKit Privacy</a></li>
+          <li><a href="/crumbkit-terms.html">CrumbKit Terms</a></li>
+          <li><a href="/colorpeek-privacy.html">ColorPeek Privacy</a></li>
+          <li><a href="/colorpeek-terms.html">ColorPeek Terms</a></li>
+          <li><a href="/colorpeek-refund.html">ColorPeek Refund</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> WayKnow. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
