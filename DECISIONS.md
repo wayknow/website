@@ -368,6 +368,34 @@
 
 ## 28. SnapMark: Batch Capture (7th Mode) (2026-07-25)
 
+[…]
+
+## 29. Blog Content Strategy: Competitive Comparison + Brand Philosophy (2026-07-27)
+
+**Decision**: Publish 5 blog posts, each targeting a specific search intent:
+
+| Post | Type | Target Search |
+|------|------|------|
+| JSON Formatter Alternatives After the Original Was Sold | Competitive comparison | "json formatter alternative", "json formatter chrome" |
+| Why Every Screenshot Extension Has a Catch | Competitive comparison | "screenshot chrome extension", "full page screenshot" |
+| CrumbKit — Why We Rebuilt Our Cookie Editor | Competitive comparison + lessons learned | "editthiscookie alternative", "cookie editor chrome" |
+| ColorPeek Is Here — A macOS Color Picker for Developers | Product launch | "macos color picker", "color picker for developers" |
+| Why "Local-First" Matters — No Servers, No Tracking, No BS | Brand philosophy | "local-first developer tools", privacy-conscious audience |
+
+**Rationale**:
+- HN Show HN is blocked for new accounts, PH didn't perform well. Content marketing is the remaining zero-cost acquisition channel
+- Each post is SEO-optimized for long-tail search queries with high purchase intent (people searching "alternative to X" are ready to switch)
+- Posts are permanent assets — once indexed by Google, they generate traffic indefinitely
+- Competitive comparison posts name competitors and their flaws honestly, building credibility
+- The Local-First post ties all four products together under a unified philosophy, giving the brand depth beyond individual tools
+- All posts cross-link to product pages and other blog posts, creating an internal link graph that helps SEO
+
+**Website impact**:
+- 5 new pages in `blog/` directory: `json-formatter-alternatives.html`, `snapmark-screenshot-tool.html`, `crumbkit-cookie-editor.html`, `colorpeek-mac-color-picker.html`, `local-first-matters.html`
+- `blog.html` updated with real links (all `#` placeholders removed)
+- `sitemap.xml` updated with 5 new blog post URLs
+- Total page count: 18 → 23
+
 **Decision**: Added Batch Capture as the 7th capture mode in SnapMark (Pro-only). Capture mode count: 5→6→7.
 
 **What it does**: Paste multiple URLs (up to 20) and capture them all automatically. Use cases: competitive analysis, design inspiration collection, batch documentation.

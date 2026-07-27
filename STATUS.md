@@ -1,10 +1,10 @@
 # Project Status
 
-> Last updated: 2026-07-25
+> Last updated: 2026-07-27
 
 ## ✅ Done
 
-### Website (18 pages)
+### Website (23 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
@@ -24,7 +24,12 @@
 | ColorPeek product | ✅ | Features, pricing (Free + $19 lifetime), comparison table, FAQ, download DMG. Creem payment live. macOS desktop app |
 | ColorPeek privacy | ✅ | Zero data collection, Pro license verification only |
 | ColorPeek terms | ✅ | Lifetime-only, 3-Mac activation, 14-day refund |
-| Blog page | ✅ | 3 placeholder posts, newsletter signup, proper SEO. `blog.html` |
+| Blog page | ✅ | 5 real posts, newsletter signup, proper SEO. `blog.html` |
+| Blog: JSON Formatter Alternatives | ✅ | Competitive comparison → ClearJSON. `blog/json-formatter-alternatives.html` |
+| Blog: SnapMark Screenshot Tool | ✅ | Competitive comparison → SnapMark. `blog/snapmark-screenshot-tool.html` |
+| Blog: CrumbKit Cookie Editor | ✅ | EditThisCookie story → CrumbKit. `blog/crumbkit-cookie-editor.html` |
+| Blog: ColorPeek Mac Picker | ✅ | Product launch → ColorPeek. `blog/colorpeek-mac-color-picker.html` |
+| Blog: Local-First Matters | ✅ | Brand philosophy → all products. `blog/local-first-matters.html` |
 | Newsletter signup | ✅ | On homepage and blog page. Posts to `api.wayknow.tech/subscribe` |
 
 ### Design & Content
