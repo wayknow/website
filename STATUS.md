@@ -1,6 +1,6 @@
 # Project Status
 
-> Last updated: 2026-07-27
+> Last updated: 2026-07-29
 
 ## ✅ Done
 
@@ -36,7 +36,7 @@
 | Item | Status | Notes |
 |------|:------:|-------|
 | English localization | ✅ | All content in English |
-| Dark theme | ✅ | Deep blue + teal, CSS variables |
+| Dark theme | ✅ | Near-black + emerald green, CSS variables, aligned with CLAUDE.md spec |
 | Responsive design | ✅ | Mobile-first, 768px breakpoint |
 | SnapMark real logo | ✅ | 128px PNG from extension icons |
 | Pricing accuracy | ✅ | Verified against PRODUCT.md and STATUS.md from extension |
@@ -56,6 +56,7 @@
 | Cloudflare CDN | ✅ | Global edge caching |
 | Email forwarding | ✅ | `support@wayknow.tech` → Gmail via Cloudflare |
 | CLAUDE.md | ✅ | Project context for Claude Code (aligned with ClearJSON's format) |
+| Design system alignment | ✅ | Colors (bg #0A0A0A, accent #10b981), spacing (--space-20 96px), card radius (16px), prefers-reduced-motion, IntersectionObserver reveal animations, stagger support, utility classes (.section-alt, .btn-block, .tag-free) |
 | SnapMark CWS submission | ✅ | v1.3.0 approved. [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). 7 capture modes (added Clean & Capture + Batch Capture Pro-only), 8 annotation tools, SEO title/description optimized, Creem Payout activated, full payment pipeline live |
 | SnapMark Edge Add-ons | ✅ | [Edge link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj). Listing "coming soon" — published in CWS, pending Edge review |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |

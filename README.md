@@ -20,7 +20,7 @@ Official website for WayKnow, a collection of privacy-first local tools (Chrome 
 | Decision | Reason |
 |----------|--------|
 | No framework | Static site, fastest load time, easy to maintain |
-| Dark theme (deep blue + teal) | Developer-focused aesthetic, conveys trust & privacy |
+| Dark theme (near-black + emerald green) | Developer-focused aesthetic, conveys trust & privacy |
 | Header/footer are static HTML | Every page directly includes them — search engines and users see the full page instantly |
 | English only | Global audience, server in Singapore |
 | No analytics | Dogfooding our privacy-first philosophy |
@@ -59,9 +59,9 @@ wayknow/
 ├── colorpeek-terms.html         # ColorPeek terms of service
 ├── colorpeek-refund.html        # ColorPeek refund policy
 ├── css/
-│   └── style.css               # Design system (~1000 lines, CSS variables, responsive)
+│   └── style.css               # Design system (~1100 lines, CSS variables, animations, responsive)
 ├── js/
-│   └── main.js                 # Header/footer injection, nav highlight, mobile menu, FAQ
+│   └── main.js                 # Nav highlight, mobile menu, FAQ accordion, smooth scroll, IntersectionObserver animations
 ├── assets/
 │   ├── snapmark-logo.png       # Real SnapMark icon (128px, from extension)
 │   ├── clearjson-logo.png       # ClearJSON logo

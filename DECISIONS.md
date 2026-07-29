@@ -405,3 +405,32 @@
 - `blog.html` updated with real links (all `#` placeholders removed)
 - `sitemap.xml` updated with 5 new blog post URLs
 - Total page count: 18 → 23
+
+---
+
+## 30. Design System Alignment: Color Migration & Animation (2026-07-29)
+
+**Decision**: Aligned the CSS implementation with the design system spec in `CLAUDE.md`. Migrated the color palette from deep blue+teal to near-black+emerald green.
+
+**Color changes**:
+| Variable | Before | After | Reason |
+|----------|--------|-------|--------|
+| `--color-bg` | `#0f172a` (slate-900) | `#0A0A0A` (near-black) | Spec target |
+| `--color-bg-alt` | `#1e293b` (slate-800) | `#141414` | Neutral dark grey |
+| `--color-accent` | `#06b6d4` (cyan) | `#10b981` (emerald) | Green = success/trust, per spec |
+| `--color-gradient` | blue→cyan | blue→emerald | Follows accent change |
+| `--color-border` | `#334155` | `#262626` | Neutral border hierarchy |
+
+**Other fixes**:
+- `--space-20`: 5rem (80px) → 6rem (96px) — matches spec
+- `.card` / `.pricing-card` border-radius: 12px → 16px (`--radius-xl`)
+- Added `prefers-reduced-motion: reduce` media query (accessibility)
+- Added `IntersectionObserver` scroll-triggered reveal animations with `.reveal` class
+- Added stagger animation support (100ms interval, up to 8 children)
+- Added `.tag-free`, `.section-alt`, `.btn-block` utility classes
+- Replaced inline `style="width:100%"` and `style="background: var(--color-bg-alt);"` with CSS classes across all 20 HTML pages
+- Fixed footer Products column CrumbKit indentation across all pages
+
+**Why**: The design system spec in `CLAUDE.md` defined the target state; the CSS was lagging behind. Green accent signals trust/success better than teal cyan for a privacy-first brand. Motion accessibility (`prefers-reduced-motion`) is a baseline web standard. Extracting inline styles to CSS classes improves maintainability.
+
+**Impact**: 20 files modified. All pages share the updated design system via `style.css`. Zero visual regressions — the layout structure is unchanged, only colors and spacing adjusted.
