@@ -415,11 +415,11 @@
 **Color changes**:
 | Variable | Before | After | Reason |
 |----------|--------|-------|--------|
-| `--color-bg` | `#0f172a` (slate-900) | `#0A0A0A` (near-black) | Spec target |
-| `--color-bg-alt` | `#1e293b` (slate-800) | `#141414` | Neutral dark grey |
+| `--color-bg` | `#0f172a` (slate-900) | `#080A10` (blue-black) | Near-black with subtle blue, matches Linear/Raycast tier |
+| `--color-bg-alt` | `#1e293b` (slate-800) | `#0E1016` | Subtle blue-grey, layered above bg |
 | `--color-accent` | `#06b6d4` (cyan) | `#10b981` (emerald) | Green = success/trust, per spec |
 | `--color-gradient` | blue→cyan | blue→emerald | Follows accent change |
-| `--color-border` | `#334155` | `#262626` | Neutral border hierarchy |
+| `--color-border` | `#334155` | `#1E2028` | Subtle blue-grey border hierarchy |
 
 **Other fixes**:
 - `--space-20`: 5rem (80px) → 6rem (96px) — matches spec

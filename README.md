@@ -20,7 +20,7 @@ Official website for WayKnow, a collection of privacy-first local tools (Chrome 
 | Decision | Reason |
 |----------|--------|
 | No framework | Static site, fastest load time, easy to maintain |
-| Dark theme (near-black + emerald green) | Developer-focused aesthetic, conveys trust & privacy |
+| Dark theme (blue-black `#080A10` + emerald green) | Developer-focused aesthetic, conveys trust & privacy |
 | Header/footer are static HTML | Every page directly includes them — search engines and users see the full page instantly |
 | English only | Global audience, server in Singapore |
 | No analytics | Dogfooding our privacy-first philosophy |

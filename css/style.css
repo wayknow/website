@@ -5,13 +5,13 @@
 /* --- CSS Variables --- */
 :root {
   /* Colors */
-  --color-bg: #0A0A0A;
-  --color-bg-alt: #141414;
-  --color-bg-card: #141414;
-  --color-bg-card-hover: #1e1e1e;
-  --color-surface: #1e1e1e;
-  --color-border: #262626;
-  --color-border-light: #363636;
+  --color-bg: #080A10;
+  --color-bg-alt: #0E1016;
+  --color-bg-card: #0E1016;
+  --color-bg-card-hover: #161820;
+  --color-surface: #161820;
+  --color-border: #1E2028;
+  --color-border-light: #2A2C36;
 
   --color-text: #f1f5f9;
   --color-text-secondary: #94a3b8;
@@ -171,7 +171,7 @@ section {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 10, 10, 0.85);
+  background: rgba(8, 10, 16, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
@@ -942,7 +942,7 @@ td .warn { color: var(--color-warning); }
     top: 64px;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 10, 0.98);
+    background: rgba(8, 10, 16, 0.98);
     backdrop-filter: blur(12px);
     flex-direction: column;
     padding: var(--space-4);
