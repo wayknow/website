@@ -64,6 +64,81 @@ wayknow/
 | ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 
 
+## 设计系统
+
+**所有 UI 相关任务必须遵循以下规范。**
+
+### 技术选型
+
+- 纯静态 HTML/CSS/JS，零框架，零构建步骤
+- 可用外部字体（Google Fonts / Bunny Fonts），需预加载。当前使用 system-ui 栈
+- 图标：内联 SVG 或 emoji，禁止 Font Awesome
+- 图片：WebP 优先，有 `width`/`height` 属性防 CLS
+
+### 品牌色彩
+
+| Token | 值 | 用途 |
+|---|---|---|
+| 主色 | `#3B82F6` | 按钮、链接、强调 |
+| 强调 | `#10B981` | 成功状态、价格标签、激活态 |
+| 深色背景 | `#0A0A0A` | 主站底色（当前 CSS：`#0a0e14` deep blue，正在迁移） |
+| 浅色背景 | `#FFFFFF` | 浅色落地页（未来可选） |
+| 深色文字 | `#F5F5F5` | 深色背景上的正文 |
+| 浅色文字 | `#171717` | 浅色背景上的正文 |
+
+> **注意：当前 `css/style.css` 使用的是深蓝 + teal 暗色主题（`--color-primary: #3b82f6`，`--color-accent: #10b981`）。新页面应逐步对齐上面的品牌规范。**
+
+### 字体
+
+| 用途 | 字体 | 当前栈 |
+|------|------|--------|
+| 标题 | Inter 或 Geist | `system-ui, -apple-system, sans-serif` |
+| 正文 | Inter 或 system-ui | `system-ui, -apple-system, sans-serif` |
+
+### 圆角
+
+| 元素 | 值 | CSS 变量 |
+|------|-----|---------|
+| 按钮 | 8px | `--radius` |
+| 卡片 | 16px | `--radius-xl` |
+| 大模块 | 24px | 暂无，用 `--radius-xl` 代替 |
+
+### 间距（8px 基数）
+
+| Token | 值 | CSS 变量 |
+|------|-----|---------|
+| 2xs | 8px | `--space-2` |
+| xs | 16px | `--space-4` |
+| sm | 24px | `--space-6` |
+| md | 32px | `--space-8` |
+| lg | 48px | `--space-12` |
+| xl | 64px | `--space-16` |
+| 2xl | 96px | `--space-20` |
+
+### 页面结构
+
+- **导航**：固定顶部，背景色 → 滚动后可选 `backdrop-filter` 模糊（现有设计不使用 blur）
+- **Hero 区**：大标题 + 产品截图/动图 + CTA 按钮
+- **产品卡片**：图标 + 名称 + 一句话描述 + 价格标签
+- **页脚**：WayKnow 品牌 + 四个产品链接 + Legal 列 + 版权
+
+### 动画规范
+
+- 首屏加载：内容 stagger 淡入（100ms 间隔）
+- 滚动触发：`IntersectionObserver` + CSS transition，禁止 heavy JS 动画
+- 按钮 hover：`scale(1.02)` 或 `translateY(-1px)` + 阴影加深，`200ms ease-out`
+- 移动：禁止 `transition` 或 `animation`（尊重 `prefers-reduced-motion`）
+- 当前实现：`.animate-in` class + `fadeInUp` keyframe（600ms ease）
+
+### 性能目标
+
+- Lighthouse 性能分 ≥ 90
+- 首屏 < 1.5s（3G 模拟）
+- 无布局偏移（CLS ≈ 0）
+- 图片有 `width`/`height` 属性防抖动
+
+---
+
 ## 关键约定
 
 - **header/footer 是静态 HTML**：每个页面直接包含 `<header>` 和 `<footer>`，不再通过 JS 注入
