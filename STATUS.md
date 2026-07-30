@@ -78,5 +78,5 @@ _No pending items. All tracked tasks are complete._
 | Blog section ✅ | Product updates, Chrome extension tips. Blog page created with CWS install buttons on product cards and newsletter signup (2026-07-22) |
 | Product Hunt launch page | Dedicated landing page for launches |
 | More product cards | Add new WayKnow products as they ship |
-| Privacy-friendly analytics | Consider Plausible or self-hosted Umami if traffic becomes interesting |
+| Privacy-friendly analytics | ✅ Cloudflare Web Analytics enabled — zero-code, privacy-first. LCP 956ms, INP 100% Good, CLS 0. All Core Web Vitals pass. (2026-07-30) |
 | SnapMark Pro price raise | Consider raising to $49 after initial traction (still well below FireShot $99.95). Currently $39 with full payment pipeline live |
