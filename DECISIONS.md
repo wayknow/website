@@ -460,6 +460,8 @@
 
 4. **ClearJSON**: Product page already up-to-date (MCP server section, JSON Pretty Pro in comparison table, npm package link). v1.1.2 changes were internal UI only — no copy changes needed.
 
+5. **ColorPeek**: Added "Auto-copy on pick" to free features — ColorPeek v1.0 added auto-copy (Settings toggle, copies selected format immediately after picking) on 2026-07-27. Website feature grid and free tier pricing card updated.
+
 **Why**: Extension repos are the source of truth for product features. The website must reflect actual product capabilities. Periodic sync prevents drift between what the website claims and what the product actually does.
 
-**Impact**: 3 files modified (`snapmark.html`, `crumbkit.html`, `blog/snapmark-screenshot-tool.html`). Corresponding `.md` files (STATUS.md, DECISIONS.md, README.md) updated.
+**Impact**: 4 files modified (`snapmark.html`, `crumbkit.html`, `colorpeek.html`, `blog/snapmark-screenshot-tool.html`). Corresponding `.md` files (STATUS.md, DECISIONS.md, README.md) updated.
