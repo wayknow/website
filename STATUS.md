@@ -57,6 +57,9 @@
 | Email forwarding | ✅ | `support@wayknow.tech` → Gmail via Cloudflare |
 | CLAUDE.md | ✅ | Project context for Claude Code (aligned with ClearJSON's format) |
 | Design system alignment | ✅ | Colors (bg #0f172a, primary #3B82F6, accent #10b981), buttons flat blue, no gradient, card radius 16px, prefers-reduced-motion, IntersectionObserver, stagger, utility classes (.section-alt, .btn-block, .tag-free) |
+| Product screenshots | ✅ | All 4 product pages have real screenshots/images (logo + hero layout) |
+| Homepage product card CTAs | ✅ | Single "Install Free →" / "Download Free →" button per card (2026-07-22) |
+| ColorPeek Creem payment ($19) | ✅ | Linked to `creem.io/payment/prod_w1VD8FO1zNXbPgQqkJ8zA`. DMG download section live. License server deployed |
 | SnapMark CWS submission | ✅ | v1.3.0 approved. [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). 7 capture modes (added Clean & Capture + Batch Capture Pro-only), 8 annotation tools, SEO title/description optimized, Creem Payout activated, full payment pipeline live |
 | SnapMark Edge Add-ons | ✅ | [Edge link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj). Listing "coming soon" — published in CWS, pending Edge review |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
@@ -66,11 +69,7 @@
 
 ## 🚧 Pending
 
-| Item | Notes |
-|------|-------|
-| ColorPeek Creem purchase link ($19) | ✅ Linked to `creem.io/payment/prod_w1VD8FO1zNXbPgQqkJ8zA`. DMG download section live. License server deployed at `api.wayknow.tech/colorpeek`. |
-| Product screenshots | Optional — add real screenshots to product pages for better conversion |
-| Homepage product card CTAs | ✅ Single "Install Free →" / "Download Free →" button per card. Product name + icon are clickable links to product page. Matches CWS/industry standard — card educates, one CTA converts (2026-07-22) |
+_No pending items. All tracked tasks are complete._
 
 ## 🔮 Future Ideas
 
