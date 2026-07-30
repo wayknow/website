@@ -248,7 +248,7 @@
 
 **Codebase**: Derived from CookieClear (same features, same 76-test suite). All branding, URLs, storage keys, and export headers use CrumbKit.
 
-**Outcome**: CrumbKit v1.0.0 was published on Chrome Web Store on 2026-07-20. Submitted with `tabs` permission in manifest — passed review. `tabs` removed proactively in repo for the next update. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl).
+**Outcome**: CrumbKit v1.0.0 was published on Chrome Web Store on 2026-07-20. Submitted with `tabs` permission in manifest — passed review. v1.0.1 published 2026-07-29 with `tabs` removed (design system alignment + accessibility fixes + cross-promo). Website permissions text corrected 2026-07-30. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl).
 
 ---
 
@@ -434,3 +434,32 @@
 **Why**: The design system spec in `CLAUDE.md` defined the target state; the CSS was lagging behind. Green accent signals trust/success better than teal cyan for a privacy-first brand. Motion accessibility (`prefers-reduced-motion`) is a baseline web standard. Extracting inline styles to CSS classes improves maintainability.
 
 **Impact**: 20 files modified. All pages share the updated design system via `style.css`. Zero visual regressions — the layout structure is unchanged, only colors and spacing adjusted.
+
+---
+
+## 31. Cross-Project Sync: SnapMark, ClearJSON, CrumbKit (2026-07-30)
+
+**Decision**: Periodic sync of website product pages against their extension repos (source of truth). Updated SnapMark product page copy, fixed blog inaccuracies, corrected CrumbKit permissions.
+
+**Changes**:
+
+1. **SnapMark product page** (`snapmark.html`) synced from `snapmark/snapmark-landing.html`:
+   - Clean & Capture description: more specific ("ads, popups, cookie banners" vs "ads, banners, sidebars")
+   - Batch Capture icon: 📋 → 📦 (package icon fits "batch" better)
+   - Batch Capture description: added technical detail ("Navigates, waits, and saves each one")
+
+2. **Blog post corrections** (`blog/snapmark-screenshot-tool.html`):
+   - Annotation tools: "9 tools" → "8 tools" (Crop is the 8th tool, undo/redo are editing capabilities)
+   - Undo steps: "50 steps" → "20 steps free, 100 steps Pro"
+   - Free capture modes: "5 modes" → "4 modes"
+   - Free annotation tools: "7 tools" → "8 tools"
+
+3. **CrumbKit permissions fix** (`crumbkit.html`):
+   - Removed "tabs" from permissions list — `tabs` permission was removed in CrumbKit v1.0.1
+   - Now correctly states: "cookies, storage, and activeTab"
+
+4. **ClearJSON**: Product page already up-to-date (MCP server section, JSON Pretty Pro in comparison table, npm package link). v1.1.2 changes were internal UI only — no copy changes needed.
+
+**Why**: Extension repos are the source of truth for product features. The website must reflect actual product capabilities. Periodic sync prevents drift between what the website claims and what the product actually does.
+
+**Impact**: 3 files modified (`snapmark.html`, `crumbkit.html`, `blog/snapmark-screenshot-tool.html`). Corresponding `.md` files (STATUS.md, DECISIONS.md, README.md) updated.
