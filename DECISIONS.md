@@ -450,7 +450,7 @@
 
 2. **Blog post corrections** (`blog/snapmark-screenshot-tool.html`):
    - Annotation tools: "9 tools" → "8 tools" (Crop is the 8th tool, undo/redo are editing capabilities)
-   - Undo steps: "50 steps" → "20 steps free, 100 steps Pro"
+   - Undo steps: "50 steps" → "20 steps free, 100 steps Pro" (2026-07-30); later updated to "100 steps both Free and Pro" (2026-08-03, v1.4.0 aligned free undo from 20→100)
    - Free capture modes: "5 modes" → "4 modes"
    - Free annotation tools: "7 tools" → "8 tools"
 
@@ -465,3 +465,27 @@
 **Why**: Extension repos are the source of truth for product features. The website must reflect actual product capabilities. Periodic sync prevents drift between what the website claims and what the product actually does.
 
 **Impact**: 4 files modified (`snapmark.html`, `crumbkit.html`, `colorpeek.html`, `blog/snapmark-screenshot-tool.html`). Corresponding `.md` files (STATUS.md, DECISIONS.md, README.md) updated.
+
+---
+
+## 32. SnapMark v1.4.0: Text Tool IME + Website Sync (2026-08-03)
+
+**Decision**: Synced website product page and blog to reflect SnapMark v1.4.0 changes — text tool IME support, font/size selection, free undo 100 steps.
+
+**Changes**:
+
+1. **Text tool description** on `snapmark.html`: "Click anywhere to add a text label" → "Drag to create a text box, type directly. Full IME support for Chinese/Japanese/Korean. 17 system fonts, 9 font sizes (12–144px)."
+
+2. **Free undo steps**: 20 → 100 (aligned with Pro). Updated in:
+   - Editing capabilities section
+   - Free pricing card
+   - FAQ (removed "100 undo steps" from Pro differentiators)
+   - Blog post (`blog/snapmark-screenshot-tool.html`)
+
+3. **Permissions**: Added `contextMenus` (added in v1.3.2 for right-click menu).
+
+4. **STATUS.md**: Updated SnapMark version references, blog data corrections, CWS submission status, Edge Add-ons status.
+
+**Why**: v1.4.0 submitted to CWS with significant text tool upgrade. Free undo was bumped from 20→100 to match competitors (Awesome Screenshot, FireShot, Nimbus all have unlimited undo). Website must accurately reflect product capabilities.
+
+**Impact**: 4 files modified (`snapmark.html`, `blog/snapmark-screenshot-tool.html`, `STATUS.md`, `DECISIONS.md`).

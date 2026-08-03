@@ -1,6 +1,6 @@
 # Project Status
 
-> Last updated: 2026-07-30
+> Last updated: 2026-08-03
 
 ## ✅ Done
 
@@ -8,7 +8,7 @@
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
-| SnapMark product | ✅ | v1.3.2: 7 capture modes (incl. Clean & Capture, Batch Capture), 8 annotation tools, CWS + Edge store links, pricing (Free + $39 lifetime), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark`. Copy synced from extension landing page 2026-07-30 |
+| SnapMark product | ✅ | v1.4.0: 7 capture modes (incl. Clean & Capture, Batch Capture), 8 annotation tools, text tool with IME (Chinese/Japanese/Korean) + 17 fonts + 9 sizes. CWS + Edge store links, pricing (Free + $39 lifetime, free undo now 100 steps), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark`. Page synced from extension 2026-08-03 |
 | ClearJSON product | ✅ | v1.1.2: features, MCP server section (10 tools, `npx -y clearjson-mcp`), pricing (Free + $29 lifetime), comparison table (incl. JSON Pretty Pro), FAQ. CWS + Edge submitted. Glama score A/A/B. npm package published. |
 | CrumbKit product | ✅ | v1.0.1: design system alignment, tabs permission removed, cross-promo (ClearJSON + SnapMark) in extension. Features, FAQ. Free, MV3-native. Published 2026-07-20, v1.0.1 2026-07-29. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
@@ -26,7 +26,7 @@
 | ColorPeek terms | ✅ | Lifetime-only, 3-Mac activation, 14-day refund |
 | Blog page | ✅ | 5 real posts, newsletter signup, proper SEO. `blog.html` |
 | Blog: JSON Formatter Alternatives | ✅ | Competitive comparison → ClearJSON. `blog/json-formatter-alternatives.html` |
-| Blog: SnapMark Screenshot Tool | ✅ | Competitive comparison → SnapMark. Data corrected 2026-07-30: 8 annotation tools (not 9), undo 20/100 steps (not 50), free 4 capture modes (not 5). `blog/snapmark-screenshot-tool.html` |
+| Blog: SnapMark Screenshot Tool | ✅ | Competitive comparison → SnapMark. Data corrected 2026-08-03: undo 100 steps both Free and Pro (v1.4.0 aligned free undo from 20→100). `blog/snapmark-screenshot-tool.html` |
 | Blog: CrumbKit Cookie Editor | ✅ | EditThisCookie story → CrumbKit. `blog/crumbkit-cookie-editor.html` |
 | Blog: ColorPeek Mac Picker | ✅ | Product launch → ColorPeek. `blog/colorpeek-mac-color-picker.html` |
 | Blog: Local-First Matters | ✅ | Brand philosophy → all products. `blog/local-first-matters.html` |
@@ -41,7 +41,7 @@
 | SnapMark real logo | ✅ | 128px PNG from extension icons |
 | Pricing accuracy | ✅ | Verified against PRODUCT.md and STATUS.md from extension |
 | No subscription residual | ✅ | All pages — terms, pricing, FAQ — consistent |
-| Feature accuracy | ✅ | SnapMark: 7 capture modes (incl. Clean & Capture, Batch Capture), 8 annotation tools, Timer Pro-only, color picker Pro-only (6 presets free). ClearJSON: JWT decode, regex search, 10 free themes. CrumbKit: 3 permissions (cookies, storage, activeTab; no tabs), privacy score, classification, undo, whitelist. Blog: data corrected 2026-07-30. |
+| Feature accuracy | ✅ | SnapMark v1.4.0: 7 capture modes, 8 annotation tools, text tool IME + 17 fonts + 9 sizes, free undo 100 steps (was 20), Timer/color picker Pro-only. ClearJSON: JWT decode, regex search, 10 free themes. CrumbKit: 3 permissions (cookies, storage, activeTab; no tabs), privacy score, classification, undo, whitelist. |
 | CrumbKit logo | ✅ | 128px PNG from extension icons |
 | Email consistency | ✅ | All pages use `support@wayknow.tech` |
 | Date consistency | ✅ | Privacy policies "Last updated: July 3, 2026"; other pages "Last updated: June 25, 2026" |
@@ -60,8 +60,8 @@
 | Product screenshots | ✅ | All 4 product pages have real screenshots/images (logo + hero layout) |
 | Homepage product card CTAs | ✅ | Single "Install Free →" / "Download Free →" button per card (2026-07-22) |
 | ColorPeek Creem payment ($19) | ✅ | Linked to `creem.io/payment/prod_w1VD8FO1zNXbPgQqkJ8zA`. DMG download section live. License server deployed |
-| SnapMark CWS submission | ✅ | v1.3.0 approved. [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). 7 capture modes (added Clean & Capture + Batch Capture Pro-only), 8 annotation tools, SEO title/description optimized, Creem Payout activated, full payment pipeline live |
-| SnapMark Edge Add-ons | ⚠️ | v1.2.1 审核未通过（测试 key 设备数超限 3 台，已修复）。v1.3.2 已重新提交审核。Edge Store ID: `0RDCKBDS022S`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj) |
+| SnapMark CWS submission | ✅ | v1.4.0 submitted 2026-08-03 (IME text tool + 17 fonts + 9 sizes + delete button scaling). v1.3.2 approved. [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). 7 capture modes, 8 annotation tools, SEO title/description optimized, Creem Payout activated, full payment pipeline live |
+| SnapMark Edge Add-ons | ⚠️ | v1.2.1 审核未通过（测试 key 设备数超限 3 台，已修复）。v1.3.2 已重新提交审核。v1.4.0 Edge zip 已打包，等 v1.3.2 审核结果出来后提交。Edge Store ID: `0RDCKBDS022S`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj) |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
