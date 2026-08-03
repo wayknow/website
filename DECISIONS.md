@@ -355,7 +355,7 @@
 
 **Changes**:
 1. **6th capture mode: Clean & Capture** (Pro-only) — Click to remove ads, banners, sidebars from screenshots. Red highlight + fade animation + Undo.
-2. **Edge store link** — Added "Get for Microsoft Edge (coming soon)" button on product page hero. [Edge Add-ons link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj).
+2. **Edge store link** — Added "Get for Microsoft Edge (coming soon)" button on product page hero. [Edge Add-ons link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj). **Update (2026-07-30)**: v1.2.1 Edge 审核未通过，v1.3.2 已重新提交审核。
 3. **CWS listing updated** to v1.3.0 with Clean & Capture in the feature set.
 
 **Website impact**:
