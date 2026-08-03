@@ -23,7 +23,7 @@
 ### 全局
 
 - **robots.txt**：允许所有爬虫，禁止 `/assets/`，指向 sitemap
-- **sitemap.xml**：17 个 URL（首页 + 4 个产品页 + 1 个支持页 + 11 个 legal 页）
+- **sitemap.xml**：23 个 URL（首页 + 4 个产品页 + 1 个支持页 + 11 个 legal 页 + 1 个 blog 页 + 5 篇博文）
 - **header/footer**：所有页面使用静态 HTML，搜索引擎可直接解析导航链接
 
 ### 各页面 SEO 覆盖
@@ -86,7 +86,7 @@ Sitemap: https://wayknow.tech/sitemap.xml
 
 ## 4. header/footer 静态化
 
-所有 17 个 HTML 页面的 `<header>` 和 `<footer>` 都是静态 HTML。`main.js` 只负责导航高亮、移动端菜单、FAQ accordion、平滑滚动、动态年份。
+所有 23 个 HTML 页面的 `<header>` 和 `<footer>` 都是静态 HTML。`main.js` 只负责导航高亮、移动端菜单、FAQ accordion、平滑滚动、动态年份。
 
 ---
 
