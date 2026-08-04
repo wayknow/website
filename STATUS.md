@@ -1,6 +1,6 @@
 # Project Status
 
-> Last updated: 2026-08-03
+> Last updated: 2026-08-04
 
 ## ✅ Done
 
@@ -9,7 +9,7 @@
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
 | SnapMark product | ✅ | v1.4.0: 7 capture modes (incl. Clean & Capture, Batch Capture), 8 annotation tools, text tool with IME (Chinese/Japanese/Korean) + 17 fonts + 9 sizes. CWS + Edge store links, pricing (Free + $39 lifetime, free undo now 100 steps), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark`. Page synced from extension 2026-08-03 |
-| ClearJSON product | ✅ | v1.1.2: features, MCP server section (10 tools, `npx -y clearjson-mcp`), pricing (Free + $29 lifetime), comparison table (incl. JSON Pretty Pro), FAQ. CWS + Edge submitted. Glama score A/A/B. npm package published. |
+| ClearJSON product | ✅ | v1.1.2: features, MCP server section (10 tools, `npx -y clearjson-mcp`), pricing (Free + $29 lifetime), comparison table (incl. JSON Pretty Pro), FAQ. CWS + Edge store links, Edge submitted. Glama score A/A/B. npm package published. |
 | CrumbKit product | ✅ | v1.0.1: design system alignment, tabs permission removed, cross-promo (ClearJSON + SnapMark) in extension. Features, FAQ. Free, MV3-native. Published 2026-07-20, v1.0.1 2026-07-29. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
 | SnapMark terms | ✅ | Updated July 9 2026: 10 sections, MIT license, Creem payment |
@@ -65,6 +65,7 @@
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
+| ClearJSON Edge Add-ons | ⚠️ | v1.1.2 submitted to Edge Add-ons. 审核中（under review）. Edge Store ID: `kdebbkdldjhhboafpflimanekmhinelg`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/clearjson/kdebbkdldjhhboafpflimanekmhinelg) |
 | CrumbKit CWS submission | ✅ | v1.0.0 published 2026-07-20, v1.0.1 published 2026-07-29. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl). v1.0.0 submitted with `tabs` in manifest — passed review anyway. `tabs` removed in v1.0.1 (design system alignment + cross-promo). Website permissions text corrected 2026-07-30. |
 
 ## 🚧 Pending

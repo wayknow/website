@@ -489,3 +489,20 @@
 **Why**: v1.4.0 submitted to CWS with significant text tool upgrade. Free undo was bumped from 20→100 to match competitors (Awesome Screenshot, FireShot, Nimbus all have unlimited undo). Website must accurately reflect product capabilities.
 
 **Impact**: 4 files modified (`snapmark.html`, `blog/snapmark-screenshot-tool.html`, `STATUS.md`, `DECISIONS.md`).
+
+---
+
+## 33. ClearJSON Edge Add-ons Link (2026-08-04)
+
+**Decision**: Added Microsoft Edge Add-ons links to ClearJSON product page (`clearjson.html`) — matching the existing SnapMark Edge link pattern.
+
+**Changes**:
+
+1. **Hero section**: Added "Get for Microsoft Edge (coming soon)" button alongside CWS button.
+2. **Free pricing card**: Added "Edge Add-ons" button alongside CWS button.
+3. **Footer CTA**: Added Edge button and kept Privacy Policy link.
+4. **STATUS.md**: Added dedicated ClearJSON Edge Add-ons tracking entry (submitted, under review).
+
+**Why**: ClearJSON was already submitted to Edge Add-ons. Product page should surface the Edge store link just like SnapMark does — consistent cross-store presence improves discoverability.
+
+**Impact**: 1 file modified (`clearjson.html`). STATUS.md and DECISIONS.md updated for tracking.
