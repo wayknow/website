@@ -60,7 +60,7 @@
 | Product screenshots | ✅ | All 4 product pages have real screenshots/images (logo + hero layout) |
 | Homepage product card CTAs | ✅ | Single "Install Free →" / "Download Free →" button per card (2026-07-22) |
 | ColorPeek Creem payment ($19) | ✅ | Linked to `creem.io/payment/prod_w1VD8FO1zNXbPgQqkJ8zA`. DMG download section live. License server deployed |
-| SnapMark CWS submission | ✅ | v1.4.0 submitted 2026-08-03 (IME text tool + 17 fonts + 9 sizes + delete button scaling). v1.3.2 approved. [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). 7 capture modes, 8 annotation tools, SEO title/description optimized, Creem Payout activated, full payment pipeline live |
+| SnapMark CWS submission | ✅ | v1.4.0 approved 2026-08-04 (IME text tool + 17 fonts + 9 sizes + delete button scaling). [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). 7 capture modes, 8 annotation tools, SEO title/description optimized, Creem Payout activated, full payment pipeline live |
 | SnapMark Edge Add-ons | ⚠️ | v1.2.1 审核未通过（测试 key 设备数超限 3 台，已修复）。v1.3.2 已重新提交审核。v1.4.0 Edge zip 已打包，等 v1.3.2 审核结果出来后提交。Edge Store ID: `0RDCKBDS022S`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj) |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
