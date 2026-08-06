@@ -486,7 +486,7 @@
 
 4. **STATUS.md**: Updated SnapMark version references, blog data corrections, CWS submission status, Edge Add-ons status.
 
-**Why**: v1.4.0 submitted to CWS with significant text tool upgrade. Free undo was bumped from 20→100 to match competitors (Awesome Screenshot, FireShot, Nimbus all have unlimited undo). Website must accurately reflect product capabilities.
+**Why**: v1.4.0 submitted to CWS with significant text tool upgrade. Free undo was bumped from 20→100 to match competitors (Awesome Screenshot, FireShot, Nimbus all have unlimited undo). Website must accurately reflect product capabilities. **Update (2026-08-04)**: v1.4.0 approved by CWS.
 
 **Impact**: 4 files modified (`snapmark.html`, `blog/snapmark-screenshot-tool.html`, `STATUS.md`, `DECISIONS.md`).
 
@@ -498,11 +498,28 @@
 
 **Changes**:
 
-1. **Hero section**: Added "Get for Microsoft Edge (coming soon)" button alongside CWS button.
+1. **Hero section**: Added "Get for Microsoft Edge" button alongside CWS button.
 2. **Free pricing card**: Added "Edge Add-ons" button alongside CWS button.
 3. **Footer CTA**: Added Edge button and kept Privacy Policy link.
-4. **STATUS.md**: Added dedicated ClearJSON Edge Add-ons tracking entry (submitted, under review).
+4. **STATUS.md**: Added dedicated ClearJSON Edge Add-ons tracking entry (published).
 
 **Why**: ClearJSON was already submitted to Edge Add-ons. Product page should surface the Edge store link just like SnapMark does — consistent cross-store presence improves discoverability.
 
 **Impact**: 1 file modified (`clearjson.html`). STATUS.md and DECISIONS.md updated for tracking.
+
+---
+
+## 34. CrumbKit v1.1.0: Table View, Profiles, Side Panel (2026-08-06)
+
+**Decision**: Updated CrumbKit product page to reflect v1.1.0 features — table view, multi-select & batch delete, one-click copy, cookie profiles, side panel support.
+
+**Changes**:
+
+1. **Hero description**: Updated to mention table view, profiles, privacy score.
+2. **Feature grid**: Added Multi-Select & Batch Delete, One-Click Copy, and Cookie Profiles as new feature cards. Updated existing Search & Filter card to mention compact table view.
+3. **At a Glance section**: Replaced "MV3 Native" with "Table View", added "Cookie Profiles" and "Import & Export" cards. Updated "Actively Maintained" to "Updated August 2026".
+4. **FAQ**: Added two new items — "What are Cookie Profiles?" and "Does CrumbKit support Chrome's Side Panel?"
+
+**Why**: v1.1.0 is a significant feature release. Cookie profiles and side panel support are differentiating features vs competitors like EditThisCookie. Website must accurately reflect current product capabilities.
+
+**Impact**: 1 file modified (`crumbkit.html`). STATUS.md, DECISIONS.md, and README.md updated for tracking.

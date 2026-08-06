@@ -1,6 +1,6 @@
 # Project Status
 
-> Last updated: 2026-08-04
+> Last updated: 2026-08-06
 
 ## ✅ Done
 
@@ -10,7 +10,7 @@
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
 | SnapMark product | ✅ | v1.4.0: 7 capture modes (incl. Clean & Capture, Batch Capture), 8 annotation tools, text tool with IME (Chinese/Japanese/Korean) + 17 fonts + 9 sizes. CWS + Edge store links, pricing (Free + $39 lifetime, free undo now 100 steps), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark`. Page synced from extension 2026-08-03 |
 | ClearJSON product | ✅ | v1.1.2: features, MCP server section (10 tools, `npx -y clearjson-mcp`), pricing (Free + $29 lifetime), comparison table (incl. JSON Pretty Pro), FAQ. CWS + Edge store links, Edge published. Glama score A/A/B. npm package published. |
-| CrumbKit product | ✅ | v1.0.1: design system alignment, tabs permission removed, cross-promo (ClearJSON + SnapMark) in extension. Features, FAQ. Free, MV3-native. Published 2026-07-20, v1.0.1 2026-07-29. |
+| CrumbKit product | ✅ | v1.1.0: table view, multi-select + batch delete, one-click copy, cookie profiles (save/restore), side panel support. Features, FAQ, always free, MV3-native. Published 2026-07-20, v1.1.0 2026-08-06. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
 | SnapMark terms | ✅ | Updated July 9 2026: 10 sections, MIT license, Creem payment |
 | SnapMark refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
@@ -41,7 +41,7 @@
 | SnapMark real logo | ✅ | 128px PNG from extension icons |
 | Pricing accuracy | ✅ | Verified against PRODUCT.md and STATUS.md from extension |
 | No subscription residual | ✅ | All pages — terms, pricing, FAQ — consistent |
-| Feature accuracy | ✅ | SnapMark v1.4.0: 7 capture modes, 8 annotation tools, text tool IME + 17 fonts + 9 sizes, free undo 100 steps (was 20), Timer/color picker Pro-only. ClearJSON: JWT decode, regex search, 10 free themes. CrumbKit: 3 permissions (cookies, storage, activeTab; no tabs), privacy score, classification, undo, whitelist. |
+| Feature accuracy | ✅ | SnapMark v1.4.0: 7 capture modes, 8 annotation tools, text tool IME + 17 fonts + 9 sizes, free undo 100 steps (was 20), Timer/color picker Pro-only. ClearJSON: JWT decode, regex search, 10 free themes. CrumbKit v1.1.0: table view, multi-select, one-click copy, cookie profiles, side panel, privacy score, classification, undo, whitelist, import/export. |
 | CrumbKit logo | ✅ | 128px PNG from extension icons |
 | Email consistency | ✅ | All pages use `support@wayknow.tech` |
 | Date consistency | ✅ | Privacy policies "Last updated: July 3, 2026"; other pages "Last updated: June 25, 2026" |
@@ -66,7 +66,7 @@
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
 | ClearJSON Edge Add-ons | ✅ | v1.1.2 published on Edge Add-ons. Edge Store ID: `kdebbkdldjhhboafpflimanekmhinelg`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/clearjson/kdebbkdldjhhboafpflimanekmhinelg) |
-| CrumbKit CWS submission | ✅ | v1.0.0 published 2026-07-20, v1.0.1 published 2026-07-29. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl). v1.0.0 submitted with `tabs` in manifest — passed review anyway. `tabs` removed in v1.0.1 (design system alignment + cross-promo). Website permissions text corrected 2026-07-30. |
+| CrumbKit CWS submission | ✅ | v1.0.0 published 2026-07-20, v1.0.1 published 2026-07-29, v1.1.0 published 2026-08-06. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl). v1.0.0 submitted with `tabs` in manifest — passed review anyway. `tabs` removed in v1.0.1 (design system alignment + cross-promo). v1.1.0 adds table view, profiles, side panel. |
 
 ## 🚧 Pending
 
