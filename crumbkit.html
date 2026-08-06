@@ -66,7 +66,7 @@
       <div class="container">
         <img src="/assets/crumbkit-logo.png" alt="CrumbKit" width="72" height="72" style="border-radius: 16px; margin-bottom: var(--space-5);">
         <h1>CrumbKit</h1>
-        <p>A cookie editor you can trust. Open source, zero tracking, always free.</p>
+        <p>A cookie editor you can trust. Table view, profiles, privacy score, zero tracking — always free.</p>
         <div class="hero-actions" style="margin-top: var(--space-6);">
           <a href="https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl" class="btn btn-primary btn-lg" target="_blank">Install CrumbKit — Free</a>
         </div>
@@ -107,11 +107,19 @@
           </div>
           <div class="feature-item">
             <div class="feature-icon">🗑️</div>
-            <div class="feature-text"><h4>Batch Delete + Whitelist</h4><p>Clear all cookies for a site in one click. Domain whitelist protects your important cookies from accidental deletion.</p></div>
+            <div class="feature-text"><h4>Multi-Select & Batch Delete</h4><p>Checkbox select multiple cookies and delete them all at once. Select-all for quick cleanup. Whitelist protection keeps your important cookies safe.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📋</div>
+            <div class="feature-text"><h4>One-Click Copy</h4><p>Copy any cookie value to clipboard with a single click. Perfect for grabbing session tokens and auth headers.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💾</div>
+            <div class="feature-text"><h4>Cookie Profiles</h4><p>Save and restore cookie sets as named profiles. Switch between dev, staging, and production sessions in one click.</p></div>
           </div>
           <div class="feature-item">
             <div class="feature-icon">🔎</div>
-            <div class="feature-text"><h4>Real-Time Search & Filter</h4><p>Type to filter cookies instantly. Find what you need in a list of hundreds.</p></div>
+            <div class="feature-text"><h4>Real-Time Search & Filter</h4><p>Type to filter cookies instantly. Compact table view shows name, value, and domain at a glance.</p></div>
           </div>
           <div class="feature-item">
             <div class="feature-icon">📦</div>
@@ -193,9 +201,14 @@
             <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">No analytics, no telemetry, no requests</p>
           </div>
           <div style="text-align: center; padding: var(--space-4);">
-            <div style="font-size: 24px; margin-bottom: 4px;">⚡</div>
-            <strong>MV3 Native</strong>
-            <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">Modern Manifest V3 architecture</p>
+            <div style="font-size: 24px; margin-bottom: 4px;">📊</div>
+            <strong>Table View</strong>
+            <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">Compact columns show all fields at a glance</p>
+          </div>
+          <div style="text-align: center; padding: var(--space-4);">
+            <div style="font-size: 24px; margin-bottom: 4px;">💾</div>
+            <strong>Cookie Profiles</strong>
+            <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">Save & restore cookie sets in one click</p>
           </div>
           <div style="text-align: center; padding: var(--space-4);">
             <div style="font-size: 24px; margin-bottom: 4px;">🛡️</div>
@@ -203,9 +216,14 @@
             <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">0–100 score with tracker breakdown</p>
           </div>
           <div style="text-align: center; padding: var(--space-4);">
+            <div style="font-size: 24px; margin-bottom: 4px;">📦</div>
+            <strong>Import & Export</strong>
+            <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">JSON, Netscape, cURL — all formats included</p>
+          </div>
+          <div style="text-align: center; padding: var(--space-4);">
             <div style="font-size: 24px; margin-bottom: 4px;">✅</div>
             <strong>Actively Maintained</strong>
-            <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">Built in 2026, regularly updated</p>
+            <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">Built in 2026, updated August 2026</p>
           </div>
         </div>
       </div>
@@ -292,6 +310,14 @@
         <div class="faq-item">
           <button class="faq-question">What formats can I import and export?</button>
           <div class="faq-answer"><p><strong>Export:</strong> JSON (.json), Netscape HTTP Cookie File (.txt — compatible with curl and wget), and cURL command (.sh). <strong>Import:</strong> JSON and Netscape formats. The parser handles real-world cookie files reliably — including edge cases like special characters, missing fields, and large datasets.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What are Cookie Profiles and how do I use them?</button>
+          <div class="faq-answer"><p>Cookie Profiles let you save your current cookies as a named set and restore them later with one click. Perfect for developers who switch between testing environments — save your dev session, switch to staging, and restore dev whenever you need. Click the ⚙ Profiles button in the toolbar, give your current cookies a name, and you're done. Profiles are stored locally in your browser — never uploaded anywhere.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Does CrumbKit support Chrome's Side Panel?</button>
+          <div class="faq-answer"><p>Yes! CrumbKit v1.1.0+ supports Chrome's Side Panel. Open it from the toolbar menu or right-click the CrumbKit icon — it opens in a wider panel that's perfect for browsing cookies while keeping the page visible.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Does CrumbKit work offline?</button>
