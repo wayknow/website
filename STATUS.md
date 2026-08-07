@@ -18,16 +18,16 @@
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
 | ClearJSON refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
 | ColorPeek refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
-| Support page | ✅ | support@wayknow.tech, FAQ links, refund summaries for all products |
-| CrumbKit privacy | ✅ | Zero data collection, MIT open source, zero network requests |
+| Support page | ✅ | support@wayknow.tech, FAQ links, refund summaries for all products. FAQ anchor links fixed 2026-08-07 (added `id="faq"` to all 4 product pages — 8 links were dead) |
+| CrumbKit privacy | ✅ | Zero data collection, MIT open source, zero network requests. Permissions updated 2026-08-07 for v1.2.0: removed `tabs` (dropped in v1.0.1), added `alarms`/`notifications`/`webRequest` (auto-cleanup + Set-Cookie interceptor), local storage list covers profiles/cleanup rules/intercepted cookies |
 | CrumbKit terms | ✅ | Free, MIT license, no payment processing |
 | ColorPeek product | ✅ | v1.0 maintenance: free (4 formats, 50-color history, auto-copy on pick), Pro (8 formats, 242-color Tailwind palette, unlimited history, custom palettes, global shortcut, clipboard image pick). Pricing (Free + $19 lifetime), comparison table (Sip/ColorSlurp/Pika), FAQ, DMG download. License server at `api.wayknow.tech/colorpeek`. Auto-copy feature added 2026-07-30. |
-| ColorPeek privacy | ✅ | Zero data collection, Pro license verification only |
-| ColorPeek terms | ✅ | Lifetime-only, 3-Mac activation, 14-day refund |
+| ColorPeek privacy | ✅ | Zero data collection, Pro license verification only. Structure aligned to `policy-content` layout 2026-08-07 |
+| ColorPeek terms | ✅ | Lifetime-only, 3-Mac activation, 14-day refund. Structure aligned to `policy-content` layout 2026-08-07 |
 | Blog page | ✅ | 5 real posts, newsletter signup, proper SEO. `blog.html` |
 | Blog: JSON Formatter Alternatives | ✅ | Competitive comparison → ClearJSON. `blog/json-formatter-alternatives.html` |
 | Blog: SnapMark Screenshot Tool | ✅ | Competitive comparison → SnapMark. Data corrected 2026-08-03: undo 100 steps both Free and Pro (v1.4.0 aligned free undo from 20→100). `blog/snapmark-screenshot-tool.html` |
-| Blog: CrumbKit Cookie Editor | ✅ | EditThisCookie story → CrumbKit. `blog/crumbkit-cookie-editor.html` |
+| Blog: CrumbKit Cookie Editor | ✅ | EditThisCookie story → CrumbKit. Feature list synced to v1.2.0 2026-08-07 (6 export formats, batch ops, profiles, auto-cleanup, interceptor, CHIPS, side panel; removed outdated "1,700 lines" claim). `blog/crumbkit-cookie-editor.html` |
 | Blog: ColorPeek Mac Picker | ✅ | Product launch → ColorPeek. `blog/colorpeek-mac-color-picker.html` |
 | Blog: Local-First Matters | ✅ | Brand philosophy → all products. `blog/local-first-matters.html` |
 | Newsletter signup | ✅ | On homepage and blog page. Posts to `api.wayknow.tech/subscribe` |
@@ -45,6 +45,7 @@
 | CrumbKit logo | ✅ | 128px PNG from extension icons |
 | Email consistency | ✅ | All pages use `support@wayknow.tech` |
 | Date consistency | ✅ | Privacy policies "Last updated: July 3, 2026"; other pages "Last updated: June 25, 2026" |
+| UI design system compliance | ✅ | 2026-08-07 sweep: all 7 legal pages use `<article class="policy-content">` layout (ColorPeek privacy/terms converted), blog styles moved from per-page inline `<style>` blocks to `.blog-article` component in `style.css`, hardcoded values tokenized (4px→`--space-1`, 13px→`--text-sm`, 24px→`--text-2xl`, 0.875rem→`--text-sm`), crumbkit nav indentation fixed |
 
 ### Infrastructure
 | Item | Status | Notes |

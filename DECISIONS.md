@@ -543,3 +543,27 @@
 **Why**: v1.2.0 adds significant power-user features (auto-cleanup, interceptor, CHIPS). New permissions require privacy policy updates for transparency and CWS compliance.
 
 **Impact**: 3 files modified (`crumbkit.html`, `index.html`, `crumbkit-privacy.html`). STATUS.md, DECISIONS.md, and README.md updated for tracking.
+
+---
+
+## 36. UI Design System Compliance Sweep (2026-08-07)
+
+**Decision**: Aligned remaining pages with the project design system — legal page structure, blog styles, token usage, and broken anchor links.
+
+**Changes**:
+
+1. **Legal pages structure** (`colorpeek-privacy.html`, `colorpeek-terms.html`): Converted from old `page-header` + inline-styled section layout to the standard `<article class="policy-content">` layout used by all 5 other legal pages. Titles now include product name ("ColorPeek Privacy Policy"). All 7 legal pages now share one structure.
+
+2. **Blog styles componentized** (`css/style.css` + 5 blog posts): Moved the duplicated per-page inline `<style>` blocks (13–18 lines × 5 copies) into a shared `.blog-article` component in `style.css` — single source of truth. Hardcoded values tokenized: `1.5rem`→`--text-2xl`, `1.125rem`→`--text-lg`, `0.875rem`→`--text-sm`, `0.8125rem`→`--text-xs`, `border-radius: 8px`→`--radius`. 11 inline `font-size: 0.875rem` occurrences → `var(--text-sm)`.
+
+3. **CrumbKit page** (`crumbkit.html`): Fixed nav indentation; tokenized At a Glance hardcoded values (`4px`→`--space-1`, `13px`→`--text-sm`, `24px`→`--text-2xl`); simplified Built for Trust inline styles.
+
+4. **Support page FAQ links** (`support.html` + 4 product pages): Added `id="faq"` to FAQ sections on snapmark/clearjson/crumbkit/colorpeek pages — 8 dead `#faq` links from support.html now work.
+
+5. **CrumbKit privacy policy** (`crumbkit-privacy.html`): Updated "Last updated" to August 7, 2026; expanded local storage list (cookie profiles, auto-cleanup rules, intercepted cookies); header aligned with SnapMark format (removed parenthetical definition, added "developed and operated by wayknow").
+
+6. **CrumbKit blog content** (`blog/crumbkit-cookie-editor.html`): Feature list synced to v1.2.0 (6 export formats, batch operations, profiles, auto-cleanup, interceptor, CHIPS, side panel); removed outdated "1,700 lines" claim.
+
+**Why**: Pages drifted from the design system — legal pages used an older layout, blog styles were duplicated per-page with hardcoded values, and support page had dead FAQ links. One sweep to restore consistency.
+
+**Impact**: 8 files modified (`css/style.css`, 5 blog posts, `colorpeek-privacy.html`, `colorpeek-terms.html`, `crumbkit.html`, `support.html`, 4 product pages for anchors, `crumbkit-privacy.html`, `blog/crumbkit-cookie-editor.html`). STATUS.md and DECISIONS.md updated for tracking.

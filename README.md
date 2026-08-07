@@ -59,7 +59,7 @@ wayknow/
 ├── colorpeek-terms.html         # ColorPeek terms of service
 ├── colorpeek-refund.html        # ColorPeek refund policy
 ├── css/
-│   └── style.css               # Design system (~1100 lines, CSS variables, animations, responsive)
+│   └── style.css               # Design system (~1200 lines, CSS variables, animations, responsive, .blog-article component)
 ├── js/
 │   └── main.js                 # Nav highlight, mobile menu, FAQ accordion, smooth scroll, IntersectionObserver animations
 ├── assets/
