@@ -66,7 +66,7 @@
       <div class="container">
         <img src="/assets/crumbkit-logo.png" alt="CrumbKit" width="72" height="72" style="border-radius: 16px; margin-bottom: var(--space-5);">
         <h1>CrumbKit</h1>
-        <p>A cookie editor you can trust. Table view, profiles, privacy score, zero tracking — always free.</p>
+        <p>A cookie editor you can trust. Batch edit, auto-cleanup, 6 export formats, privacy score, zero tracking — always free.</p>
         <div class="hero-actions" style="margin-top: var(--space-6);">
           <a href="https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl" class="btn btn-primary btn-lg" target="_blank">Install CrumbKit — Free</a>
         </div>
@@ -107,7 +107,7 @@
           </div>
           <div class="feature-item">
             <div class="feature-icon">🗑️</div>
-            <div class="feature-text"><h4>Multi-Select & Batch Delete</h4><p>Checkbox select multiple cookies and delete them all at once. Select-all for quick cleanup. Whitelist protection keeps your important cookies safe.</p></div>
+            <div class="feature-text"><h4>Batch Operations</h4><p>Checkbox select multiple cookies to delete them all at once — or bulk-edit domain, path, Secure, HttpOnly, and SameSite across the selection. Whitelist protection keeps your important cookies safe.</p></div>
           </div>
           <div class="feature-item">
             <div class="feature-icon">📋</div>
@@ -123,7 +123,19 @@
           </div>
           <div class="feature-item">
             <div class="feature-icon">📦</div>
-            <div class="feature-text"><h4>Import & Export</h4><p>Export to JSON, Netscape (curl/wget), and cURL formats. Import from JSON and Netscape. Actually works — unlike broken alternatives.</p></div>
+            <div class="feature-text"><h4>Import & Export — 6 Formats</h4><p>Export to JSON, Netscape (curl/wget), cURL command, CSV, Puppeteer script, and Set-Cookie headers. Import from JSON and Netscape. Actually works — unlike broken alternatives.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">⏰</div>
+            <div class="feature-text"><h4>Scheduled Auto-Cleanup</h4><p>Set rules to automatically purge cookies by domain, category, or age — every hour, daily, or weekly. Never manually clean tracking cookies again.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📡</div>
+            <div class="feature-text"><h4>Set-Cookie Interceptor</h4><p>Monitor Set-Cookie response headers in real time and add intercepted cookies to the browser with one click. See exactly what servers are setting.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🧩</div>
+            <div class="feature-text"><h4>CHIPS Partitioned Cookies</h4><p>Full support for Chrome's partitioned cookies (CHIPS). View, export, and import partitioned cookies with their top-level site — marked clearly in the list.</p></div>
           </div>
           <div class="feature-item">
             <div class="feature-icon">🛡️</div>
@@ -217,8 +229,13 @@
           </div>
           <div style="text-align: center; padding: var(--space-4);">
             <div style="font-size: 24px; margin-bottom: 4px;">📦</div>
-            <strong>Import & Export</strong>
-            <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">JSON, Netscape, cURL — all formats included</p>
+            <strong>6 Export Formats</strong>
+            <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">JSON, Netscape, cURL, CSV, Puppeteer, Set-Cookie</p>
+          </div>
+          <div style="text-align: center; padding: var(--space-4);">
+            <div style="font-size: 24px; margin-bottom: 4px;">⏰</div>
+            <strong>Auto-Cleanup</strong>
+            <p style="color: var(--color-text-secondary); font-size: 13px; margin-top: 4px;">Scheduled rules purge cookies automatically</p>
           </div>
           <div style="text-align: center; padding: var(--space-4);">
             <div style="font-size: 24px; margin-bottom: 4px;">✅</div>
@@ -251,7 +268,7 @@
           </div>
           <div class="feature-item">
             <div class="feature-icon">🛡️</div>
-            <div class="feature-text"><h4>Minimal Permissions</h4><p>Only cookies, storage, and activeTab. No history, no bookmarks, no browsing data access.</p></div>
+            <div class="feature-text"><h4>Minimal Permissions</h4><p>Only cookies, storage, activeTab — plus alarms/notifications/webRequest strictly for auto-cleanup and the Set-Cookie interceptor. No history, no bookmarks, no browsing data access.</p></div>
           </div>
         </div>
       </div>
@@ -309,7 +326,19 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">What formats can I import and export?</button>
-          <div class="faq-answer"><p><strong>Export:</strong> JSON (.json), Netscape HTTP Cookie File (.txt — compatible with curl and wget), and cURL command (.sh). <strong>Import:</strong> JSON and Netscape formats. The parser handles real-world cookie files reliably — including edge cases like special characters, missing fields, and large datasets.</p></div>
+          <div class="faq-answer"><p><strong>Export (6 formats):</strong> JSON (.json), Netscape HTTP Cookie File (.txt — compatible with curl and wget), cURL command (.sh), CSV (.csv), Puppeteer script (.js), and Set-Cookie HTTP headers (.txt). <strong>Import:</strong> JSON and Netscape formats. The parser handles real-world cookie files reliably — including edge cases like special characters, missing fields, and large datasets.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What is Scheduled Auto-Cleanup?</button>
+          <div class="faq-answer"><p>CrumbKit can automatically delete cookies on a schedule. Create rules in the options page — e.g. "delete all advertising cookies every hour" or "delete cookies older than 30 days every Sunday". Rules run in the background via Chrome alarms, with optional notifications. Everything stays local — rules never leave your device.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What does the Set-Cookie Interceptor do?</button>
+          <div class="faq-answer"><p>Toggle the 📡 Intercept button in the popup and CrumbKit watches Set-Cookie response headers as you browse (up to 50 recent ones). Perfect for backend developers inspecting what servers set — add any intercepted cookie to the browser with one click, or copy it to inspect the attributes.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Does CrumbKit support partitioned (CHIPS) cookies?</button>
+          <div class="faq-answer"><p>Yes. CrumbKit displays a blue "P" badge on partitioned cookies, keeps their top-level site info in the edit view, and preserves partition data across all 6 export formats and JSON import. As Chrome phases out third-party cookies, CHIPS partitioned cookies are preserved correctly.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">What are Cookie Profiles and how do I use them?</button>
