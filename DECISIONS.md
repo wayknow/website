@@ -523,3 +523,23 @@
 **Why**: v1.1.0 is a significant feature release. Cookie profiles and side panel support are differentiating features vs competitors like EditThisCookie. Website must accurately reflect current product capabilities.
 
 **Impact**: 1 file modified (`crumbkit.html`). STATUS.md, DECISIONS.md, and README.md updated for tracking.
+
+---
+
+## 35. CrumbKit v1.2.0: Batch Edit, Auto-Cleanup, Interceptor, CHIPS (2026-08-07)
+
+**Decision**: Updated CrumbKit product page and homepage to reflect v1.2.0 features — batch operations, 6 export formats, scheduled auto-cleanup, Set-Cookie interceptor, CHIPS partitioned cookies.
+
+**Changes**:
+
+1. **Product page hero**: Updated to mention batch edit, auto-cleanup, 6 export formats.
+2. **Feature grid**: "Multi-Select & Batch Delete" → "Batch Operations" (bulk-edit domain/path/attributes). Import & Export updated to 6 formats. Added Scheduled Auto-Cleanup, Set-Cookie Interceptor, CHIPS Partitioned Cookies cards.
+3. **At a Glance**: "Import & Export" → "6 Export Formats" (JSON, Netscape, cURL, CSV, Puppeteer, Set-Cookie). Added Auto-Cleanup card.
+4. **Permissions section**: Documented `alarms`/`notifications`/`webRequest` usage for auto-cleanup and interceptor.
+5. **FAQ**: Added 3 entries — Scheduled Auto-Cleanup, Set-Cookie Interceptor, CHIPS support.
+6. **Homepage card**: Updated description and tags (Batch edit, 6 export formats, Auto-cleanup).
+7. **Privacy policy** (`crumbkit-privacy.html`): Removed obsolete `tabs` permission (dropped in v1.0.1); documented `alarms`, `notifications`, `webRequest` with usage justification.
+
+**Why**: v1.2.0 adds significant power-user features (auto-cleanup, interceptor, CHIPS). New permissions require privacy policy updates for transparency and CWS compliance.
+
+**Impact**: 3 files modified (`crumbkit.html`, `index.html`, `crumbkit-privacy.html`). STATUS.md, DECISIONS.md, and README.md updated for tracking.

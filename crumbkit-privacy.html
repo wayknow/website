@@ -92,9 +92,11 @@
       <p>CrumbKit requests the following Chrome permissions:</p>
       <ul>
         <li><strong>cookies</strong>: To read, create, edit, and delete browser cookies at your direction. CrumbKit never reads cookies from sites you haven't explicitly opened the popup on.</li>
-        <li><strong>storage</strong>: To store your preferences and domain whitelist locally.</li>
+        <li><strong>storage</strong>: To store your preferences, domain whitelist, and cookie profiles locally.</li>
         <li><strong>activeTab</strong>: To know which site's cookies to display when you click the extension icon.</li>
-        <li><strong>tabs</strong>: To get the URL of the current tab so we know which site's cookies to show. No browsing history is accessed or stored.</li>
+        <li><strong>alarms</strong>: To run scheduled auto-cleanup rules in the background at the intervals you configure.</li>
+        <li><strong>notifications</strong>: To show an optional notification when a scheduled auto-cleanup rule runs.</li>
+        <li><strong>webRequest</strong>: To inspect <code>Set-Cookie</code> response headers when you enable the Set-Cookie Interceptor. Response headers are read in real time and shown to you; nothing is stored beyond the last 50 intercepted cookies in your local storage.</li>
         <li><strong>host permissions</strong>: Required by <code>chrome.cookies</code> API to access cookies for the current site. CrumbKit only accesses cookies when you open the popup.</li>
       </ul>
 
