@@ -716,6 +716,97 @@ td .warn { color: var(--color-warning); }
   font-size: var(--text-sm);
 }
 
+/* --- Blog Article --- */
+.blog-article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-8) 0;
+}
+
+.blog-article h2 {
+  font-size: var(--text-2xl);
+  margin: var(--space-8) 0 var(--space-4);
+}
+
+.blog-article h3 {
+  font-size: var(--text-lg);
+  margin: var(--space-6) 0 var(--space-3);
+}
+
+.blog-article p {
+  line-height: 1.8;
+  margin-bottom: var(--space-5);
+  color: var(--color-text-secondary);
+}
+
+.blog-article ul, .blog-article ol {
+  margin-bottom: var(--space-5);
+  padding-left: var(--space-6);
+}
+
+.blog-article li {
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.blog-article strong {
+  color: var(--color-text);
+}
+
+.blog-article em {
+  color: var(--color-text-secondary);
+}
+
+.blog-article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-5);
+}
+
+.blog-article th {
+  text-align: left;
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 2px solid var(--color-border);
+  font-size: var(--text-sm);
+}
+
+.blog-article td {
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.blog-article blockquote {
+  border-left: 3px solid var(--color-primary);
+  padding-left: var(--space-4);
+  margin: var(--space-5) 0;
+  color: var(--color-text-muted);
+}
+
+.blog-article .article-meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-8);
+}
+
+.blog-article .cta-box {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  margin: var(--space-8) 0;
+}
+
+.blog-article .cta-box p {
+  margin-bottom: var(--space-3);
+}
+
+.blog-article .cta-box strong {
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
 /* --- Privacy / Terms Content --- */
 .policy-content {
   max-width: 720px;
