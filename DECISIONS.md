@@ -567,3 +567,19 @@
 **Why**: Pages drifted from the design system — legal pages used an older layout, blog styles were duplicated per-page with hardcoded values, and support page had dead FAQ links. One sweep to restore consistency.
 
 **Impact**: 8 files modified (`css/style.css`, 5 blog posts, `colorpeek-privacy.html`, `colorpeek-terms.html`, `crumbkit.html`, `support.html`, 4 product pages for anchors, `crumbkit-privacy.html`, `blog/crumbkit-cookie-editor.html`). STATUS.md and DECISIONS.md updated for tracking.
+
+---
+
+## 37. SnapMark + ClearJSON Edge Add-ons Approved (2026-08-10)
+
+**Decision**: Both Edge Add-ons submissions approved. SnapMark page Edge button updated from "(coming soon)" secondary to primary.
+
+**Changes**:
+
+1. **SnapMark Edge** (`snapmark.html`): v1.3.2 approved on Edge Add-ons. Hero button "Get for Microsoft Edge (coming soon)" → "Get for Microsoft Edge" (btn-primary, matching ClearJSON's pattern). v1.4.0 Edge zip ready, submission pending.
+2. **ClearJSON Edge**: v1.1.4 approved on Edge Add-ons.
+3. **STATUS.md**: Both Edge rows → ✅, ClearJSON product version v1.1.2 → v1.1.4, date → 2026-08-10.
+
+**Why**: Both stores live means both products now have full cross-store presence (CWS + Edge). Page buttons should reflect live availability.
+
+**Impact**: 2 files modified (`snapmark.html`, `STATUS.md`). DECISIONS.md updated for tracking.
