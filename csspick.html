@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CSSPick — Hover any element to inspect its CSS, copy it with one click. 100% local, no subscription. Free tier available, Pro $19 lifetime.">
+  <title>CSSPick — CSS Inspector & Copy Tool | WayKnow</title>
+  <link rel="canonical" href="https://wayknow.tech/csspick.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="CSSPick — Inspect & Copy CSS in One Click">
+  <meta property="og:description" content="Hover any element to see its CSS, copy with one click. 7 property groups, 100% local. Free tier, Pro $19 lifetime.">
+  <meta property="og:url" content="https://wayknow.tech/csspick.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WayKnow">
+  <meta property="og:image" content="https://wayknow.tech/assets/csspick-logo.png">
+  <meta property="og:image:width" content="128">
+  <meta property="og:image:height" content="128">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CSSPick — Inspect & Copy CSS in One Click">
+  <meta name="twitter:description" content="Hover any element to see its CSS, copy with one click. 7 property groups, 100% local. Free tier, Pro $19 lifetime.">
+  <meta name="twitter:image" content="https://wayknow.tech/assets/csspick-logo.png">
+  <link rel="icon" type="image/png" href="/assets/csspick-logo.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CSSPick",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome",
+    "description": "CSS inspector Chrome extension. Hover any element to view and copy its computed CSS. 100% local processing.",
+    "url": "https://wayknow.tech/csspick.html",
+    "offers": {
+      "@type": "Offer",
+      "price": "19.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <span class="dot"></span> WayKnow
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/snapmark.html">SnapMark</a></li>
+        <li><a href="/clearjson.html">ClearJSON</a></li>
+        <li><a href="/crumbkit.html">CrumbKit</a></li>
+        <li><a href="/colorpeek.html">ColorPeek</a></li>
+        <li><a href="/csspick.html">CSSPick</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <img src="/assets/csspick-logo.png" alt="CSSPick" width="72" height="72" style="border-radius: 16px; margin-bottom: var(--space-5);">
+        <h1>CSSPick</h1>
+        <p>Hover any element, see its CSS, copy it in one click. All locally. Free tier fully functional, Pro $19 lifetime. No subscription.</p>
+        <div class="hero-actions" style="margin-top: var(--space-6);">
+          <a href="https://www.creem.io/payment/prod_2WIFmjutxgl3tYNbQoFgHu" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Buy Pro — $19</a>
+          <span class="btn btn-secondary btn-lg" style="pointer-events: none; opacity: 0.7;">Coming Soon on Chrome Web Store</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Inspect CSS the Fast Way</h2>
+          <p>What DevTools does in 30 seconds, CSSPick does in 3</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <div class="feature-icon">🎯</div>
+            <div class="feature-text">
+              <h4>One-Click Inspect</h4>
+              <p>Click the toolbar icon and you're in inspect mode instantly. No popup menus, no friction.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🖱️</div>
+            <div class="feature-text">
+              <h4>Hover Highlight</h4>
+              <p>Hover any element to see a 2px indigo highlight box with a tooltip showing tag#id.class and dimensions.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📋</div>
+            <div class="feature-text">
+              <h4>7 CSS Groups</h4>
+              <p>Click to lock an element and its computed CSS is grouped into Color, Typography, Spacing, Size & Box, Background, Border & Shadow, and Layout.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📄</div>
+            <div class="feature-text">
+              <h4>Single-Property Copy</h4>
+              <p>Click any property to copy it as <code>prop: value;</code>. Free, unlimited, no watermark.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✂️</div>
+            <div class="feature-text">
+              <h4>Copy All CSS <span class="badge badge-info" style="margin-left: 4px;">Pro</span></h4>
+              <p>Copy the element's full computed CSS in one click — perfect for recreating a design or building a component.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🏷️</div>
+            <div class="feature-text">
+              <h4>Copy Selector <span class="badge badge-info" style="margin-left: 4px;">Pro</span></h4>
+              <p>Copy a clean <code>tag#id.class</code> selector path (up to 4 levels) for use in your own stylesheets.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-text">
+              <h4>Minimal Permissions</h4>
+              <p>Only activeTab + storage + scripting. No host permissions, no browsing history, no data collection.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">⚡</div>
+            <div class="feature-text">
+              <h4>100% Local Processing</h4>
+              <p>All inspection happens in your browser via the standard <code>getComputedStyle</code> API. Nothing is uploaded.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section-alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Free is fully functional. Pro is $19 once — no subscription.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Free -->
+          <div class="pricing-card">
+            <div class="pricing-name">Free</div>
+            <div class="pricing-price">$0</div>
+            <p class="pricing-desc">Free forever, fully functional</p>
+            <ul class="pricing-features">
+              <li>Hover inspect mode</li>
+              <li>All 7 CSS property groups</li>
+              <li>Single-property copy</li>
+              <li>Tooltip with tag#id.class</li>
+              <li>100% local processing</li>
+              <li>No sign-up required</li>
+            </ul>
+            <span class="btn btn-outline btn-block" style="pointer-events: none; opacity: 0.7;">Coming Soon — Install Free</span>
+          </div>
+
+          <!-- Lifetime -->
+          <div class="pricing-card featured">
+            <div class="pricing-name">Pro Lifetime</div>
+            <div class="pricing-price">$19 <small>one-time</small></div>
+            <p class="pricing-desc">Best value — pay once, own forever</p>
+            <ul class="pricing-features">
+              <li>Everything in Free</li>
+              <li>Copy All CSS</li>
+              <li>Copy Selector (tag#id.class path)</li>
+              <li>License covers up to 3 devices</li>
+              <li>Lifetime updates</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="https://www.creem.io/payment/prod_2WIFmjutxgl3tYNbQoFgHu" class="btn btn-primary btn-block" target="_blank" rel="noopener">Buy Now — $19</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>How We Compare</h2>
+          <p>Same needs, at 1/5 the price</p>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>CSSPick</th>
+                <th>CSS Scan</th>
+                <th>UI-Ray</th>
+                <th>Free tools</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Hover inspect</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>Grouped CSS display</td><td><span class="check">✓ 7 groups</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="warn">⚠ basic</span></td></tr>
+              <tr><td>Copy single property</td><td><span class="check">✓ Free</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>Copy All CSS</td><td><span class="check">✓ Pro</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>Copy selector path</td><td><span class="check">✓ Pro</span></td><td><span class="check">✓</span></td><td><span class="warn">⚠</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td>Minimal permissions</td><td><span class="check">✓ 3 only</span></td><td><span class="warn">⚠ more</span></td><td><span class="warn">⚠</span></td><td><span class="warn">⚠ varies</span></td></tr>
+              <tr><td>100% local</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>No subscription</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td>Lifetime purchase</td><td><span class="check">✓ $19</span></td><td><span class="warn">⚠ $95+</span></td><td><span class="check">✓ $39</span></td><td><span class="check">✓ free</span></td></tr>
+              <tr><td>Store rating</td><td><strong>New</strong></td><td>3.5★</td><td>—</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="text-align:center; margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-muted);">
+          ✓ = Available &nbsp; ⚠ = Limited &nbsp; ✗ = Not available
+        </p>
+      </div>
+    </section>
+
+    <!-- Privacy Highlight -->
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Privacy by Design</h2>
+          <p>Your CSS is yours. We don't want it.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <div class="feature-icon">🏠</div>
+            <div class="feature-text"><h4>100% Local Processing</h4><p>Inspection and copying happen inside your browser. Nothing is ever uploaded.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📤</div>
+            <div class="feature-text"><h4>Zero Uploads</h4><p>No page content, CSS, or browsing data is sent to any server. Period.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔑</div>
+            <div class="feature-text"><h4>No Sign-Up</h4><p>Install and go. No email, no account required.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🛡️</div>
+            <div class="feature-text"><h4>Minimal Permissions</h4><p>Only activeTab + storage + scripting. No host permissions — unlike competitors, CSSPick can't silently access every site.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What does CSSPick do?</button>
+          <div class="faq-answer"><p>CSSPick lets you hover any element on a page to see its computed CSS — grouped into Color, Typography, Spacing, Size & Box, Background, Border & Shadow, and Layout. Click any property to copy it as <code>prop: value;</code>. It's like a read-only, zero-friction version of DevTools' inspect panel.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What's the difference between Free and Pro?</button>
+          <div class="faq-answer"><p>Free covers hover inspection, all 7 property groups, and single-property copy. Pro ($19 one-time) adds Copy All CSS and Copy Selector — the power-user features for recreating designs and writing stylesheets.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How is CSSPick different from DevTools?</button>
+          <div class="faq-answer"><p>DevTools requires opening the panel, navigating to the right tab, and manually reading computed values. CSSPick is one click on the toolbar, hover to see everything, click to copy. For daily "what styles does this element have?" questions, it's dramatically faster.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Where is my data stored?</button>
+          <div class="faq-answer"><p>Nowhere — everything stays in your browser. The CSS you inspect is read live from the page and shown only to you. No data is collected, stored, or transmitted.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Does the Pro license work on multiple devices?</button>
+          <div class="faq-answer"><p>Yes. Each Pro license covers up to 3 devices. Lifetime access, no subscription.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Stop fighting DevTools. Start copying CSS.</h2>
+        <p>100% local. No subscription. $19 once, own it forever.</p>
+        <div class="hero-actions">
+          <a href="https://www.creem.io/payment/prod_2WIFmjutxgl3tYNbQoFgHu" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Buy Pro — $19</a>
+          <a href="/csspick-privacy.html" class="btn btn-secondary btn-lg">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="dot"></span> WayKnow
+        </a>
+        <p>Privacy-first browser tools.<br>100% local processing, zero data uploads, no sign-up required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/snapmark.html">SnapMark</a></li>
+          <li><a href="/clearjson.html">ClearJSON</a></li>
+          <li><a href="/crumbkit.html">CrumbKit</a></li>
+          <li><a href="/colorpeek.html">ColorPeek</a></li>
+          <li><a href="/csspick.html">CSSPick</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/snapmark-privacy.html">SnapMark Privacy</a></li>
+          <li><a href="/snapmark-terms.html">SnapMark Terms</a></li>
+          <li><a href="/snapmark-refund.html">SnapMark Refund</a></li>
+          <li><a href="/clearjson-privacy.html">ClearJSON Privacy</a></li>
+          <li><a href="/clearjson-terms.html">ClearJSON Terms</a></li>
+          <li><a href="/clearjson-refund.html">ClearJSON Refund</a></li>
+          <li><a href="/crumbkit-privacy.html">CrumbKit Privacy</a></li>
+          <li><a href="/crumbkit-terms.html">CrumbKit Terms</a></li>
+          <li><a href="/colorpeek-privacy.html">ColorPeek Privacy</a></li>
+          <li><a href="/colorpeek-terms.html">ColorPeek Terms</a></li>
+          <li><a href="/colorpeek-refund.html">ColorPeek Refund</a></li>
+          <li><a href="/csspick-privacy.html">CSSPick Privacy</a></li>
+          <li><a href="/csspick-terms.html">CSSPick Terms</a></li>
+          <li><a href="/csspick-refund.html">CSSPick Refund</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> WayKnow. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -14,6 +14,7 @@ Official website for WayKnow, a collection of privacy-first local tools (Chrome 
 | [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, JWT decode, regex search, large files, MCP server) | Free + $29 lifetime |
 | [CrumbKit](./crumbkit.html) | Cookie editor Chrome extension (privacy-first, MV3 native, v1.2.0 — batch edit, auto-cleanup, interceptor, CHIPS, 6 export formats) | Always Free |
 | [ColorPeek](./colorpeek.html) | macOS color picker for developers (menu bar, 8 formats, Tailwind CSS, SCSS, SwiftUI Color) | Free + $19 lifetime |
+| [CSSPick](./csspick.html) | CSS inspector Chrome extension (hover any element → view/copy computed CSS, 7 groups, 100% local) | Free + $19 lifetime |
 
 ## Key Design Decisions
 
@@ -58,6 +59,10 @@ wayknow/
 ├── colorpeek-privacy.html       # ColorPeek privacy policy
 ├── colorpeek-terms.html         # ColorPeek terms of service
 ├── colorpeek-refund.html        # ColorPeek refund policy
+├── csspick.html                 # CSSPick product page (CSS inspector, $19 lifetime)
+├── csspick-privacy.html         # CSSPick privacy policy
+├── csspick-terms.html           # CSSPick terms of service
+├── csspick-refund.html          # CSSPick refund policy
 ├── css/
 │   └── style.css               # Design system (~1200 lines, CSS variables, animations, responsive, .blog-article component)
 ├── js/
@@ -67,6 +72,7 @@ wayknow/
 │   ├── clearjson-logo.png       # ClearJSON logo
 │   ├── crumbkit-logo.png        # CrumbKit logo
 │   ├── colorpeek-logo.png       # ColorPeek logo
+│   ├── csspick-logo.png         # CSSPick logo
 │   └── wayknow-logo.svg         # Site favicon
 ├── download/
 │   └── ColorPeek.dmg            # ColorPeek macOS app

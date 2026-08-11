@@ -600,3 +600,31 @@
 **Why**: MailChannels' free service shutdown created delivery risk for license emails — the most critical email (activation key after payment). Resend aligns ColorPeek with SnapMark, which has used Resend since 2026-07-11 (Decision #22).
 
 **Impact**: Website repo — documentation only (STATUS.md). ColorPeek repo: `server/src/index.js`, `server/wrangler.toml`, `STATUS.md`.
+
+---
+
+## 39. CSSPick Added to Website (2026-08-11)
+
+**Decision**: Added CSSPick (CSS inspector Chrome extension, $19 lifetime) to the website — 4 new pages, nav/footer updates across all pages, homepage card, sitemap, and docs.
+
+**Changes**:
+
+1. **Product page** (`csspick.html`): Full product page in website design system — hero (Buy Pro $19 via Creem `prod_2WIFmjutxgl3tYNbQoFgHu`, "Coming Soon" for CWS since not yet published), 8 feature cards (one-click inspect, hover highlight, 7 CSS groups, single-property copy free, Copy All CSS / Copy Selector Pro, minimal permissions, 100% local), pricing (Free / Pro $19 lifetime), comparison table (vs CSS Scan $95 / UI-Ray $39 / free tools), privacy by design, FAQ (with `id="faq"` anchor), CTA.
+
+2. **Legal pages** (`csspick-privacy.html`, `csspick-terms.html`, `csspick-refund.html`): Converted the CWS standalone light-theme versions (added by another agent, commit 98b581e) to the website's `policy-content` layout with site header/footer.
+
+3. **Logo** (`assets/csspick-logo.png`): 128px icon from `../csspick/icons/icon-128.png`.
+
+4. **Homepage** (`index.html`): Added CSSPick product card (Hover inspect / 7 CSS groups / Copy All CSS / $19 lifetime).
+
+5. **Navigation & footer** (all 27 pages): Added CSSPick to nav (after ColorPeek) and footer Products + Legal columns via batch script.
+
+6. **Support page** (`support.html`): Added CSSPick to Product Help, Refund Policy sections, and FAQ links.
+
+7. **Sitemap**: Added 4 URLs (23 → 27).
+
+8. **Docs**: README (Products table + structure), STATUS (product rows, License API, page count 23→27), CLAUDE.md (product line table).
+
+**Why**: CSSPick is the 5th WayKnow product with a live license server (api.wayknow.tech/csspick) and Creem checkout. Standard new-product checklist per CLAUDE.md.
+
+**Impact**: 27 HTML files + sitemap.xml + 4 .md files.

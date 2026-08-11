@@ -23,7 +23,7 @@
 ### 全局
 
 - **robots.txt**：允许所有爬虫，禁止 `/assets/`，指向 sitemap
-- **sitemap.xml**：23 个 URL（首页 + 4 个产品页 + 1 个支持页 + 11 个 legal 页 + 1 个 blog 页 + 5 篇博文）
+- **sitemap.xml**：27 个 URL（首页 + 5 个产品页 + 1 个支持页 + 14 个 legal 页 + 1 个 blog 页 + 5 篇博文）
 - **header/footer**：所有页面使用静态 HTML，搜索引擎可直接解析导航链接
 
 ### 各页面 SEO 覆盖
@@ -47,6 +47,10 @@
 | colorpeek-privacy.html | ✅ | — | — | — | colorpeek-logo.png |
 | colorpeek-terms.html | ✅ | — | — | — | colorpeek-logo.png |
 | colorpeek-refund.html | ✅ | — | — | — | colorpeek-logo.png |
+| csspick.html | ✅ | ✅ | ✅ | SoftwareApplication | csspick-logo.png |
+| csspick-privacy.html | ✅ | — | — | — | csspick-logo.png |
+| csspick-terms.html | ✅ | — | — | — | csspick-logo.png |
+| csspick-refund.html | ✅ | — | — | — | csspick-logo.png |
 
 > Privacy 和 Terms 页面不需要 OG/Twitter Card（不需要在社交媒体上分享这些页面）。
 
@@ -80,13 +84,13 @@ Sitemap: https://wayknow.tech/sitemap.xml
 
 ## 3. sitemap.xml
 
-包含全部 17 个页面 URL，含 `changefreq` 和 `priority`。产品页 priority 0.9（weekly），legal 页 priority 0.3（monthly），首页 priority 1.0。
+包含全部 27 个页面 URL，含 `changefreq` 和 `priority`。产品页 priority 0.9（weekly），legal 页 priority 0.3（monthly），首页 priority 1.0。
 
 ---
 
 ## 4. header/footer 静态化
 
-所有 23 个 HTML 页面的 `<header>` 和 `<footer>` 都是静态 HTML。`main.js` 只负责导航高亮、移动端菜单、FAQ accordion、平滑滚动、动态年份。
+所有 27 个 HTML 页面的 `<header>` 和 `<footer>` 都是静态 HTML。`main.js` 只负责导航高亮、移动端菜单、FAQ accordion、平滑滚动、动态年份。
 
 ---
 
@@ -119,7 +123,7 @@ Sitemap: https://wayknow.tech/sitemap.xml
 
 ## 6. canonical 链接
 
-全部 17 个页面都有 canonical，指向各自的标准 URL（`https://wayknow.tech/` + 路径）。防止 `www.wayknow.tech` 被当作重复内容。
+全部 27 个页面都有 canonical，指向各自的标准 URL（`https://wayknow.tech/` + 路径）。防止 `www.wayknow.tech` 被当作重复内容。
 
 ---
 

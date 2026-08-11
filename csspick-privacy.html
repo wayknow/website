@@ -3,56 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — CSSPick</title>
-  <style>
-    body { max-width: 720px; margin: 60px auto; padding: 0 24px; font: 16px/1.7 system-ui, -apple-system, sans-serif; color: #222; background: #fff; }
-    h1 { font-size: 28px; margin-bottom: 8px; }
-    h2 { font-size: 20px; margin-top: 36px; }
-    .date { color: #888; font-size: 14px; margin-bottom: 32px; }
-  </style>
+  <meta name="description" content="CSSPick Privacy Policy — 100% local processing, zero data collection. Inspect CSS without uploading anything.">
+  <title>Privacy Policy — CSSPick | WayKnow</title>
+  <link rel="canonical" href="https://wayknow.tech/csspick-privacy.html">
+  <link rel="icon" type="image/png" href="/assets/csspick-logo.png">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <h1>CSSPick Privacy Policy</h1>
-  <p class="date">Last updated: August 11, 2026</p>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <span class="dot"></span> WayKnow
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/snapmark.html">SnapMark</a></li>
+        <li><a href="/clearjson.html">ClearJSON</a></li>
+        <li><a href="/crumbkit.html">CrumbKit</a></li>
+        <li><a href="/colorpeek.html">ColorPeek</a></li>
+        <li><a href="/csspick.html">CSSPick</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <p>CSSPick is a Chrome extension for inspecting and copying CSS from web pages. This policy explains what data CSSPick handles and how.</p>
+  <main>
+    <article class="policy-content">
+      <h1>CSSPick Privacy Policy</h1>
+      <p class="last-updated">Last updated: August 11, 2026</p>
 
-  <h2>Data Collection</h2>
-  <p><strong>CSSPick does not collect, transmit, or store any of your browsing data, page content, or CSS on any remote server.</strong> All inspection happens entirely inside your browser, on your device. The CSS you view is read from the page with Chrome's standard <code>getComputedStyle</code> API and displayed in the panel — it never leaves your machine.</p>
+      <p>CSSPick is a Chrome extension for inspecting and copying CSS from web pages. This policy explains what data CSSPick handles and how.</p>
 
-  <h2>What CSSPick Accesses</h2>
-  <ul>
-    <li><strong>Active page structure and styles</strong>: When you click the CSSPick toolbar icon, the extension reads element geometry and computed CSS of the current page so it can highlight elements and show styles. This data is only shown to you in the panel and is never transmitted.</li>
-    <li><strong>License key</strong>: If you enter a Pro license key, it is stored locally in <code>chrome.storage.local</code> on your device.</li>
-    <li><strong>Device identifier</strong>: CSSPick generates a random, non-personal device ID (a UUID) used only to count how many devices a license key has been activated on (max 3 per key). It contains no identifying information about you or your hardware.</li>
-  </ul>
+      <h2>Data Collection</h2>
+      <p><strong>CSSPick does not collect, transmit, or store any of your browsing data, page content, or CSS on any remote server.</strong> All inspection happens entirely inside your browser, on your device. The CSS you view is read from the page with Chrome's standard <code>getComputedStyle</code> API and displayed in the panel — it never leaves your machine.</p>
 
-  <h2>Remote Interactions</h2>
-  <p>CSSPick makes exactly two remote connections, and only when you take a related action:</p>
-  <ul>
-    <li><strong>License verification</strong>: When you activate a Pro license key, it is sent to our license server (<code>api.wayknow.tech</code>) together with the random device ID and your browser's operating system and version. The server responds whether the key is valid. This happens only when you explicitly activate or launch the extension.</li>
-    <li><strong>Purchase</strong>: Purchases are processed on <code>creem.io</code>, our payment provider. CSSPick never sees or stores your payment information.</li>
-  </ul>
+      <h2>What CSSPick Accesses</h2>
+      <ul>
+        <li><strong>Active page structure and styles</strong>: When you click the CSSPick toolbar icon, the extension reads element geometry and computed CSS of the current page so it can highlight elements and show styles. This data is only shown to you in the panel and is never transmitted.</li>
+        <li><strong>License key</strong>: If you enter a Pro license key, it is stored locally in <code>chrome.storage.local</code> on your device.</li>
+        <li><strong>Device identifier</strong>: CSSPick generates a random, non-personal device ID (a UUID) used only to count how many devices a license key has been activated on (max 3 per key). It contains no identifying information about you or your hardware.</li>
+      </ul>
 
-  <h2>Permissions</h2>
-  <p>CSSPick requests the following Chrome permissions, and uses them only as described:</p>
-  <ul>
-    <li><strong><code>activeTab</code></strong>: To inspect the current tab only after you click the extension icon.</li>
-    <li><strong><code>scripting</code></strong>: To inject the inspection script and styles into the current tab when you activate the extension. Scripts are removed when you exit inspect mode.</li>
-    <li><strong><code>storage</code></strong>: To save your license key and license verification cache locally on your device.</li>
-  </ul>
-  <p>CSSPick requests no host permissions and runs no background data collection.</p>
+      <h2>Remote Interactions</h2>
+      <p>CSSPick makes exactly two remote connections, and only when you take a related action:</p>
+      <ul>
+        <li><strong>License verification</strong>: When you activate a Pro license key, it is sent to our license server (<code>api.wayknow.tech</code>) together with the random device ID and your browser's operating system and version. The server responds whether the key is valid. This happens only when you explicitly activate or launch the extension.</li>
+        <li><strong>Purchase</strong>: Purchases are processed on <code>creem.io</code>, our payment provider. CSSPick never sees or stores your payment information.</li>
+      </ul>
 
-  <h2>Third-Party Services</h2>
-  <p>CSSPick does not integrate with any analytics, tracking, or advertising services. Data is shared with no third party other than the license verification request described above.</p>
+      <h2>Permissions</h2>
+      <p>CSSPick requests the following Chrome permissions, and uses them only as described:</p>
+      <ul>
+        <li><strong><code>activeTab</code></strong>: To inspect the current tab only after you click the extension icon.</li>
+        <li><strong><code>scripting</code></strong>: To inject the inspection script and styles into the current tab when you activate the extension. Scripts are removed when you exit inspect mode.</li>
+        <li><strong><code>storage</code></strong>: To save your license key and license verification cache locally on your device.</li>
+      </ul>
+      <p>CSSPick requests no host permissions and runs no background data collection.</p>
 
-  <h2>Your Control</h2>
-  <p>You can clear all CSSPick data at any time by removing the extension from Chrome, or by clearing the extension's storage in Chrome's extension settings.</p>
+      <h2>Third-Party Services</h2>
+      <p>CSSPick does not integrate with any analytics, tracking, or advertising services. Data is shared with no third party other than the license verification request described above.</p>
 
-  <h2>Changes to This Policy</h2>
-  <p>If this policy changes, the updated version will be posted here and the "Last updated" date will be revised.</p>
+      <h2>Your Control</h2>
+      <p>You can clear all CSSPick data at any time by removing the extension from Chrome, or by clearing the extension's storage in Chrome's extension settings.</p>
 
-  <h2>Contact</h2>
-  <p>For questions about this policy, contact <a href="mailto:support@wayknow.tech">support@wayknow.tech</a>.</p>
+      <h2>Changes to This Policy</h2>
+      <p>If this policy changes, the updated version will be posted here and the "Last updated" date will be revised.</p>
+
+      <h2>Contact</h2>
+      <p>For questions about this policy, contact <a href="mailto:support@wayknow.tech">support@wayknow.tech</a>.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="dot"></span> WayKnow
+        </a>
+        <p>Privacy-first browser tools.<br>100% local processing, zero data uploads, no sign-up required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/snapmark.html">SnapMark</a></li>
+          <li><a href="/clearjson.html">ClearJSON</a></li>
+          <li><a href="/crumbkit.html">CrumbKit</a></li>
+          <li><a href="/colorpeek.html">ColorPeek</a></li>
+          <li><a href="/csspick.html">CSSPick</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/snapmark-privacy.html">SnapMark Privacy</a></li>
+          <li><a href="/snapmark-terms.html">SnapMark Terms</a></li>
+          <li><a href="/snapmark-refund.html">SnapMark Refund</a></li>
+          <li><a href="/clearjson-privacy.html">ClearJSON Privacy</a></li>
+          <li><a href="/clearjson-terms.html">ClearJSON Terms</a></li>
+          <li><a href="/clearjson-refund.html">ClearJSON Refund</a></li>
+          <li><a href="/crumbkit-privacy.html">CrumbKit Privacy</a></li>
+          <li><a href="/crumbkit-terms.html">CrumbKit Terms</a></li>
+          <li><a href="/colorpeek-privacy.html">ColorPeek Privacy</a></li>
+          <li><a href="/colorpeek-terms.html">ColorPeek Terms</a></li>
+          <li><a href="/colorpeek-refund.html">ColorPeek Refund</a></li>
+          <li><a href="/csspick-privacy.html">CSSPick Privacy</a></li>
+          <li><a href="/csspick-terms.html">CSSPick Terms</a></li>
+          <li><a href="/csspick-refund.html">CSSPick Refund</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> WayKnow. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
 </body>
 </html>

@@ -4,10 +4,10 @@
 
 ## ✅ Done
 
-### Website (23 pages)
+### Website (27 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
-| Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, ColorPeek), shared values, no hero |
+| Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CrumbKit, ColorPeek, CSSPick), shared values, no hero |
 | SnapMark product | ✅ | v1.4.0: 7 capture modes (incl. Clean & Capture, Batch Capture), 8 annotation tools, text tool with IME (Chinese/Japanese/Korean) + 17 fonts + 9 sizes. CWS + Edge store links, pricing (Free + $39 lifetime, free undo now 100 steps), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark`. Page synced from extension 2026-08-03 |
 | ClearJSON product | ✅ | v1.1.4: features, MCP server section (10 tools, `npx -y clearjson-mcp`), pricing (Free + $29 lifetime), comparison table (incl. JSON Pretty Pro), FAQ. CWS + Edge store links, both stores live. Glama score A/A/B. npm package published. |
 | CrumbKit product | ✅ | v1.2.0: batch operations (multi-delete + bulk-edit), one-click copy, cookie profiles, side panel, scheduled auto-cleanup, Set-Cookie interceptor, CHIPS partitioned cookies, 6 export formats (JSON/Netscape/cURL/CSV/Puppeteer/Set-Cookie). Features, FAQ, always free, MV3-native. Published 2026-07-20, v1.2.0 2026-08-07. |
@@ -18,12 +18,16 @@
 | ClearJSON terms | ✅ | No subscription, simplified to lifetime-only |
 | ClearJSON refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
 | ColorPeek refund | ✅ | 14-day conditional refund: technical issues, feature discrepancies, billing errors |
-| Support page | ✅ | support@wayknow.tech, FAQ links, refund summaries for all products. FAQ anchor links fixed 2026-08-07 (added `id="faq"` to all 4 product pages — 8 links were dead) |
+| Support page | ✅ | support@wayknow.tech, FAQ links, refund summaries for all products. FAQ anchor links fixed 2026-08-07 (added `id="faq"` to all 4 product pages — 8 links were dead). CSSPick added to product help + refund sections 2026-08-11 |
 | CrumbKit privacy | ✅ | Zero data collection, MIT open source, zero network requests. Permissions updated 2026-08-07 for v1.2.0: removed `tabs` (dropped in v1.0.1), added `alarms`/`notifications`/`webRequest` (auto-cleanup + Set-Cookie interceptor), local storage list covers profiles/cleanup rules/intercepted cookies |
 | CrumbKit terms | ✅ | Free, MIT license, no payment processing |
 | ColorPeek product | ✅ | v1.0 maintenance: free (4 formats, 50-color history, auto-copy on pick), Pro (8 formats, 242-color Tailwind palette, unlimited history, custom palettes, global shortcut, clipboard image pick). Pricing (Free + $19 lifetime), comparison table (Sip/ColorSlurp/Pika), FAQ, DMG download. License server at `api.wayknow.tech/colorpeek`. Auto-copy feature added 2026-07-30. DMG updated 2026-08-04 (Pro visibility optimization + fixes). Email delivery migrated to Resend 2026-08-11 (was MailChannels — discontinued free service). |
 | ColorPeek privacy | ✅ | Zero data collection, Pro license verification only. Structure aligned to `policy-content` layout 2026-08-07 |
 | ColorPeek terms | ✅ | Lifetime-only, 3-Mac activation, 14-day refund. Structure aligned to `policy-content` layout 2026-08-07 |
+| CSSPick product | ✅ | v0.2.0: hover inspect, 7 CSS groups (Color/Typography/Spacing/Size & Box/Background/Border & Shadow/Layout), single-property copy (free), Copy All CSS + Copy Selector (Pro $19 lifetime). Minimal permissions (activeTab + storage + scripting, no host_permissions). License server live at `api.wayknow.tech/csspick`. Creem checkout live. CWS pending submission. Page added 2026-08-11 |
+| CSSPick privacy | ✅ | Zero data collection, license verification only (api.wayknow.tech), device UUID for 3-device binding |
+| CSSPick terms | ✅ | Free + Pro tiers, Creem payment, 3-device license |
+| CSSPick refund | ✅ | 14-day conditional refund, 2-device max activation for eligibility |
 | Blog page | ✅ | 5 real posts, newsletter signup, proper SEO. `blog.html` |
 | Blog: JSON Formatter Alternatives | ✅ | Competitive comparison → ClearJSON. `blog/json-formatter-alternatives.html` |
 | Blog: SnapMark Screenshot Tool | ✅ | Competitive comparison → SnapMark. Data corrected 2026-08-03: undo 100 steps both Free and Pro (v1.4.0 aligned free undo from 20→100). `blog/snapmark-screenshot-tool.html` |
@@ -65,6 +69,7 @@
 | SnapMark Edge Add-ons | ✅ | v1.4.0 approved 2026-08-11（v1.2.1 曾因测试 key 设备数超限被拒，已修复）。Chrome + Edge 双平台均为 v1.4.0。Edge Store ID: `0RDCKBDS022S`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj) |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
+| CSSPick License API | ✅ | `api.wayknow.tech/csspick` (Cloudflare Workers + D1), verify/generate/webhook/checkout/admin, 21 e2e tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
 | ClearJSON Edge Add-ons | ✅ | v1.1.4 approved 2026-08-10. Edge Store ID: `kdebbkdldjhhboafpflimanekmhinelg`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/clearjson/kdebbkdldjhhboafpflimanekmhinelg) |
 | CrumbKit CWS submission | ✅ | v1.0.0 published 2026-07-20, v1.0.1 published 2026-07-29, v1.1.0 published 2026-08-06, v1.2.0 published 2026-08-07. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl). v1.0.0 submitted with `tabs` in manifest — passed review anyway. `tabs` removed in v1.0.1 (design system alignment + cross-promo). v1.1.0 adds table view, profiles, side panel. v1.2.0 adds batch edit, auto-cleanup, Set-Cookie interceptor, CHIPS, 6 export formats. |
