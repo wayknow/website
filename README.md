@@ -47,13 +47,14 @@ wayknow/
 ├── crumbkit.html               # CrumbKit product page (free, MV3-native, privacy-first)
 ├── crumbkit-privacy.html       # CrumbKit privacy policy (zero data collection)
 ├── crumbkit-terms.html         # CrumbKit terms of service (MIT license)
-├── blog.html                     # Blog listing (5 posts, newsletter signup)
+├── blog.html                     # Blog listing (6 posts, newsletter signup)
 ├── blog/                         # Blog post pages
 │   ├── json-formatter-alternatives.html
 │   ├── snapmark-screenshot-tool.html
 │   ├── crumbkit-cookie-editor.html
 │   ├── colorpeek-mac-color-picker.html
-│   └── local-first-matters.html
+│   ├── local-first-matters.html
+│   └── csspick-css-inspector.html
 ├── support.html                 # Support page (contact, FAQ links, refund policy)
 ├── colorpeek.html               # ColorPeek product page (macOS color picker, $19 lifetime)
 ├── colorpeek-privacy.html       # ColorPeek privacy policy

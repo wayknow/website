@@ -628,3 +628,22 @@
 **Why**: CSSPick is the 5th WayKnow product with a live license server (api.wayknow.tech/csspick) and Creem checkout. Standard new-product checklist per CLAUDE.md.
 
 **Impact**: 27 HTML files + sitemap.xml + 4 .md files.
+
+---
+
+## 40. CSSPick Blog Post (2026-08-11)
+
+**Decision**: Published the 6th blog post — "CSS Inspection Shouldn't Cost $95 — Meet CSSPick" (`blog/csspick-css-inspector.html`).
+
+**Content**: Competitive comparison angle, matching the blog series pattern:
+- CSS Scan $95 price critique (3.5★ rating, $900 "Pro" tier)
+- DevTools slowness (30s vs 3s per lookup)
+- Abandonware free alternatives (biggest has 345 users)
+- CSSPick features: hover inspect, 7 CSS groups, single-property copy (free), Copy All CSS / Copy Selector (Pro)
+- Comparison table (CSSPick $19 vs CSS Scan $95 vs UI-Ray $39)
+- Minimal permissions story (3 permissions, no host permissions)
+- SnapMark/ClearJSON reuse story
+
+**Why**: Every product launch gets a blog post (pattern: snapmark, crumbkit, colorpeek, clearjson). Drives organic search traffic from "CSS Scan alternative" and "CSS inspector" queries.
+
+**Impact**: `blog/csspick-css-inspector.html` (new), `blog.html` (card added at top), `sitemap.xml` (+1 URL), STATUS/README/CLAUDE.md (5→6 posts).

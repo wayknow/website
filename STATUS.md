@@ -28,12 +28,13 @@
 | CSSPick privacy | ✅ | Zero data collection, license verification only (api.wayknow.tech), device UUID for 3-device binding |
 | CSSPick terms | ✅ | Free + Pro tiers, Creem payment, 3-device license |
 | CSSPick refund | ✅ | 14-day conditional refund, 2-device max activation for eligibility |
-| Blog page | ✅ | 5 real posts, newsletter signup, proper SEO. `blog.html` |
+| Blog page | ✅ | 6 real posts, newsletter signup, proper SEO. `blog.html` |
 | Blog: JSON Formatter Alternatives | ✅ | Competitive comparison → ClearJSON. `blog/json-formatter-alternatives.html` |
 | Blog: SnapMark Screenshot Tool | ✅ | Competitive comparison → SnapMark. Data corrected 2026-08-03: undo 100 steps both Free and Pro (v1.4.0 aligned free undo from 20→100). `blog/snapmark-screenshot-tool.html` |
 | Blog: CrumbKit Cookie Editor | ✅ | EditThisCookie story → CrumbKit. Feature list synced to v1.2.0 2026-08-07 (6 export formats, batch ops, profiles, auto-cleanup, interceptor, CHIPS, side panel; removed outdated "1,700 lines" claim). `blog/crumbkit-cookie-editor.html` |
 | Blog: ColorPeek Mac Picker | ✅ | Product launch → ColorPeek. `blog/colorpeek-mac-color-picker.html` |
 | Blog: Local-First Matters | ✅ | Brand philosophy → all products. `blog/local-first-matters.html` |
+| Blog: CSSPick CSS Inspector | ✅ | Competitive comparison → CSSPick. CSS Scan $95 price critique, DevTools slowness, 7 groups, $19 lifetime. 2026-08-11. `blog/csspick-css-inspector.html` |
 | Newsletter signup | ✅ | On homepage and blog page. Posts to `api.wayknow.tech/subscribe` |
 
 ### Design & Content

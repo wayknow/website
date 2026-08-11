@@ -7,7 +7,7 @@
 - **技术栈**：纯静态 HTML/CSS/JS，零框架，零构建步骤
 - **设计系统**：CSS 自定义属性，深蓝 + teal 暗色主题，768px 响应式断点
 - **部署**：`git push` → 服务器 `git pull`，Tencent Cloud 新加坡 + Cloudflare CDN
-- **当前状态**：27 个页面（含 5 篇博客），5 款产品，SEO 已优化
+- **当前状态**：28 个页面（含 6 篇博客），5 款产品，SEO 已优化
 - **详细状态**：[STATUS.md](STATUS.md)
 - **决策记录**：[DECISIONS.md](DECISIONS.md)
 - **部署指南**：[DEPLOY.md](DEPLOY.md)
@@ -37,13 +37,14 @@ wayknow/
 ├── csspick-terms.html          # CSSPick 服务条款
 ├── csspick-refund.html         # CSSPick 退款政策
 ├── support.html                 # 通用支持页面
-├── blog.html                   # Blog 列表页（5 篇博文 + newsletter signup）
+├── blog.html                   # Blog 列表页（6 篇博文 + newsletter signup）
 ├── blog/                       # 博客文章
 │   ├── json-formatter-alternatives.html
 │   ├── snapmark-screenshot-tool.html
 │   ├── crumbkit-cookie-editor.html
 │   ├── colorpeek-mac-color-picker.html
-│   └── local-first-matters.html
+│   ├── local-first-matters.html
+│   └── csspick-css-inspector.html
 ├── css/style.css               # ~1200 行 CSS 设计系统
 ├── js/main.js                  # 导航高亮、移动端菜单、FAQ accordion、平滑滚动
 ├── assets/                     # 产品图标
