@@ -21,7 +21,7 @@
 | Support page | ✅ | support@wayknow.tech, FAQ links, refund summaries for all products. FAQ anchor links fixed 2026-08-07 (added `id="faq"` to all 4 product pages — 8 links were dead) |
 | CrumbKit privacy | ✅ | Zero data collection, MIT open source, zero network requests. Permissions updated 2026-08-07 for v1.2.0: removed `tabs` (dropped in v1.0.1), added `alarms`/`notifications`/`webRequest` (auto-cleanup + Set-Cookie interceptor), local storage list covers profiles/cleanup rules/intercepted cookies |
 | CrumbKit terms | ✅ | Free, MIT license, no payment processing |
-| ColorPeek product | ✅ | v1.0 maintenance: free (4 formats, 50-color history, auto-copy on pick), Pro (8 formats, 242-color Tailwind palette, unlimited history, custom palettes, global shortcut, clipboard image pick). Pricing (Free + $19 lifetime), comparison table (Sip/ColorSlurp/Pika), FAQ, DMG download. License server at `api.wayknow.tech/colorpeek`. Auto-copy feature added 2026-07-30. |
+| ColorPeek product | ✅ | v1.0 maintenance: free (4 formats, 50-color history, auto-copy on pick), Pro (8 formats, 242-color Tailwind palette, unlimited history, custom palettes, global shortcut, clipboard image pick). Pricing (Free + $19 lifetime), comparison table (Sip/ColorSlurp/Pika), FAQ, DMG download. License server at `api.wayknow.tech/colorpeek`. Auto-copy feature added 2026-07-30. DMG updated 2026-08-04 (Pro visibility optimization + fixes). |
 | ColorPeek privacy | ✅ | Zero data collection, Pro license verification only. Structure aligned to `policy-content` layout 2026-08-07 |
 | ColorPeek terms | ✅ | Lifetime-only, 3-Mac activation, 14-day refund. Structure aligned to `policy-content` layout 2026-08-07 |
 | Blog page | ✅ | 5 real posts, newsletter signup, proper SEO. `blog.html` |
