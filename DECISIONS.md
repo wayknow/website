@@ -583,3 +583,20 @@
 **Why**: Both stores live means both products now have full cross-store presence (CWS + Edge). Page buttons should reflect live availability.
 
 **Impact**: 2 files modified (`snapmark.html`, `STATUS.md`). DECISIONS.md updated for tracking.
+
+---
+
+## 38. ColorPeek Email Delivery Migrated to Resend (2026-08-11)
+
+**Decision**: ColorPeek license server email delivery migrated from MailChannels to Resend.
+
+**Changes** (in `../colorpeek` repo):
+
+1. **Email provider**: MailChannels → Resend API (`api.resend.com/emails`). Reason: MailChannels discontinued its free service in 2024, delivery was unreliable.
+2. **Config**: API key read from `env.RESEND_API_KEY` (set via `npx wrangler secret put`). Domain `wayknow.tech` verified in Resend (DKIM DNS records).
+3. **Email content**: Added HTML version of the activation email (inline styles, light theme), in addition to the existing plain-text version.
+4. **ColorPeek STATUS.md**: Updated email delivery description and Changelog.
+
+**Why**: MailChannels' free service shutdown created delivery risk for license emails — the most critical email (activation key after payment). Resend aligns ColorPeek with SnapMark, which has used Resend since 2026-07-11 (Decision #22).
+
+**Impact**: Website repo — documentation only (STATUS.md). ColorPeek repo: `server/src/index.js`, `server/wrangler.toml`, `STATUS.md`.
