@@ -66,8 +66,8 @@ wayknow/
 | SnapMark | 截图 + 标注 | 免费 + $39 终身 | `snapmark.html` | `../snapmark` |
 | ClearJSON | JSON 查看器 | 免费 + $29 终身 | `clearjson.html` | `../clearjson` |
 | CrumbKit | Cookie 编辑器（合规新版） | 完全免费 | `crumbkit.html` | `../crumbkit` |
-| ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 | CSSPick | CSS 检查器 | 免费 + $19 终身 | `csspick.html` | `../csspick` |
+| ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 
 
 ## 设计系统
