@@ -62,7 +62,7 @@
 | Homepage product card CTAs | ✅ | Single "Install Free →" / "Download Free →" button per card (2026-07-22) |
 | ColorPeek Creem payment ($19) | ✅ | Linked to `creem.io/payment/prod_w1VD8FO1zNXbPgQqkJ8zA`. DMG download section live. License server deployed |
 | SnapMark CWS submission | ✅ | v1.4.0 approved 2026-08-04 (IME text tool + 17 fonts + 9 sizes + delete button scaling). [CWS link](https://chromewebstore.google.com/detail/snapmark-full-page-screen/eppopiophjmfnoimmaklpbmkfmgpfgmj). 7 capture modes, 8 annotation tools, SEO title/description optimized, Creem Payout activated, full payment pipeline live |
-| SnapMark Edge Add-ons | ✅ | v1.3.2 approved 2026-08-10（v1.2.1 曾因测试 key 设备数超限被拒，已修复）。v1.4.0 Edge zip 已打包，待提交。Edge Store ID: `0RDCKBDS022S`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj) |
+| SnapMark Edge Add-ons | ✅ | v1.4.0 approved 2026-08-11（v1.2.1 曾因测试 key 设备数超限被拒，已修复）。Chrome + Edge 双平台均为 v1.4.0。Edge Store ID: `0RDCKBDS022S`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/eodjafakbolkcgjnhjhekfmnnghblfhj) |
 | SnapMark License API | ✅ | `api.wayknow.tech/snapmark` (Cloudflare Workers + D1), 4 endpoints |
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
