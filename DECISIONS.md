@@ -663,3 +663,41 @@
 **Why**: Standard flow — page placeholders go live once the store listing is approved. CSSPick is now fully live: CWS install, Creem checkout, license server.
 
 **Impact**: 3 files modified (`csspick.html`, `index.html`, `STATUS.md`). DECISIONS.md updated for tracking.
+
+---
+
+## 42. 获客策略转向：放弃社区 launch 渠道 (2026-08-12)
+
+**Decision**: 不再依赖 Reddit / Show HN / Product Hunt 等社区 launch 渠道获客。全部精力转向自有/算法分发渠道。
+
+**Why**: 用户实测 Reddit、Show HN 对新账号极不友好（Show HN 需账号满 1 年；多数 subreddit 自动过滤低 karma 新号）。CWS 搜索排名按安装量+评分增速加权，新扩展排不上去；GitHub 0 star 无人信——"先有权威才能获得权威"的渠道全部走不通（这是结构性障碍，不是内容质量问题）。
+
+**How**: 获客只依赖：官网 SEO（低竞争词文章，3-6 个月周期）+ GSC + Chrome Web Store 店内搜索 + dev.to 同步（canonical 指回官网）+ MCP 生态收录（mcp.so/Smithery）+ 扩展内评分收集。社区账号（Reddit/HN）注册养龄作长期备用，不当主力。
+
+---
+
+## 43. 主攻方向：浏览器 AI 产品 + ClearJSON SEO 引擎（双轨）(2026-08-12)
+
+**Decision**: 放弃"下一个 Mac 本地 AI 工具"作为立即主攻（survey 通用建议），改为双轨：轨道 A = ClearJSON SEO 内容引擎（每周 2 篇，3-6 个月养流量）；轨道 B = 浏览器 AI 产品（自然语言网页数据提取，订阅制 $9.99-29.99/月，MVP 4-6 周）。
+
+**Why**: 用户核心瓶颈是分发而非产品形态。现有资产（WayKnow 品牌、官网、4 个扩展、DOM 技术栈、dev.to 声音、MCP 经验）全部在浏览器侧；换 Mac 方向等于全部作废重新冷启动（ColorPeek 1 条评分已验证 Mac 不解决分发）。浏览器 DOM 技术栈（CSSPick 元素定位 + SnapMark 页面捕获 + CrumbKit 会话 + ClearJSON 解析）恰好是 2026 年 AI agent 需要的能力底座。Mac 方向保留为 SEO 引擎起量后的产品线扩展。
+
+---
+
+## 44. 博客事实审计与修正 (2026-08-12)
+
+**Decision**: 文章上线前必须事实核验；发现的问题全部修复。
+
+**Why**: 首篇对比文初稿的竞品名单来自搜索摘要，核实后：NextJSON（1 star 无 license）与 BestJSONViewer/PayloadScope/JSON Keeper（无法证实）全部删除；JSON Formatter Pro 确认为 Zovo 的 20 扩展套件（价格各来源矛盾，不做价格声称）；JSONVault Pro 确认为真实正面竞品（免费层+Pro 内购，声称 500MB 虚拟渲染，弱化了 "the only viewer" 的绝对化声称）。旧文章修复：真实 HN 链接（item?id=47721946，2026-04-10，289 分，Algolia API 验证）、时间线（实际 2026 年 1 月注入/4 月曝光，非 2025）、"exactly one paid" 事实错误、竞品名统一为 JSON Pretty Pro、新增作者辩护段。新文章同样修正时间线并新增 JSONVault Pro 条目。
+
+**Impact**: 站内两篇文章互为链接；竞品事实与产品页对比表（TreeJSON/JSON Alexander/arnav-kr/Just JSON/JSON Pretty Pro）统一。
+
+---
+
+## 45. dev.to 全量设置 canonical 回流官网 (2026-08-12)
+
+**Decision**: 5 篇 dev.to 文章的 canonical_url 全部改为指向对应官网文章。
+
+**Why**: 此前 canonical 全部指向 dev.to 自己，Google 会把 dev.to（高权重）当原文来源，与自己官网抢同一关键词排名。设置 canonical 后权重回流官网，dev.to 只承担分发。
+
+**How**: dev.to 编辑器（齿轮图标/省略号按钮/基础编辑器 front matter 三选一）填入对应官网 URL。已用 API 验证 5 篇全部生效。JSON Viewer 那篇的 "2025" 经查是版本日期（JSON Viewer Pro v7.1 as of October 2025），非时间线错误，无需修改。
