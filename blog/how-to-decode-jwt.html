@@ -94,9 +94,9 @@
 
           <p>No tools, works on any machine. JWT uses base64url: same as base64 but with <code>-</code> and <code>_</code> instead of <code>+</code> and <code>/</code>, and no padding. To decode part 2 (the payload):</p>
 
-          <pre><code>echo 'eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ' | tr '_-' '/+' | base64 -d</code></pre>
+          <pre><code>echo 'eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ==' | tr '_-' '/+' | base64 -d</code></pre>
 
-          <p>You'll get the JSON claims. If <code>base64</code> complains about invalid characters, your token's part isn't a multiple of 4 characters — append <code>==</code> to the end and try again. (jq will pretty-print it: add <code>| jq .</code> at the end.)</p>
+          <p>You'll get the JSON claims. Note the <code>==</code> at the end: JWT strips the padding that standard base64 uses, so you usually have to add it back. (GNU base64 on Linux adds it automatically; macOS's BSD base64 doesn't, and will silently truncate the output if you forget — an easy way to waste ten minutes.) Add <code>| jq .</code> at the end to pretty-print.</p>
 
           <p><strong>When to use it:</strong> once a year, on a machine with nothing else installed, or to prove it's not magic.</p>
 
@@ -104,8 +104,10 @@
 
           <p>For daily work on the command line, one alias does the whole job:</p>
 
-          <pre><code>alias jwt='cut -d. -f2 | tr "_-" "/+" | base64 -d 2>/dev/null | jq .'
+          <pre><code>alias jwt='cut -d. -f2 | { read t; while [ $((${#t} % 4)) -ne 0 ]; do t="${t}="; done; printf %s "$t"; } | tr "_-" "/+" | base64 -d 2>/dev/null | jq .'
 # usage: echo "$TOKEN" | jwt</code></pre>
+
+          <p>The while loop just restores the <code>=</code> padding JWT strips out — without it, BSD base64 silently drops the last few characters.</p>
 
           <p>That reads the payload. For the header, change <code>-f2</code> to <code>-f1</code>. This is what I use when I'm already in a terminal and the token is in an environment variable — it never touches the network, so there's nothing to leak.</p>
 
