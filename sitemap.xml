@@ -111,6 +111,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wayknow.tech/blog/how-to-decode-jwt.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wayknow.tech/blog/best-json-viewer-chrome-extensions-2026.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

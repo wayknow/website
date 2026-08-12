@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Decode a JWT 5 ways: by hand with base64, in the terminal, online, in your browser with zero upload, and via AI agents. Plus the security gotcha most tutorials skip.">
+  <title>How to Decode a JWT in 2026 — 5 Methods, No Token Upload</title>
+  <link rel="canonical" href="https://wayknow.tech/blog/how-to-decode-jwt.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Decode a JWT in 2026 — 5 Methods, No Token Upload">
+  <meta property="og:description" content="Decode JWTs 5 ways — by hand, terminal, online, zero-upload browser tools, AI agents. Plus what most tutorials skip.">
+  <meta property="og:url" content="https://wayknow.tech/blog/how-to-decode-jwt.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="WayKnow">
+  <meta property="og:image" content="https://wayknow.tech/assets/wayknow-logo.svg">
+  <meta property="article:published_time" content="2026-08-12">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Decode a JWT in 2026 — 5 Methods, No Token Upload">
+  <meta name="twitter:description" content="Decode JWTs 5 ways — by hand, terminal, online, zero-upload browser tools, AI agents. Plus what most tutorials skip.">
+  <meta name="twitter:image" content="https://wayknow.tech/assets/wayknow-logo.svg">
+  <link rel="icon" type="image/svg+xml" href="/assets/wayknow-logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Decode a JWT in 2026 — 5 Methods, No Token Upload",
+    "datePublished": "2026-08-12",
+    "author": {"@type": "Person", "name": "wayknow"},
+    "description": "Decode JWTs 5 ways: by hand with base64, in the terminal, online, in your browser with zero upload, and via AI agents. Plus the security gotcha most tutorials skip."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <span class="dot"></span> WayKnow
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/snapmark.html">SnapMark</a></li>
+        <li><a href="/clearjson.html">ClearJSON</a></li>
+        <li><a href="/crumbkit.html">CrumbKit</a></li>
+        <li><a href="/csspick.html">CSSPick</a></li>
+        <li><a href="/colorpeek.html">ColorPeek</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <a href="/blog.html" style="color: var(--color-text-muted); font-size: var(--text-sm);">← Back to Blog</a>
+        <h1 style="margin-top: var(--space-4);">How to Decode a JWT in 2026 — 5 Methods, No Token Upload</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <article class="blog-article">
+          <p class="article-meta">Published August 12, 2026 · 7 min read</p>
+
+          <p>Every developer eventually needs to decode a JWT — usually at 11pm when a login fails, an integration breaks, or someone asks "what's actually in this token?" Most tutorials tell you to paste it into a website. That works, but it's the only option most people ever learn. Here are <strong>five</strong>, including the ones that never upload your token anywhere.</p>
+
+          <p>Quick spoiler for the impatient: if you decode JWTs more than once a month, get a <strong>zero-upload browser tool</strong> (method 4). If it's a one-off, jwt.io is fine. Everything in between is for the curious and the security-minded.</p>
+
+          <h2>What's inside a JWT</h2>
+
+          <p>A JWT is just three base64url-encoded parts joined by dots:</p>
+
+          <p><code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</code></p>
+
+          <table>
+            <thead>
+              <tr><th>Part</th><th>What it is</th><th>Example</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Header</strong></td><td>Algorithm and token type</td><td><code>{"alg":"HS256","typ":"JWT"}</code></td></tr>
+              <tr><td><strong>Payload</strong></td><td>Claims — the actual data</td><td><code>{"sub":"1234567890","name":"John Doe","iat":1516239022}</code></td></tr>
+              <tr><td><strong>Signature</strong></td><td>HMAC or RSA signature of the first two parts</td><td>prevents tampering</td></tr>
+            </tbody>
+          </table>
+
+          <p>Here's the thing most tutorials skip: <strong>the first two parts are just base64</strong>. Anyone — you, me, your logs — can read them. The signature exists to stop someone from <em>modifying</em> the payload, not to keep it secret.</p>
+
+          <h2>Method 1: Decode it by hand</h2>
+
+          <p>No tools, works on any machine. JWT uses base64url: same as base64 but with <code>-</code> and <code>_</code> instead of <code>+</code> and <code>/</code>, and no padding. To decode part 2 (the payload):</p>
+
+          <pre><code>echo 'eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ' | tr '_-' '/+' | base64 -d</code></pre>
+
+          <p>You'll get the JSON claims. If <code>base64</code> complains about invalid characters, your token's part isn't a multiple of 4 characters — append <code>==</code> to the end and try again. (jq will pretty-print it: add <code>| jq .</code> at the end.)</p>
+
+          <p><strong>When to use it:</strong> once a year, on a machine with nothing else installed, or to prove it's not magic.</p>
+
+          <h2>Method 2: Decode it in the terminal</h2>
+
+          <p>For daily work on the command line, one alias does the whole job:</p>
+
+          <pre><code>alias jwt='cut -d. -f2 | tr "_-" "/+" | base64 -d 2>/dev/null | jq .'
+# usage: echo "$TOKEN" | jwt</code></pre>
+
+          <p>That reads the payload. For the header, change <code>-f2</code> to <code>-f1</code>. This is what I use when I'm already in a terminal and the token is in an environment variable — it never touches the network, so there's nothing to leak.</p>
+
+          <p><strong>When to use it:</strong> server-side debugging, CI logs, anywhere you're already at a prompt.</p>
+
+          <h2>Method 3: Online decoders (jwt.io and friends)</h2>
+
+          <p>jwt.io is the classic: paste the token, read the decoded claims, plus algorithm and expiry at a glance. It decodes client-side in your browser, and Auth0 maintains it — it's a legitimate, well-run tool.</p>
+
+          <p>The honest caveat: <strong>you're still pasting a live token into a third-party page</strong>. Client-side or not, many companies' security policies forbid it, and once it's in your clipboard history and browser tabs, "it never left my machine" is hard to prove. Fine for a throwaway token; not the habit I'd build for production tokens.</p>
+
+          <p><strong>When to use it:</strong> the one-off decode, especially with a token you don't care about.</p>
+
+          <h2>Method 4: A browser extension — zero upload, offline</h2>
+
+          <p>If you decode tokens regularly, keep the decoder inside your browser where the token already is. <a href="/clearjson.html">ClearJSON</a> (I built it, full disclosure) auto-detects <code>eyJ...</code> tokens on any page and shows the decoded header, payload and expiry inline — in the same tab where you're looking at the API response, no copy-paste round-trip. Everything runs locally: <strong>zero network requests, works offline, nothing ever uploaded</strong>.</p>
+
+          <p>It's not the only one: JSONVault Pro also decodes JWTs in its paid tier, and online tools do the job fine as a fallback. What sold me on the extension approach is the workflow — the token is usually sitting right there in the Network tab, and the decoder is one click away, not one tab away.</p>
+
+          <p><strong>When to use it:</strong> the "I decode tokens every week" default. Pro is a one-time $29 — I compared the whole viewer field, <a href="/blog/best-json-viewer-chrome-extensions-2026.html">including the subscription alternatives, in this post</a>.</p>
+
+          <h2>Method 5: Let your AI agent decode it</h2>
+
+          <p>If you work with Claude or Cursor, you don't need a manual step at all: <code>npx clearjson-mcp</code> exposes ClearJSON's format, validate, search, query and diff tools to your agent. Ask "what's in this token, when does it expire, and what changed between these two?" and the agent answers without you touching a website. The extension's JWT auto-decode covers the token itself; the MCP server covers the agent side.</p>
+
+          <p><strong>When to use it:</strong> you're already talking to an AI agent — which, in 2026, is most debugging sessions.</p>
+
+          <h2>The comparison</h2>
+
+          <table>
+            <thead>
+              <tr><th>Method</th><th>Effort</th><th>Token leaves your machine?</th><th>Offline</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>By hand / terminal</td><td>Medium</td><td>No</td><td>Yes</td><td>Free</td></tr>
+              <tr><td>jwt.io / online</td><td>Low</td><td>Enters a third-party page</td><td>No</td><td>Free</td></tr>
+              <tr><td>Browser extension</td><td>Lowest</td><td>No</td><td>Yes</td><td>Free / $29 lifetime</td></tr>
+              <tr><td>AI agent (MCP)</td><td>None</td><td>No</td><td>Agent-dependent</td><td>Free + Pro tools</td></tr>
+            </tbody>
+          </table>
+
+          <h2>The security gotcha most tutorials skip</h2>
+
+          <p>Every time you paste a token into an online decoder, you're sharing whatever the claims contain — email addresses, user IDs, roles, tenant names, sometimes more. And two details make this worse than it sounds:</p>
+
+          <ul>
+            <li><strong>Expired tokens are still readable — and often still accepted.</strong> Many backends allow a clock-skew window (up to several minutes) around <code>exp</code>. "It expired, so it's safe to share" is not a safe assumption.</li>
+            <li><strong>Tokens end up in logs.</strong> The token you pasted into a chat, a support ticket, or a bug report has a half-life that's longer than you think.</li>
+          </ul>
+
+          <p>The rule I use: <strong>if I'd be embarrassed to see the token's claims in a public issue tracker, I decode it locally.</strong></p>
+
+          <h2>JWT claims quick reference</h2>
+
+          <table>
+            <thead>
+              <tr><th>Claim</th><th>Meaning</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>iss</code></td><td>Issuer — who created the token</td></tr>
+              <tr><td><code>sub</code></td><td>Subject — who the token is about (usually a user ID)</td></tr>
+              <tr><td><code>aud</code></td><td>Audience — which service(s) accept it</td></tr>
+              <tr><td><code>exp</code></td><td>Expiry — Unix timestamp, after which it should be rejected</td></tr>
+              <tr><td><code>nbf</code></td><td>Not-before — Unix timestamp, before which it should be rejected</td></tr>
+              <tr><td><code>iat</code></td><td>Issued-at — when the token was created</td></tr>
+              <tr><td><code>jti</code></td><td>JWT ID — a unique identifier, used for revocation lists</td></tr>
+            </tbody>
+          </table>
+
+          <h2>FAQ</h2>
+
+          <p><strong>Do I need the secret to decode a JWT?</strong> No. Decoding is just base64. <em>Verifying</em> the signature is different — that needs the shared secret (HS256) or the public key (RS256/ES256).</p>
+
+          <p><strong>Is jwt.io safe?</strong> It decodes client-side and is maintained by Auth0 — reputable. The risk isn't the site, it's the habit of pasting live tokens into third-party pages at all.</p>
+
+          <p><strong>Can I decode an expired JWT?</strong> Yes — decoding shows all claims including <code>exp</code>. It doesn't validate anything; that's the server's job.</p>
+
+          <p><strong>If anyone can decode the payload, what's the signature for?</strong> Tamper-proofing: change even one character of the payload and the signature no longer matches.</p>
+
+          <h2>The verdict</h2>
+
+          <p>One-off decode with a disposable token: jwt.io, honestly. Everything else: keep the token where it is and decode it locally — in the terminal for the server-side work, in your browser for the daily debugging, and through your AI agent when you're already talking to one. That's the setup that never has a "I pasted the prod token into a random website" story to explain.</p>
+
+          <div class="cta-box">
+            <strong>Get ClearJSON:</strong>
+            <p><a href="https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk" class="btn btn-primary" target="_blank" rel="noopener">Install on Chrome Web Store</a></p>
+            <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-3);">
+              Also available as an <a href="https://www.npmjs.com/package/clearjson-mcp">MCP server for Claude Code</a> and on <a href="https://github.com/wayknow/clearjson">GitHub</a>.
+            </p>
+          </div>
+
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-8);">
+            <em>This post is about my experience building ClearJSON. I also maintain <a href="/snapmark.html">SnapMark</a> (screenshot + annotation), <a href="/csspick.html">CSSPick</a> (CSS inspector) and <a href="/crumbkit.html">CrumbKit</a> (cookie editor) — all privacy-first, all local processing, all one-time purchase or free.</em>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="dot"></span> WayKnow
+        </a>
+        <p>Privacy-first browser tools.<br>100% local processing, zero data uploads, no sign-up required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/snapmark.html">SnapMark</a></li>
+          <li><a href="/clearjson.html">ClearJSON</a></li>
+          <li><a href="/crumbkit.html">CrumbKit</a></li>
+          <li><a href="/csspick.html">CSSPick</a></li>
+          <li><a href="/colorpeek.html">ColorPeek</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/snapmark-privacy.html">SnapMark Privacy</a></li>
+          <li><a href="/snapmark-terms.html">SnapMark Terms</a></li>
+          <li><a href="/snapmark-refund.html">SnapMark Refund</a></li>
+          <li><a href="/clearjson-privacy.html">ClearJSON Privacy</a></li>
+          <li><a href="/clearjson-terms.html">ClearJSON Terms</a></li>
+          <li><a href="/clearjson-refund.html">ClearJSON Refund</a></li>
+          <li><a href="/crumbkit-privacy.html">CrumbKit Privacy</a></li>
+          <li><a href="/crumbkit-terms.html">CrumbKit Terms</a></li>
+          <li><a href="/csspick-privacy.html">CSSPick Privacy</a></li>
+          <li><a href="/csspick-terms.html">CSSPick Terms</a></li>
+          <li><a href="/csspick-refund.html">CSSPick Refund</a></li>
+          <li><a href="/colorpeek-privacy.html">ColorPeek Privacy</a></li>
+          <li><a href="/colorpeek-terms.html">ColorPeek Terms</a></li>
+          <li><a href="/colorpeek-refund.html">ColorPeek Refund</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> WayKnow. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
