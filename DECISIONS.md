@@ -647,3 +647,19 @@
 **Why**: Every product launch gets a blog post (pattern: snapmark, crumbkit, colorpeek, clearjson). Drives organic search traffic from "CSS Scan alternative" and "CSS inspector" queries.
 
 **Impact**: `blog/csspick-css-inspector.html` (new), `blog.html` (card added at top), `sitemap.xml` (+1 URL), STATUS/README/CLAUDE.md (5→6 posts).
+
+---
+
+## 41. CSSPick CWS Approved (2026-08-12)
+
+**Decision**: CSSPick v0.2.0 approved on Chrome Web Store. Replaced all "Coming Soon" placeholders with the real CWS link.
+
+**Changes**:
+
+1. **Product page** (`csspick.html`): Hero "Coming Soon on Chrome Web Store" (disabled span) → "Install from Chrome Web Store" (btn-primary, real link `kadcnmgmnjnjcggfbphjnbndkoadkghj`). Free pricing card "Coming Soon — Install Free" → "Install Free" (btn-outline).
+2. **Homepage** (`index.html`): CSSPick card button "Learn More →" → "Install Free →" (CWS link, matching other extension cards).
+3. **STATUS.md**: CWS submitted → approved.
+
+**Why**: Standard flow — page placeholders go live once the store listing is approved. CSSPick is now fully live: CWS install, Creem checkout, license server.
+
+**Impact**: 3 files modified (`csspick.html`, `index.html`, `STATUS.md`). DECISIONS.md updated for tracking.
