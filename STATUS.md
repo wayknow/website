@@ -83,7 +83,7 @@
 |------|:------:|-------|
 | 获客策略转向 | ✅ | 放弃 Reddit/Show HN/CWS 社区 launch（新账号结构性不可行）→ 只走自有/算法渠道：官网 SEO、CWS 店内搜索、dev.to（canonical 回流）、MCP 生态收录 |
 | 主攻方向（双轨） | ✅ | 轨道 A：ClearJSON SEO 内容引擎（每周 2 篇）；轨道 B：浏览器 AI 产品（自然语言网页数据提取，订阅 $9.99-29.99/月）。Mac 本地 AI 工具降级为 SEO 起量后的产品线扩展 |
-| 博客发布管道 | ✅ | `blog-template.html` + 检查清单（部署清单存于 `project-survey/website/`）。流程：本地 → git push → 服务器 pull → GSC 收录 |
+| 博客发布管道 | ✅ | 模板存于 `project-survey/blog-template.html`（写作参考）；网页改 `wayknow/` 仓库，流程：git push → 服务器 pull → GSC 收录 |
 | 博客事实审计 | ✅ | 真实 HN 链接（item?id=47721946）、时间线（early 2026）、JSONVault Pro 竞品事实、竞品名统一 JSON Pretty Pro；两篇文章互链闭环 |
 | dev.to canonical 回流 | ✅ | 5 篇 dev.to 文章 canonical 全部指回官网对应文章（API 验证） |
 | 数据基线（2026-08-12） | ✅ | ClearJSON 安装 ~51；博客 8 篇；GSC 已注册+提交 sitemap；30 天检查点：第 3 个月 GSC 长尾词 ≥10 个进前 50，第 6 个月 ClearJSON 月安装 ≥500 或博客月自然访问 ≥2000 |
