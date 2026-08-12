@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I tested the JSON viewer field — 5 free open-source replacements, the most popular free option, and the only paid one — on a 47MB file. Honest comparison with real results.">
+  <title>Best JSON Viewer Chrome Extensions in 2026 — Tested &amp; Compared</title>
+  <link rel="canonical" href="https://wayknow.tech/blog/best-json-viewer-chrome-extensions-2026.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Best JSON Viewer Chrome Extensions in 2026 — Tested &amp; Compared">
+  <meta property="og:description" content="I tested the JSON viewer field on a 47MB file. Honest comparison: large files, privacy, JWT decode, price.">
+  <meta property="og:url" content="https://wayknow.tech/blog/best-json-viewer-chrome-extensions-2026.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="WayKnow">
+  <meta property="og:image" content="https://wayknow.tech/assets/wayknow-logo.svg">
+  <meta property="article:published_time" content="2026-08-12">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best JSON Viewer Chrome Extensions in 2026 — Tested &amp; Compared">
+  <meta name="twitter:description" content="I tested the JSON viewer field on a 47MB file. Honest comparison: large files, privacy, JWT decode, price.">
+  <meta name="twitter:image" content="https://wayknow.tech/assets/wayknow-logo.svg">
+  <link rel="icon" type="image/svg+xml" href="/assets/wayknow-logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Best JSON Viewer Chrome Extensions in 2026 — Tested & Compared",
+    "datePublished": "2026-08-12",
+    "author": {"@type": "Person", "name": "wayknow"},
+    "description": "I tested the JSON viewer field — free open-source replacements, the most popular free option, and the only paid one — on a 47MB file."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <span class="dot"></span> WayKnow
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/snapmark.html">SnapMark</a></li>
+        <li><a href="/clearjson.html">ClearJSON</a></li>
+        <li><a href="/crumbkit.html">CrumbKit</a></li>
+        <li><a href="/csspick.html">CSSPick</a></li>
+        <li><a href="/colorpeek.html">ColorPeek</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <a href="/blog.html" style="color: var(--color-text-muted); font-size: var(--text-sm);">← Back to Blog</a>
+        <h1 style="margin-top: var(--space-4);">Best JSON Viewer Chrome Extensions in 2026 — Tested &amp; Compared</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <article class="blog-article">
+          <p class="article-meta">Published August 12, 2026 · 7 min read</p>
+
+          <p>Every developer reads JSON daily, yet most browsers still dump it as an unreadable wall of text. JSON viewer extensions have existed for a decade — but the landscape changed in early 2026, when the most popular one (2M users) was sold, closed-sourced, and started injecting ads and tracking.</p>
+
+          <p>So I installed and tested the current field on the same three real-world files: a <strong>47MB API response</strong>, a 200KB settings file, and a JWT token. Here's what I found — including where my own extension loses.</p>
+
+          <h2>How I tested</h2>
+
+          <ul>
+            <li><strong>Large files</strong>: the 47MB API dump — measured load time, scroll smoothness, and whether Chrome froze</li>
+            <li><strong>Privacy</strong>: opened DevTools → Network tab and watched for requests; checked each manifest's permissions; read each privacy policy</li>
+            <li><strong>Features</strong>: tree view, regex search, JWT decode, export formats, themes, offline use</li>
+            <li><strong>Price</strong>: total cost of ownership over 2 years — subscription vs. lifetime</li>
+          </ul>
+
+          <p>Full disclosure up front: I built one of these extensions (ClearJSON). I'll be explicit about where mine wins and where it loses.</p>
+
+          <h2>TL;DR — the comparison table</h2>
+
+          <table>
+            <thead>
+              <tr><th>Extension</th><th>Best for</th><th>Large files</th><th>Privacy</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>ClearJSON</strong> (mine)</td><td>Privacy + large files + AI agents</td><td>100MB+ (virtual scroll)</td><td>Zero network requests</td><td>Free / $29 lifetime</td></tr>
+              <tr><td>JSON Formatter Pro</td><td>Part of a paid 20-extension suite</td><td>Untested by me</td><td>Claims local processing</td><td>Free tier / paid</td></tr>
+              <tr><td>JSONVault Pro</td><td>Second post-scandal option</td><td>Claims 500MB (untested by me)</td><td>Zero tracking claimed</td><td>Free tier / Pro IAP</td></tr>
+              <tr><td>JSON Viewer Pro</td><td>The popular free default</td><td>Handled the 47MB file</td><td>Closed source</td><td>Free</td></tr>
+              <tr><td>Free replacements ×5 (TreeJSON, JSON Alexander, arnav-kr fork, Just JSON, JSON Pretty Pro)</td><td>Free, basic viewing</td><td>Choke on large files</td><td>Local, but unmaintained risk</td><td>Free</td></tr>
+            </tbody>
+          </table>
+
+          <h2>The scandal that changed everything</h2>
+
+          <p>In early 2026, the JSON Formatter extension — 2M users, a decade of open-source history — was sold to a new team. They closed the source, injected GiveFreely ads, and added MaxMind GeoIP tracking. A <a href="https://news.ycombinator.com/item?id=47721946">Hacker News thread</a> (289 points) exposed it, and two million users went hunting for a replacement. I wrote the <a href="/blog/json-formatter-alternatives.html">full story here</a>.</p>
+
+          <p>That's the backdrop for every extension below. Trust isn't a feature anymore — it's the default requirement.</p>
+
+          <h2>The contenders, honestly reviewed</h2>
+
+          <h3>1. ClearJSON — best for privacy, large files &amp; AI agents</h3>
+
+          <p>Built after the scandal, ClearJSON is local-first by design: <strong>zero network requests, even in the free version</strong> — verified in DevTools' Network tab. No accounts, no telemetry, no ads.</p>
+
+          <p>Where it genuinely wins:</p>
+          <ul>
+            <li><strong>100MB+ files</strong> via virtual scrolling and a Web Worker parser. I opened the 47MB test file and it expanded without freezing — scrolling stayed smooth.</li>
+            <li><strong>JWT auto-decode</strong> (Pro) — paste any <code>eyJ...</code> token, see header, payload and expiry inline</li>
+            <li><strong>Regex search</strong> (Pro) — search and highlight across large files without the browser choking</li>
+            <li><strong>MCP server for AI agents</strong> (Pro) — <code>npx clearjson-mcp</code> lets Claude and Cursor format, validate, search and diff JSON directly. No other viewer in this list can be called by an AI agent</li>
+          </ul>
+
+          <p>Where it loses: the free tier is intentionally simpler than a full JSON IDE — no graph view, no inline editing. And I'm a solo developer, so roadmap speed depends on me. Pro is a one-time $29 purchase, no subscription.</p>
+
+          <h3>2. JSON Formatter Pro — the subscription-suite one</h3>
+
+          <p>Not to be confused with the original JSON Formatter: this is a different extension, part of <strong>Zovo's suite of 20 Chrome extensions under one paid plan</strong>. It does formatting, validation with line numbers, tree view and minifying locally, with a free tier and paid features (CSV export, JSON diff, schema validation, YAML conversion). Check the store listing for current pricing — it's sold as monthly or lifetime suite plans.</p>
+
+          <p>The interesting part: its positioning is almost identical to mine — <em>"privacy-safe, 100% local, don't paste sensitive API responses into random websites."</em> The difference is the business model: one subscription, 20 extensions. If you already use several tools from the same suite, that math can work. For a single JSON viewer, compare it against a one-time $29 purchase over two years.</p>
+
+          <h3>3. JSON Viewer Pro — the popular free default</h3>
+
+          <p>The safest default pick: solid tree view, JSONPath with autocomplete, chart view. It handled my 47MB test file without falling over. It's closed source, and as an ad-free free tool its long-term funding is the same open question that got the original JSON Formatter sold. Fine for everyday API reading; not where I'd put my debugging workflow for huge logs.</p>
+
+          <h3>4. JSONVault Pro — the other post-scandal player</h3>
+
+          <p>Worth calling out because it shares my origin story: JSONVault Pro was built by a French developer (Valentin Conan) as a direct response to the same GiveFreely incident — same privacy-first pitch, zero tracking, everything local. It runs a free tier plus in-app purchases (JWT decode, schema validation, 21 themes) and claims virtual rendering for files up to 500MB.</p>
+
+          <p>Honest assessment: I haven't stress-tested the 500MB claim myself, and it has three store ratings so far. But it's a legitimate option if you want a second post-scandal player — the one thing it doesn't do is plug into AI agents.</p>
+
+          <h3>5. The five free replacements</h3>
+
+          <p>Within a year of the scandal, five open-source replacements appeared: <strong>TreeJSON, JSON Alexander (Wes Bos), an arnav-kr JSON Formatter fork, Just JSON, and JSON Pretty Pro</strong>. All of them are personal projects. All of them are free. None of them have a business model.</p>
+
+          <p>And that's the real problem. In my tests, <strong>all of them choked on the 47MB file</strong> — and without revenue, the maintainer eventually burns out, moves on, or — as we just saw — sells to someone who will monetize your data. The question isn't "is there a free alternative?" — there are five. The question is <strong>"will it still be maintained in 3 years?"</strong></p>
+
+          <h2>So which one should you use?</h2>
+
+          <ul>
+            <li><strong>You debug large API responses daily</strong> → ClearJSON (100MB, no freeze)</li>
+            <li><strong>You handle JWTs or need regex search</strong> → ClearJSON (Pro)</li>
+            <li><strong>You want zero subscriptions</strong> → ClearJSON, or any of the free options if you only read small JSON</li>
+            <li><strong>You already pay for Zovo's suite</strong> → JSON Formatter Pro is already in it</li>
+            <li><strong>You want a second post-scandal option</strong> → JSONVault Pro (free tier + in-app purchases)</li>
+            <li><strong>You want your AI tools to read JSON too</strong> → ClearJSON — the only one with an MCP server</li>
+          </ul>
+
+          <h2>FAQ</h2>
+
+          <p><strong>Are JSON viewer extensions safe to install?</strong> Check the permissions: a viewer only needs <code>storage</code> and <code>tabs</code> at most. Any viewer asking for <code>webRequest</code> or broad host access is a red flag.</p>
+
+          <p><strong>Why would I pay for a JSON viewer?</strong> Large files, JWT decoding, regex search, exports. If you only read small JSON, free tools are fine — the paid pick only matters at scale.</p>
+
+          <p><strong>Can my AI coding tools use these viewers?</strong> Almost none — ClearJSON ships an MCP server (<code>npx clearjson-mcp</code>) that formats and validates JSON inside Claude, Cursor, and other MCP-compatible agents.</p>
+
+          <h2>The honest verdict</h2>
+
+          <p>In 2026, you can get a JSON viewer for free, but the free ones choke on large files and have no business model — which is exactly how betrayals happen. The commercial ones tie you to a subscription suite or in-app purchases. ClearJSON is the only option that handles 100MB+ files, decodes JWTs, and plugs into your AI tools — for a one-time $29, with zero server costs and therefore zero incentive to ever sell your data.</p>
+
+          <div class="cta-box">
+            <strong>Get ClearJSON:</strong>
+            <p><a href="https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk" class="btn btn-primary" target="_blank" rel="noopener">Install on Chrome Web Store</a></p>
+            <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-3);">
+              Also available as an <a href="https://www.npmjs.com/package/clearjson-mcp">MCP server for Claude Code</a> and on <a href="https://github.com/wayknow/clearjson">GitHub</a>.
+            </p>
+          </div>
+
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-8);">
+            <em>This post is about my experience building ClearJSON. I also maintain <a href="/snapmark.html">SnapMark</a> (screenshot + annotation), <a href="/csspick.html">CSSPick</a> (CSS inspector) and <a href="/crumbkit.html">CrumbKit</a> (cookie editor) — all privacy-first, all local processing, all one-time purchase or free.</em>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="dot"></span> WayKnow
+        </a>
+        <p>Privacy-first browser tools.<br>100% local processing, zero data uploads, no sign-up required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/snapmark.html">SnapMark</a></li>
+          <li><a href="/clearjson.html">ClearJSON</a></li>
+          <li><a href="/crumbkit.html">CrumbKit</a></li>
+          <li><a href="/csspick.html">CSSPick</a></li>
+          <li><a href="/colorpeek.html">ColorPeek</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/snapmark-privacy.html">SnapMark Privacy</a></li>
+          <li><a href="/snapmark-terms.html">SnapMark Terms</a></li>
+          <li><a href="/snapmark-refund.html">SnapMark Refund</a></li>
+          <li><a href="/clearjson-privacy.html">ClearJSON Privacy</a></li>
+          <li><a href="/clearjson-terms.html">ClearJSON Terms</a></li>
+          <li><a href="/clearjson-refund.html">ClearJSON Refund</a></li>
+          <li><a href="/crumbkit-privacy.html">CrumbKit Privacy</a></li>
+          <li><a href="/crumbkit-terms.html">CrumbKit Terms</a></li>
+          <li><a href="/csspick-privacy.html">CSSPick Privacy</a></li>
+          <li><a href="/csspick-terms.html">CSSPick Terms</a></li>
+          <li><a href="/csspick-refund.html">CSSPick Refund</a></li>
+          <li><a href="/colorpeek-privacy.html">ColorPeek Privacy</a></li>
+          <li><a href="/colorpeek-terms.html">ColorPeek Terms</a></li>
+          <li><a href="/colorpeek-refund.html">ColorPeek Refund</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> WayKnow. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
