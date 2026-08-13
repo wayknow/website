@@ -47,7 +47,8 @@ wayknow/
 │   ├── csspick-css-inspector.html
 │   ├── best-json-viewer-chrome-extensions-2026.html
 │   ├── how-to-decode-jwt.html
-│   └── editthiscookie-alternatives.html
+│   ├── editthiscookie-alternatives.html
+│   └── css-scan-alternatives.html
 ├── css/style.css               # ~1200 行 CSS 设计系统
 ├── js/main.js                  # 导航高亮、移动端菜单、FAQ accordion、平滑滚动
 ├── assets/                     # 产品图标
