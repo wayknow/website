@@ -34,7 +34,7 @@
 | Blog: CrumbKit Cookie Editor | ✅ | EditThisCookie story → CrumbKit. Feature list synced to v1.2.0 2026-08-07 (6 export formats, batch ops, profiles, auto-cleanup, interceptor, CHIPS, side panel; removed outdated "1,700 lines" claim). `blog/crumbkit-cookie-editor.html` |
 | Blog: ColorPeek Mac Picker | ✅ | Product launch → ColorPeek. `blog/colorpeek-mac-color-picker.html` |
 | Blog: Local-First Matters | ✅ | Brand philosophy → all products. `blog/local-first-matters.html` |
-| Blog: CSSPick CSS Inspector | ✅ | Competitive comparison → CSSPick. CSS Scan $95 price critique, DevTools slowness, 7 groups, $19 lifetime. 2026-08-11. `blog/csspick-css-inspector.html` |
+| Blog: CSSPick CSS Inspector | ✅ | Competitive comparison → CSSPick. CSS Scan $120 list ($69 promo) price critique, DevTools slowness, 7 groups, $19 lifetime. Price claims verified against getcssscan.com 2026-08-13 (was incorrectly $95). 2026-08-11. `blog/csspick-css-inspector.html` |
 | Blog: Best JSON Viewer Chrome Extensions | ✅ | Competitive comparison → ClearJSON. 8 extensions tested on 47MB file, TL;DR table, FAQ, MCP angle. 2026-08-12. `blog/best-json-viewer-chrome-extensions-2026.html` |
 | Blog: How to Decode a JWT | ✅ | Tutorial → ClearJSON Pro (JWT auto-decode) + MCP. 5 methods (hand/terminal/jwt.io/extension/AI agent), claims reference, security gotcha. 2026-08-12. `blog/how-to-decode-jwt.html` |
 | Blog: EditThisCookie Alternatives | ✅ | Competitive comparison → CrumbKit. MV2 removal story, malicious clone warning, 4 options (DevTools/CookieMate/CookieJar/CrumbKit), migration guide, security checklist. 2026-08-13. `blog/editthiscookie-alternatives.html` |

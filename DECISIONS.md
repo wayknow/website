@@ -609,7 +609,7 @@
 
 **Changes**:
 
-1. **Product page** (`csspick.html`): Full product page in website design system — hero (Buy Pro $19 via Creem `prod_2WIFmjutxgl3tYNbQoFgHu`, "Coming Soon" for CWS since not yet published), 8 feature cards (one-click inspect, hover highlight, 7 CSS groups, single-property copy free, Copy All CSS / Copy Selector Pro, minimal permissions, 100% local), pricing (Free / Pro $19 lifetime), comparison table (vs CSS Scan $95 / UI-Ray $39 / free tools), privacy by design, FAQ (with `id="faq"` anchor), CTA.
+1. **Product page** (`csspick.html`): Full product page in website design system — hero (Buy Pro $19 via Creem `prod_2WIFmjutxgl3tYNbQoFgHu`, "Coming Soon" for CWS since not yet published), 8 feature cards (one-click inspect, hover highlight, 7 CSS groups, single-property copy free, Copy All CSS / Copy Selector Pro, minimal permissions, 100% local), pricing (Free / Pro $19 lifetime), comparison table (vs CSS Scan $120 / UI-Ray $39 / free tools), privacy by design, FAQ (with `id="faq"` anchor), CTA.
 
 2. **Legal pages** (`csspick-privacy.html`, `csspick-terms.html`, `csspick-refund.html`): Converted the CWS standalone light-theme versions (added by another agent, commit 98b581e) to the website's `policy-content` layout with site header/footer.
 
@@ -633,14 +633,14 @@
 
 ## 40. CSSPick Blog Post (2026-08-11)
 
-**Decision**: Published the 6th blog post — "CSS Inspection Shouldn't Cost $95 — Meet CSSPick" (`blog/csspick-css-inspector.html`).
+**Decision**: Published the 6th blog post — "CSS Inspection Shouldn't Cost $120 — Meet CSSPick" (`blog/csspick-css-inspector.html`).
 
 **Content**: Competitive comparison angle, matching the blog series pattern:
-- CSS Scan $95 price critique (3.5★ rating, $900 "Pro" tier)
+- CSS Scan $120 list price critique ($69 promo; price verified against getcssscan.com 2026-08-13)
 - DevTools slowness (30s vs 3s per lookup)
 - Abandonware free alternatives (biggest has 345 users)
 - CSSPick features: hover inspect, 7 CSS groups, single-property copy (free), Copy All CSS / Copy Selector (Pro)
-- Comparison table (CSSPick $19 vs CSS Scan $95 vs UI-Ray $39)
+- Comparison table (CSSPick $19 vs CSS Scan $120 vs UI-Ray $39)
 - Minimal permissions story (3 permissions, no host permissions)
 - SnapMark/ClearJSON reuse story
 
