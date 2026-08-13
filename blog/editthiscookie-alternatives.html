@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EditThisCookie was removed from the Chrome Web Store in late 2024 — and a malicious clone took its name. Here are the safe, MV3-native alternatives in 2026, from built-in DevTools to full cookie managers.">
+  <title>EditThisCookie Alternatives: What to Use After It Was Removed (2026)</title>
+  <link rel="canonical" href="https://wayknow.tech/blog/editthiscookie-alternatives.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="EditThisCookie Alternatives: What to Use After It Was Removed (2026)">
+  <meta property="og:description" content="EditThisCookie was removed in late 2024 — and a malicious clone took its name. Safe MV3-native alternatives in 2026, from built-in DevTools to full cookie managers.">
+  <meta property="og:url" content="https://wayknow.tech/blog/editthiscookie-alternatives.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="WayKnow">
+  <meta property="og:image" content="https://wayknow.tech/assets/wayknow-logo.svg">
+  <meta property="article:published_time" content="2026-08-13">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EditThisCookie Alternatives: What to Use After It Was Removed (2026)">
+  <meta name="twitter:description" content="EditThisCookie was removed in late 2024 — and a malicious clone took its name. Safe MV3-native alternatives in 2026.">
+  <meta name="twitter:image" content="https://wayknow.tech/assets/wayknow-logo.svg">
+  <link rel="icon" type="image/svg+xml" href="/assets/wayknow-logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "EditThisCookie Alternatives: What to Use After It Was Removed (2026)",
+    "datePublished": "2026-08-13",
+    "author": {"@type": "Person", "name": "wayknow"},
+    "description": "EditThisCookie was removed from the Chrome Web Store in late 2024 — and a malicious clone took its name. Safe, MV3-native alternatives in 2026."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <span class="dot"></span> WayKnow
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/snapmark.html">SnapMark</a></li>
+        <li><a href="/clearjson.html">ClearJSON</a></li>
+        <li><a href="/crumbkit.html">CrumbKit</a></li>
+        <li><a href="/csspick.html">CSSPick</a></li>
+        <li><a href="/colorpeek.html">ColorPeek</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <a href="/blog.html" style="color: var(--color-text-muted); font-size: var(--text-sm);">← Back to Blog</a>
+        <h1 style="margin-top: var(--space-4);">EditThisCookie Alternatives: What to Use After It Was Removed (2026)</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <article class="blog-article">
+          <p class="article-meta">Published August 13, 2026 · 6 min read</p>
+
+          <p>If you're here, you already know: <strong>EditThisCookie is gone.</strong> It was removed from the Chrome Web Store in late 2024 — the victim of Chrome's Manifest V3 migration — and millions of developers lost their daily cookie editor overnight.</p>
+
+          <p>But here's the part that should worry you more: <strong>a malicious clone took its name.</strong> An extension called "EditThisCookie®" appeared on the store, was downloaded by tens of thousands of users, and was confirmed by security researchers to be malware — it injected ads, attempted phishing, and could steal sensitive data. It's since been removed, but the search for the old tool is exactly where people get burned.</p>
+
+          <p>So: what do you use now? I've tested every real option. Full disclosure — I built one of them (CrumbKit), and I'll be explicit about where it wins and loses.</p>
+
+          <h2>Why EditThisCookie stopped working</h2>
+
+          <p>Chrome retired the Manifest V2 (MV2) extension platform in favor of MV3. EditThisCookie never migrated — its background scripts and extension model were incompatible with MV3's service workers — so it stopped receiving updates, and for many users stopped loading entirely. The removal from the store was the final step.</p>
+
+          <p>The lesson from that transition: an old, unmaintained cookie editor is a liability, and cookie managers are a target for clones because cookies are <em>exactly</em> what session hijackers want. Whatever you install now should be <strong>MV3-native, actively maintained, and ideally open source.</strong></p>
+
+          <h2>The options, compared</h2>
+
+          <table>
+            <thead>
+              <tr><th>Tool</th><th>Best for</th><th>Open source</th><th>Import old backups</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Chrome DevTools</strong> (built-in)</td><td>Occasional edits</td><td>—</td><td>No</td><td>Free</td></tr>
+              <tr><td><strong>CookieMate</strong></td><td>Simple, trustworthy drop-in</td><td>MIT</td><td>EditThisCookie JSON</td><td>Free</td></tr>
+              <tr><td><strong>CookieJar</strong></td><td>Feature-rich with a paid tier</td><td>—</td><td>Via JSON</td><td>Free + Pro</td></tr>
+              <tr><td><strong>CrumbKit</strong> (mine)</td><td>Power features, fully free</td><td>MIT</td><td>JSON / Netscape</td><td>Free</td></tr>
+            </tbody>
+          </table>
+
+          <h3>1. Chrome DevTools — the zero-install baseline</h3>
+
+          <p>Right-click → Inspect → <strong>Application</strong> tab → <strong>Cookies</strong>. Double-click any field to edit it. No install, no risk, always works.</p>
+
+          <p>The limits: no search across domains, no filtering, no export/import, and no way to see which cookie was just set by the server. Fine for the occasional fix; painful if you edit cookies daily.</p>
+
+          <h3>2. CookieMate — the open-source drop-in</h3>
+
+          <p>An MV3-native, MIT-licensed replacement with the feature that matters most for you specifically: <strong>it imports EditThisCookie's JSON backups directly</strong>. If you still have an old export from EditThisCookie, this is the smoothest migration path. View, edit, add, bulk-delete, and wipe cookies, with light/dark themes and no telemetry.</p>
+
+          <p>The catch: it's a straightforward editor — no scheduled cleanup, no server-side interceptor, no privacy scoring.</p>
+
+          <h3>3. CookieJar — the feature-rich contender</h3>
+
+          <p>A modern MV3 cookie manager built as a direct EditThisCookie replacement: auto-classifies cookies into categories, scores each site's privacy, manages profiles (dev vs. prod cookie sets), exports in multiple formats, and handles CHIPS partitioned cookies. It has a free tier with a paid Pro tier.</p>
+
+          <p>Honestly a solid tool — the closest thing to "EditThisCookie with a 2026 paint job." The paid tier is where it differs from the free options below.</p>
+
+          <h3>4. CrumbKit — the fully free power tool</h3>
+
+          <p>I built CrumbKit after the removal, and it's my honest take on what a cookie editor should be in 2026: <strong>everything free, open source (MIT), zero network requests, MV3-native.</strong></p>
+
+          <p>Where it genuinely beats the field:</p>
+          <ul>
+            <li><strong>Set-Cookie interceptor</strong> — watch every <code>Set-Cookie</code> header a server sends and add it to your session with one click. No other editor in this list shows you <em>which</em> cookie was just set and by <em>which</em> response.</li>
+            <li><strong>Scheduled auto-cleanup</strong> — purge tracking cookies by domain, category, or age, hourly or daily.</li>
+            <li><strong>6 export formats</strong> — JSON, Netscape (curl/wget), cURL command, CSV, Puppeteer script, and Set-Cookie headers. If you script against cookies, this is the differentiator.</li>
+            <li><strong>Batch edit, profiles, privacy score, undo (50 steps), whitelist protection</strong>, CHIPS partitioned-cookie support, and real-time cookie search.</li>
+          </ul>
+
+          <p>Where it loses: it's younger than the alternatives (I'm a solo maintainer), and if you only need to change a cookie value once a week, DevTools is genuinely enough.</p>
+
+          <h2>Migrating from EditThisCookie</h2>
+
+          <p>If you still have an old backup: <strong>CookieMate imports EditThisCookie's JSON format directly</strong>, and CrumbKit imports JSON and Netscape formats — either way your domains, paths, and flags survive the move. If you don't have a backup, re-login to your sites; there's no way to resurrect cookies Chrome already discarded.</p>
+
+          <h2>Which one should you use?</h2>
+
+          <ul>
+            <li><strong>You edit a cookie once a month</strong> → DevTools, nothing to install</li>
+            <li><strong>You want your old backup to just work</strong> → CookieMate</li>
+            <li><strong>You want maximum features and a free tool</strong> → CrumbKit</li>
+            <li><strong>You're fine paying for a maintained Pro tool</strong> → CookieJar</li>
+            <li><strong>You debug sessions professionally</strong> → CrumbKit, for the Set-Cookie interceptor alone</li>
+          </ul>
+
+          <h2>Security checklist before you install anything</h2>
+
+          <ul>
+            <li><strong>Check the store name carefully.</strong> The malware clone used "EditThisCookie®" — a legitimate editor won't brand itself with the name of the dead original.</li>
+            <li><strong>Prefer open source.</strong> A cookie editor has access to your sessions on every site; you should be able to audit what it does. (CrumbKit and CookieMate are both MIT.)</li>
+            <li><strong>Watch the permissions.</strong> A cookie editor legitimately needs <code>cookies</code> — anything asking for it <em>and</em> broad host permissions without a reason is a red flag.</li>
+            <li><strong>Check maintenance recency.</strong> The MV2 graveyard is full of tools that were great in 2021 and abandoned since.</li>
+          </ul>
+
+          <h2>FAQ</h2>
+
+          <p><strong>Is EditThisCookie still available anywhere?</strong> The original is gone from the Chrome Web Store. Old copies float around third-party sites — don't install those; that's exactly how the malware spread.</p>
+
+          <p><strong>Can I edit cookies without an extension?</strong> Yes — DevTools' Application tab can edit any cookie, just less efficiently.</p>
+
+          <p><strong>What are CHIPS partitioned cookies?</strong> Chrome's privacy feature that separates third-party cookies per top-level site. A modern cookie editor needs to handle them — both CookieJar and CrumbKit do.</p>
+
+          <p><strong>Why do cookie editors need so many permissions?</strong> Editing <code>cookies</code> is the core — it's inherently powerful. That's why open source and zero-telemetry matter here more than in any other extension category.</p>
+
+          <div class="cta-box">
+            <strong>Get CrumbKit — free, open source:</strong>
+            <p><a href="https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl" class="btn btn-primary" target="_blank" rel="noopener">Install on Chrome Web Store</a></p>
+            <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-3);">
+              MIT licensed on <a href="https://github.com/wayknow/crumbkit">GitHub</a>. Zero network requests, zero tracking, always free.
+            </p>
+          </div>
+
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-8);">
+            <em>This post is about my experience building CrumbKit. I also maintain <a href="/clearjson.html">ClearJSON</a> (JSON viewer), <a href="/snapmark.html">SnapMark</a> (screenshot + annotation) and <a href="/csspick.html">CSSPick</a> (CSS inspector) — all privacy-first, all local processing, all one-time purchase or free.</em>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="dot"></span> WayKnow
+        </a>
+        <p>Privacy-first browser tools.<br>100% local processing, zero data uploads, no sign-up required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/snapmark.html">SnapMark</a></li>
+          <li><a href="/clearjson.html">ClearJSON</a></li>
+          <li><a href="/crumbkit.html">CrumbKit</a></li>
+          <li><a href="/csspick.html">CSSPick</a></li>
+          <li><a href="/colorpeek.html">ColorPeek</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/snapmark-privacy.html">SnapMark Privacy</a></li>
+          <li><a href="/snapmark-terms.html">SnapMark Terms</a></li>
+          <li><a href="/snapmark-refund.html">SnapMark Refund</a></li>
+          <li><a href="/clearjson-privacy.html">ClearJSON Privacy</a></li>
+          <li><a href="/clearjson-terms.html">ClearJSON Terms</a></li>
+          <li><a href="/clearjson-refund.html">ClearJSON Refund</a></li>
+          <li><a href="/crumbkit-privacy.html">CrumbKit Privacy</a></li>
+          <li><a href="/crumbkit-terms.html">CrumbKit Terms</a></li>
+          <li><a href="/csspick-privacy.html">CSSPick Privacy</a></li>
+          <li><a href="/csspick-terms.html">CSSPick Terms</a></li>
+          <li><a href="/csspick-refund.html">CSSPick Refund</a></li>
+          <li><a href="/colorpeek-privacy.html">ColorPeek Privacy</a></li>
+          <li><a href="/colorpeek-terms.html">ColorPeek Terms</a></li>
+          <li><a href="/colorpeek-refund.html">ColorPeek Refund</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> WayKnow. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

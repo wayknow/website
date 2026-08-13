@@ -7,7 +7,7 @@
 - **技术栈**：纯静态 HTML/CSS/JS，零框架，零构建步骤
 - **设计系统**：CSS 自定义属性，深蓝 + teal 暗色主题，768px 响应式断点
 - **部署**：`git push` → 服务器 `git pull`，Tencent Cloud 新加坡 + Cloudflare CDN
-- **当前状态**：30 个页面（含 8 篇博客），5 款产品，SEO 已优化
+- **当前状态**：31 个页面（含 9 篇博客），5 款产品，SEO 已优化
 - **详细状态**：[STATUS.md](STATUS.md)
 - **决策记录**：[DECISIONS.md](DECISIONS.md)
 - **部署指南**：[DEPLOY.md](DEPLOY.md)
