@@ -56,7 +56,8 @@ wayknow/
 │   ├── local-first-matters.html
 │   ├── csspick-css-inspector.html
 │   ├── best-json-viewer-chrome-extensions-2026.html
-│   └── how-to-decode-jwt.html
+│   ├── how-to-decode-jwt.html
+│   └── editthiscookie-alternatives.html
 ├── support.html                 # Support page (contact, FAQ links, refund policy)
 ├── colorpeek.html               # ColorPeek product page (macOS color picker, $19 lifetime)
 ├── colorpeek-privacy.html       # ColorPeek privacy policy
