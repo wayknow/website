@@ -71,6 +71,7 @@ wayknow/
 | ClearJSON | JSON 查看器 | 免费 + $29 终身 | `clearjson.html` | `../clearjson` |
 | CrumbKit | Cookie 编辑器（合规新版） | 完全免费 | `crumbkit.html` | `../crumbkit` |
 | CSSPick | CSS 检查器 | 免费 + $19 终身 | `csspick.html` | `../csspick` |
+| GleanKit | AI 提取工具（透明 AI，外链子域名） | 待定 | `gleankit.wayknow.tech`（外链） | `../gleankit` |
 | ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |
 
 

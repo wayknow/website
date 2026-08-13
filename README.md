@@ -15,6 +15,7 @@ Official website for WayKnow, a collection of privacy-first local tools (Chrome 
 | [CrumbKit](./crumbkit.html) | Cookie editor Chrome extension (privacy-first, MV3 native, v1.2.0 — batch edit, auto-cleanup, interceptor, CHIPS, 6 export formats) | Always Free |
 | [ColorPeek](./colorpeek.html) | macOS color picker for developers (menu bar, 8 formats, Tailwind CSS, SCSS, SwiftUI Color) | Free + $19 lifetime |
 | [CSSPick](./csspick.html) | CSS inspector Chrome extension (hover any element → view/copy computed CSS, 7 groups, 100% local) | Free + $19 lifetime |
+| [GleanKit](https://gleankit.wayknow.tech) | AI extraction tool (transparent AI, separate subdomain, landing page live 2026-08-13, extension MVP in dev) | TBA |
 
 ## Key Design Decisions
 
@@ -78,6 +79,7 @@ wayknow/
 │   ├── crumbkit-logo.png        # CrumbKit logo
 │   ├── colorpeek-logo.png       # ColorPeek logo
 │   ├── csspick-logo.png         # CSSPick logo
+│   ├── gleankit-logo.svg        # GleanKit logo
 │   └── wayknow-logo.svg         # Site favicon
 ├── download/
 │   └── ColorPeek.dmg            # ColorPeek macOS app

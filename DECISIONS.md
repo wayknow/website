@@ -701,3 +701,21 @@
 **Why**: 此前 canonical 全部指向 dev.to 自己，Google 会把 dev.to（高权重）当原文来源，与自己官网抢同一关键词排名。设置 canonical 后权重回流官网，dev.to 只承担分发。
 
 **How**: dev.to 编辑器（齿轮图标/省略号按钮/基础编辑器 front matter 三选一）填入对应官网 URL。已用 API 验证 5 篇全部生效。JSON Viewer 那篇的 "2025" 经查是版本日期（JSON Viewer Pro v7.1 as of October 2025），非时间线错误，无需修改。
+
+---
+
+## 46. GleanKit: AI Tools Umbrella Brand (2026-08-13)
+
+**Decision**: Introduced GleanKit — an AI extraction tool — as a new WayKnow product. Homepage repositioned to "Independent Developer Tools" covering both local-first utilities and transparent AI tools.
+
+**Changes**:
+
+1. **Brand repositioning** (`index.html`): Title/meta → "Independent Developer Tools". Values section rewritten to cover local tools + transparent AI tools (GleanKit umbrella-brand decision).
+2. **Homepage card**: Added GleanKit card in a new third group "AI Tools" (Browser Extensions / macOS Apps / AI Tools). Logo `assets/gleankit-logo.svg`.
+3. **Footer** (all 22 pages): GleanKit link added to Products column (external, `https://gleankit.wayknow.tech`, target=_blank). Not added to nav — external AI product, different category.
+4. **Landing page**: `gleankit.wayknow.tech` (separate repo `../gleankit`, nginx server block + Cloudflare CNAME). Waitlist form → `api.wayknow.tech/subscribe`.
+5. **STATUS.md**: Homepage row + GleanKit landing row added.
+
+**Why**: AI tools are a different trust model than local-first utilities — the umbrella brand distinguishes "zero tracking, everything local" from "transparent AI with disclosed data flow". GleanKit has no site page yet; the subdomain hosts its landing page.
+
+**Impact**: 22 HTML files (footer), `index.html`, `assets/gleankit-logo.svg`. STATUS.md updated; README/CLAUDE.md product tables updated 2026-08-13.
