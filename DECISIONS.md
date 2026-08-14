@@ -719,3 +719,21 @@
 **Why**: AI tools are a different trust model than local-first utilities — the umbrella brand distinguishes "zero tracking, everything local" from "transparent AI with disclosed data flow". GleanKit has no site page yet; the subdomain hosts its landing page.
 
 **Impact**: 22 HTML files (footer), `index.html`, `assets/gleankit-logo.svg`. STATUS.md updated; README/CLAUDE.md product tables updated 2026-08-13.
+
+---
+
+## 47. GleanKit Removed from Homepage (2026-08-14)
+
+**Decision**: Removed GleanKit from the homepage product cards, AI Tools group, and all footers. Product direction under review — may pivot.
+
+**Changes**:
+
+1. **Homepage** (`index.html`): Removed GleanKit card and the AI Tools group label (it was the only AI Tools product). Homepage back to two groups (Browser Extensions / macOS Apps). Title stays "Independent Developer Tools" (covers future products).
+2. **Footers** (22 pages): Removed GleanKit external link from Products column.
+3. **Docs**: STATUS (homepage row + GleanKit landing row marked ⚠️ direction under review), README (product table + logo structure), CLAUDE.md (product line table).
+
+**Kept**: `gleankit/` landing page directory (subdomain still live), `assets/gleankit-logo.svg`, GleanKit landing/privacy/terms pages. Extension repo `../gleankit` untouched (separate owner).
+
+**Why**: Product direction has issues — homepage should not showcase it while the direction is being reworked.
+
+**Impact**: 23 files modified (index.html + 22 footers + docs).

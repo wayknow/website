@@ -7,7 +7,7 @@
 ### Website (32 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
-| Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CrumbKit, CSSPick + ColorPeek + **GleanKit**), three groups (Browser Extensions / macOS Apps / **AI Tools**), shared values, no hero. 2026-08-13: repositioned to "Independent Developer Tools" + GleanKit card (links to gleankit.wayknow.tech) |
+| Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CrumbKit, CSSPick + ColorPeek), two groups (Browser Extensions / macOS Apps), shared values, no hero. 2026-08-13: repositioned to "Independent Developer Tools". GleanKit card removed 2026-08-14 (direction change — not a homepage product) |
 | SnapMark product | ✅ | v1.4.0: 7 capture modes (incl. Clean & Capture, Batch Capture), 8 annotation tools, text tool with IME (Chinese/Japanese/Korean) + 17 fonts + 9 sizes. CWS + Edge store links, pricing (Free + $39 lifetime, free undo now 100 steps), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark`. Page synced from extension 2026-08-03 |
 | ClearJSON product | ✅ | v1.1.4: features, MCP server section (10 tools, `npx -y clearjson-mcp`), pricing (Free + $29 lifetime), comparison table (incl. JSON Pretty Pro), FAQ. CWS + Edge store links, both stores live. Glama score A/A/B. npm package published. |
 | CrumbKit product | ✅ | v1.2.0: batch operations (multi-delete + bulk-edit), one-click copy, cookie profiles, side panel, scheduled auto-cleanup, Set-Cookie interceptor, CHIPS partitioned cookies, 6 export formats (JSON/Netscape/cURL/CSV/Puppeteer/Set-Cookie). Features, FAQ, always free, MV3-native. Published 2026-07-20, v1.2.0 2026-08-07. |
@@ -40,7 +40,7 @@
 | Blog: EditThisCookie Alternatives | ✅ | Competitive comparison → CrumbKit. MV2 removal story, malicious clone warning, 4 options (DevTools/CookieMate/CookieJar/CrumbKit), migration guide, security checklist. 2026-08-13. `blog/editthiscookie-alternatives.html` |
 | Blog: CSS Scan Alternatives | ✅ | Competitive comparison → CSSPick. CSS Scan price disputed across sources ($39-99) → article uses range not fixed number; free alternatives (ExtractCSS/MiroMiro) covered honestly; $19 lifetime positioning. 2026-08-13. `blog/css-scan-alternatives.html` |
 | Newsletter signup | ✅ | On homepage and blog page. Posts to `api.wayknow.tech/subscribe` |
-| GleanKit landing (`gleankit/index.html`) | ✅ | AI extraction tool landing page at `https://gleankit.wayknow.tech` (nginx server block + Cloudflare CNAME). Waitlist form → `api.wayknow.tech/subscribe`. Privacy + Terms pages added 2026-08-14 (platform AI proxy / BYOK / subscription data flow). 2026-08-13. Extension MVP in development at `/Users/xiaoxiao/work/gleankit/` |
+| GleanKit landing (`gleankit/index.html`) | ⚠️ | AI extraction tool landing page at `https://gleankit.wayknow.tech` (nginx server block + Cloudflare CNAME). Waitlist form → `api.wayknow.tech/subscribe`. Privacy + Terms pages added 2026-08-14 (platform AI proxy / BYOK / subscription data flow). **2026-08-14: product direction under review — removed from homepage cards and all footers; landing page kept on subdomain** |
 
 ### Design & Content
 | Item | Status | Notes |
