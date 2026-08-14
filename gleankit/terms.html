@@ -3,51 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GleanKit Terms of Service — plans, payments, AI usage, and acceptable use.">
   <title>Terms of Service — GleanKit</title>
+  <link rel="canonical" href="https://gleankit.wayknow.tech/terms.html">
   <style>
-    body { max-width: 720px; margin: 60px auto; padding: 0 24px; font: 16px/1.7 system-ui, -apple-system, sans-serif; color: #222; background: #fff; }
-    h1 { font-size: 28px; margin-bottom: 8px; }
-    h2 { font-size: 20px; margin-top: 36px; }
-    .date { color: #888; font-size: 14px; margin-bottom: 32px; }
+    :root {
+      --bg: #0f172a;
+      --bg-soft: #1e293b;
+      --text: #F5F5F5;
+      --muted: #94a3b8;
+      --primary: #3B82F6;
+      --accent: #10B981;
+      --border: #334155;
+      --radius: 8px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    header { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 1.25rem; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--primary); }
+    .nav-link { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+    .nav-link:hover { color: var(--text); }
+    .policy { padding: 48px 0 64px; }
+    .policy h1 { font-size: 2rem; margin-bottom: 8px; }
+    .policy .date { color: var(--muted); font-size: 0.875rem; margin-bottom: 32px; }
+    .policy h2 { font-size: 1.25rem; margin-top: 36px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .policy p { color: var(--muted); margin-bottom: 16px; }
+    .policy strong { color: var(--text); }
+    .policy ul { color: var(--muted); padding-left: 24px; margin-bottom: 16px; }
+    .policy li { margin-bottom: 8px; }
+    .policy a { color: var(--primary); }
+    code { background: var(--bg-soft); padding: 2px 6px; border-radius: 4px; color: var(--accent); font-size: 0.9em; }
+    footer { border-top: 1px solid var(--border); padding: 32px 0; }
+    footer p { color: var(--muted); font-size: 0.875rem; margin-bottom: 8px; }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--text); }
   </style>
 </head>
 <body>
-  <h1>GleanKit Terms of Service</h1>
-  <p class="date">Last updated: August 14, 2026</p>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">Glean<span>Kit</span></a>
+        <a href="index.html" class="nav-link">← Back to Home</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>These Terms of Service ("Terms") govern your use of GleanKit ("the Extension"), a Chrome browser extension developed and operated by WayKnow. By installing or using GleanKit, you agree to these Terms.</p>
+  <main class="policy">
+    <div class="container">
+      <h1>GleanKit Terms of Service</h1>
+      <p class="date">Last updated: August 14, 2026</p>
 
-  <h2>1. Service Description</h2>
-  <p>GleanKit helps you extract structured data from web pages you visit and export it as CSV or JSON. You describe the fields you want, GleanKit locates the matching elements with AI assistance, you confirm the selection, and you export the result to your own device.</p>
+      <p>These Terms of Service ("Terms") govern your use of GleanKit ("the Extension"), a Chrome browser extension developed and operated by WayKnow. By installing or using GleanKit, you agree to these Terms.</p>
 
-  <h2>2. Plans</h2>
-  <ul>
-    <li><strong>Free Tier</strong>: Includes 3 AI locations per calendar month, CSV export, and unlimited table viewing of your extractions.</li>
-    <li><strong>Pro Tier</strong>: A monthly ($9.99) or yearly ($79) subscription that includes 500 AI locations per month, JSON export, optional bring-your-own-key mode, and priority support. Pro licenses cover up to 3 devices and renew automatically; canceling stops renewal at the end of the current billing period.</li>
-  </ul>
+      <h2>1. Service Description</h2>
+      <p>GleanKit helps you extract structured data from web pages you visit and export it as CSV or JSON. You describe the fields you want, GleanKit locates the matching elements with AI assistance, you confirm the selection, and you export the result to your own device.</p>
 
-  <h2>3. Payments and Subscriptions</h2>
-  <p>Subscriptions are sold and billed through Creem, our payment provider. Prices are displayed in USD and may be subject to applicable taxes. GleanKit does not store or process your payment information. Subscriptions renew automatically until canceled; you can cancel anytime from your Creem account, and access continues until the end of the paid period.</p>
+      <h2>2. Plans</h2>
+      <ul>
+        <li><strong>Free Tier</strong>: Includes 3 AI locations per calendar month, CSV export, and unlimited table viewing of your extractions.</li>
+        <li><strong>Pro Tier</strong>: A monthly ($9.99) or yearly ($79) subscription that includes 500 AI locations per month, JSON export, optional bring-your-own-key mode, and priority support. Pro licenses cover up to 3 devices and renew automatically; canceling stops renewal at the end of the current billing period.</li>
+      </ul>
 
-  <h2>4. Acceptable Use</h2>
-  <p>You agree to use GleanKit only for lawful purposes and only on pages you have the right to access. You are responsible for complying with the terms of service and applicable laws of any website you extract from, and for how you use the data you extract. GleanKit is provided for personal research and productivity use; automated, unattended bulk scraping is not supported by the product.</p>
+      <h2>3. Payments and Subscriptions</h2>
+      <p>Subscriptions are sold and billed through Creem, our payment provider. Prices are displayed in USD and may be subject to applicable taxes. GleanKit does not store or process your payment information. Subscriptions renew automatically until canceled; you can cancel anytime from your Creem account, and access continues until the end of the paid period.</p>
 
-  <h2>5. AI Usage</h2>
-  <p>AI-assisted element location uses third-party AI providers (DeepSeek by default; optionally Anthropic in bring-your-own-key mode). See the <a href="privacy.html">Privacy Policy</a> for exactly what data is sent. Free-tier AI locations reset each calendar month; unused locations do not carry over.</p>
+      <h2>4. Acceptable Use</h2>
+      <p>You agree to use GleanKit only for lawful purposes and only on pages you have the right to access. You are responsible for complying with the terms of service and applicable laws of any website you extract from, and for how you use the data you extract. GleanKit is provided for personal research and productivity use; automated, unattended bulk scraping is not supported by the product.</p>
 
-  <h2>6. Intellectual Property</h2>
-  <p>GleanKit and its associated branding are owned by WayKnow. The data you extract belongs to you; we claim no ownership over your extracted data.</p>
+      <h2>5. AI Usage</h2>
+      <p>AI-assisted element location uses third-party AI providers (DeepSeek by default; optionally Anthropic in bring-your-own-key mode). See the <a href="privacy.html">Privacy Policy</a> for exactly what data is sent. Free-tier AI locations reset each calendar month; unused locations do not carry over.</p>
 
-  <h2>7. Disclaimer of Warranties</h2>
-  <p>GleanKit is provided "as is" without warranties of any kind, express or implied. While we aim for accurate element location, extraction results may be incomplete or incorrect depending on the page structure; you are responsible for reviewing extracted data before relying on it.</p>
+      <h2>6. Intellectual Property</h2>
+      <p>GleanKit and its associated branding are owned by WayKnow. The data you extract belongs to you; we claim no ownership over your extracted data.</p>
 
-  <h2>8. Limitation of Liability</h2>
-  <p>To the maximum extent permitted by law, WayKnow shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of GleanKit.</p>
+      <h2>7. Disclaimer of Warranties</h2>
+      <p>GleanKit is provided "as is" without warranties of any kind, express or implied. While we aim for accurate element location, extraction results may be incomplete or incorrect depending on the page structure; you are responsible for reviewing extracted data before relying on it.</p>
 
-  <h2>9. Changes to These Terms</h2>
-  <p>We may update these Terms from time to time. Material changes will be posted on this page with a revised "Last updated" date. Continued use of GleanKit after changes constitutes acceptance.</p>
+      <h2>8. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, WayKnow shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of GleanKit.</p>
 
-  <h2>10. Contact</h2>
-  <p>For questions about these Terms, contact <a href="mailto:support@wayknow.tech">support@wayknow.tech</a>.</p>
+      <h2>9. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. Material changes will be posted on this page with a revised "Last updated" date. Continued use of GleanKit after changes constitutes acceptance.</p>
+
+      <h2>10. Contact</h2>
+      <p>For questions about these Terms, contact <a href="mailto:support@wayknow.tech">support@wayknow.tech</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>GleanKit is an independent tool by the same developer behind <a href="https://wayknow.tech">WayKnow</a> — a collection of developer tools that don't sell your data.</p>
+      <p><a href="mailto:support@wayknow.tech">support@wayknow.tech</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </footer>
 </body>
 </html>

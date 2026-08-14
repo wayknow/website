@@ -3,67 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GleanKit Privacy Policy — what stays on your device, what the AI proxy receives, and bring-your-own-key mode.">
   <title>Privacy Policy — GleanKit</title>
+  <link rel="canonical" href="https://gleankit.wayknow.tech/privacy.html">
   <style>
-    body { max-width: 720px; margin: 60px auto; padding: 0 24px; font: 16px/1.7 system-ui, -apple-system, sans-serif; color: #222; background: #fff; }
-    h1 { font-size: 28px; margin-bottom: 8px; }
-    h2 { font-size: 20px; margin-top: 36px; }
-    .date { color: #888; font-size: 14px; margin-bottom: 32px; }
-    code { background: #f3f4f6; padding: 1px 5px; border-radius: 3px; font-size: 0.9em; }
+    :root {
+      --bg: #0f172a;
+      --bg-soft: #1e293b;
+      --text: #F5F5F5;
+      --muted: #94a3b8;
+      --primary: #3B82F6;
+      --accent: #10B981;
+      --border: #334155;
+      --radius: 8px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    header { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 1.25rem; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--primary); }
+    .nav-link { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+    .nav-link:hover { color: var(--text); }
+    .policy { padding: 48px 0 64px; }
+    .policy h1 { font-size: 2rem; margin-bottom: 8px; }
+    .policy .date { color: var(--muted); font-size: 0.875rem; margin-bottom: 32px; }
+    .policy h2 { font-size: 1.25rem; margin-top: 36px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .policy p { color: var(--muted); margin-bottom: 16px; }
+    .policy strong { color: var(--text); }
+    .policy ul { color: var(--muted); padding-left: 24px; margin-bottom: 16px; }
+    .policy li { margin-bottom: 8px; }
+    .policy a { color: var(--primary); }
+    code { background: var(--bg-soft); padding: 2px 6px; border-radius: 4px; color: var(--accent); font-size: 0.9em; }
+    footer { border-top: 1px solid var(--border); padding: 32px 0; }
+    footer p { color: var(--muted); font-size: 0.875rem; margin-bottom: 8px; }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--text); }
   </style>
 </head>
 <body>
-  <h1>GleanKit Privacy Policy</h1>
-  <p class="date">Last updated: August 14, 2026</p>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">Glean<span>Kit</span></a>
+        <a href="index.html" class="nav-link">← Back to Home</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>GleanKit is a Chrome extension that turns web pages into spreadsheets: you describe the data you want (e.g. "product name, price and rating"), GleanKit locates the matching elements, and you export the result as CSV or JSON. This policy explains what data GleanKit handles and where it goes.</p>
+  <main class="policy">
+    <div class="container">
+      <h1>GleanKit Privacy Policy</h1>
+      <p class="date">Last updated: August 14, 2026</p>
 
-  <h2>What Stays on Your Device</h2>
-  <ul>
-    <li><strong>Extracted data</strong>: The rows you extract and the table you view are kept only in your browser's session storage on your device, and only until you close the browser or start a new extraction. Exported CSV/JSON files go straight to your Downloads folder. GleanKit never stores your extracted data on any server.</li>
-    <li><strong>Your API keys</strong>: If you use the optional "bring your own key" mode, your key is stored locally in <code>chrome.storage.local</code> and is sent only to the AI provider you chose.</li>
-    <li><strong>Your license key</strong>: Stored locally in <code>chrome.storage.local</code>, with a 7-day local verification cache.</li>
-    <li><strong>A random device identifier</strong>: GleanKit generates a random, non-personal UUID used only to count how many devices a license is activated on and how many free extractions you have used this month. It contains no identifying information about you or your hardware.</li>
-  </ul>
+      <p>GleanKit is a Chrome extension that turns web pages into spreadsheets: you describe the data you want (e.g. "product name, price and rating"), GleanKit locates the matching elements, and you export the result as CSV or JSON. This policy explains what data GleanKit handles and where it goes.</p>
 
-  <h2>What Is Sent to Our AI Proxy (Platform Mode)</h2>
-  <p>By default, GleanKit runs in <strong>platform mode</strong>: the AI step is handled by our server (<code>api.wayknow.tech</code>), which calls the DeepSeek API on your behalf. When you click "Locate with AI", GleanKit sends to our server:</p>
-  <ul>
-    <li>The <strong>fields you asked for</strong> (e.g. "name, price, rating") — your original free-text request is parsed locally and only the parsed field list is sent.</li>
-    <li>A <strong>compact structural fingerprint of the page</strong> — a stripped-down summary of repeated blocks (element tags, class names, and short text samples), <em>not</em> the full page content. Hidden elements, scripts, comments and invisible text are removed before this summary is built.</li>
-    <li>Your <strong>random device ID</strong>, used to enforce the free quota (3 AI locations per month).</li>
-  </ul>
-  <p>We do <strong>not</strong> receive: your full page HTML, cookies or login state, your browsing history, or the extracted table rows. Our server logs quota counts and error codes; AI request payloads are not stored. DeepSeek receives the fingerprint and field list solely to propose element selectors, under its own privacy policy.</p>
+      <h2>What Stays on Your Device</h2>
+      <ul>
+        <li><strong>Extracted data</strong>: The rows you extract and the table you view are kept only in your browser's session storage on your device, and only until you close the browser or start a new extraction. Exported CSV/JSON files go straight to your Downloads folder. GleanKit never stores your extracted data on any server.</li>
+        <li><strong>Your API keys</strong>: If you use the optional "bring your own key" mode, your key is stored locally in <code>chrome.storage.local</code> and is sent only to the AI provider you chose.</li>
+        <li><strong>Your license key</strong>: Stored locally in <code>chrome.storage.local</code>, with a 7-day local verification cache.</li>
+        <li><strong>A random device identifier</strong>: GleanKit generates a random, non-personal UUID used only to count how many devices a license is activated on and how many free extractions you have used this month. It contains no identifying information about you or your hardware.</li>
+      </ul>
 
-  <h2>Bring-Your-Own-Key Mode</h2>
-  <p>If you add your own API key in Settings, extraction requests go <strong>directly</strong> from your browser to the provider you selected (DeepSeek or Anthropic), never through our server. The same stripped fingerprint and field list are sent to that provider under its privacy policy. The provider is selected by you; GleanKit does not share your key with anyone else.</p>
+      <h2>What Is Sent to Our AI Proxy (Platform Mode)</h2>
+      <p>By default, GleanKit runs in <strong>platform mode</strong>: the AI step is handled by our server (<code>api.wayknow.tech</code>), which calls the DeepSeek API on your behalf. When you click "Locate with AI", GleanKit sends to our server:</p>
+      <ul>
+        <li>The <strong>fields you asked for</strong> (e.g. "name, price, rating") — your original free-text request is parsed locally and only the parsed field list is sent.</li>
+        <li>A <strong>compact structural fingerprint of the page</strong> — a stripped-down summary of repeated blocks (element tags, class names, and short text samples), <em>not</em> the full page content. Hidden elements, scripts, comments and invisible text are removed before this summary is built.</li>
+        <li>Your <strong>random device ID</strong>, used to enforce the free quota (3 AI locations per month).</li>
+      </ul>
+      <p>We do <strong>not</strong> receive: your full page HTML, cookies or login state, your browsing history, or the extracted table rows. Our server logs quota counts and error codes; AI request payloads are not stored. DeepSeek receives the fingerprint and field list solely to propose element selectors, under its own privacy policy.</p>
 
-  <h2>Remote Interactions</h2>
-  <ul>
-    <li><strong>AI location</strong>: as described above — platform mode sends the fingerprint + field list to <code>api.wayknow.tech</code>; BYOK mode sends it to your chosen provider.</li>
-    <li><strong>License verification</strong>: when you activate a Pro license key, it is sent to our license server together with the random device ID and your browser's operating system and version. The server responds whether the key is valid.</li>
-    <li><strong>Usage quota check</strong>: the free-tier counter is checked against our server to show your remaining monthly extractions.</li>
-    <li><strong>Purchase</strong>: Pro subscriptions are processed on <code>creem.io</code>, our payment provider. GleanKit never sees or stores your payment information. After payment, our server emails you a license key using your purchase email address (via Resend, our email provider).</li>
-  </ul>
+      <h2>Bring-Your-Own-Key Mode</h2>
+      <p>If you add your own API key in Settings, extraction requests go <strong>directly</strong> from your browser to the provider you selected (DeepSeek or Anthropic), never through our server. The same stripped fingerprint and field list are sent to that provider under its privacy policy. The provider is selected by you; GleanKit does not share your key with anyone else.</p>
 
-  <h2>Permissions</h2>
-  <p>GleanKit requests the following Chrome permissions, and uses them only as described:</p>
-  <ul>
-    <li><strong><code>activeTab</code></strong> + <strong><code>scripting</code></strong>: To read the current page's structure and highlight matched elements, only after you open the GleanKit popup and click "Locate with AI". Highlight overlays are removed when you close the popup or press Esc.</li>
-    <li><strong><code>storage</code></strong>: To save your settings, API key, license key and quota counter locally.</li>
-    <li><strong>Host permissions</strong> (<code>api.wayknow.tech</code>, <code>api.deepseek.com</code>, <code>api.anthropic.com</code>): To reach our AI proxy / license server and the AI providers you select. GleanKit does not read or modify other sites' data beyond the current page you choose to extract from.</li>
-  </ul>
+      <h2>Remote Interactions</h2>
+      <ul>
+        <li><strong>AI location</strong>: as described above — platform mode sends the fingerprint + field list to <code>api.wayknow.tech</code>; BYOK mode sends it to your chosen provider.</li>
+        <li><strong>License verification</strong>: when you activate a Pro license key, it is sent to our license server together with the random device ID and your browser's operating system and version. The server responds whether the key is valid.</li>
+        <li><strong>Usage quota check</strong>: the free-tier counter is checked against our server to show your remaining monthly extractions.</li>
+        <li><strong>Purchase</strong>: Pro subscriptions are processed on <code>creem.io</code>, our payment provider. GleanKit never sees or stores your payment information. After payment, our server emails you a license key using your purchase email address (via Resend, our email provider).</li>
+      </ul>
 
-  <h2>Third-Party Services</h2>
-  <p>GleanKit uses no analytics, tracking, or advertising services. Data is shared only with the services listed above (our Cloudflare server, the AI provider in use, Creem for payments, Resend for transactional email), each of which has its own privacy policy.</p>
+      <h2>Permissions</h2>
+      <p>GleanKit requests the following Chrome permissions, and uses them only as described:</p>
+      <ul>
+        <li><strong><code>activeTab</code></strong> + <strong><code>scripting</code></strong>: To read the current page's structure and highlight matched elements, only after you open the GleanKit popup and click "Locate with AI". Highlight overlays are removed when you close the popup or press Esc.</li>
+        <li><strong><code>storage</code></strong>: To save your settings, API key, license key and quota counter locally.</li>
+        <li><strong>Host permissions</strong> (<code>api.wayknow.tech</code>, <code>api.deepseek.com</code>, <code>api.anthropic.com</code>): To reach our AI proxy / license server and the AI providers you select. GleanKit does not read or modify other sites' data beyond the current page you choose to extract from.</li>
+      </ul>
 
-  <h2>Your Control</h2>
-  <p>You can clear all GleanKit data at any time by removing the extension from Chrome, or by clearing the extension's storage in Chrome's extension settings. Free-tier quota and license activations can also be reset by contacting us.</p>
+      <h2>Third-Party Services</h2>
+      <p>GleanKit uses no analytics, tracking, or advertising services. Data is shared only with the services listed above (our Cloudflare server, the AI provider in use, Creem for payments, Resend for transactional email), each of which has its own privacy policy.</p>
 
-  <h2>Changes to This Policy</h2>
-  <p>If this policy changes, the updated version will be posted here and the "Last updated" date will be revised.</p>
+      <h2>Your Control</h2>
+      <p>You can clear all GleanKit data at any time by removing the extension from Chrome, or by clearing the extension's storage in Chrome's extension settings. Free-tier quota and license activations can also be reset by contacting us.</p>
 
-  <h2>Contact</h2>
-  <p>For questions about this policy, contact <a href="mailto:support@wayknow.tech">support@wayknow.tech</a>.</p>
+      <h2>Changes to This Policy</h2>
+      <p>If this policy changes, the updated version will be posted here and the "Last updated" date will be revised.</p>
+
+      <h2>Contact</h2>
+      <p>For questions about this policy, contact <a href="mailto:support@wayknow.tech">support@wayknow.tech</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>GleanKit is an independent tool by the same developer behind <a href="https://wayknow.tech">WayKnow</a> — a collection of developer tools that don't sell your data.</p>
+      <p><a href="mailto:support@wayknow.tech">support@wayknow.tech</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </footer>
 </body>
 </html>

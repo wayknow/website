@@ -40,7 +40,7 @@
 | Blog: EditThisCookie Alternatives | ✅ | Competitive comparison → CrumbKit. MV2 removal story, malicious clone warning, 4 options (DevTools/CookieMate/CookieJar/CrumbKit), migration guide, security checklist. 2026-08-13. `blog/editthiscookie-alternatives.html` |
 | Blog: CSS Scan Alternatives | ✅ | Competitive comparison → CSSPick. CSS Scan price disputed across sources ($39-99) → article uses range not fixed number; free alternatives (ExtractCSS/MiroMiro) covered honestly; $19 lifetime positioning. 2026-08-13. `blog/css-scan-alternatives.html` |
 | Newsletter signup | ✅ | On homepage and blog page. Posts to `api.wayknow.tech/subscribe` |
-| GleanKit landing (`gleankit/index.html`) | ✅ | AI extraction tool landing page at `https://gleankit.wayknow.tech` (nginx server block + Cloudflare CNAME). Waitlist form → `api.wayknow.tech/subscribe`. 2026-08-13. Extension MVP in development at `/Users/xiaoxiao/work/gleankit/` |
+| GleanKit landing (`gleankit/index.html`) | ✅ | AI extraction tool landing page at `https://gleankit.wayknow.tech` (nginx server block + Cloudflare CNAME). Waitlist form → `api.wayknow.tech/subscribe`. Privacy + Terms pages added 2026-08-14 (platform AI proxy / BYOK / subscription data flow). 2026-08-13. Extension MVP in development at `/Users/xiaoxiao/work/gleankit/` |
 
 ### Design & Content
 | Item | Status | Notes |
