@@ -47,7 +47,7 @@ wayknow/
 ├── crumbkit.html               # CrumbKit product page (free, MV3-native, privacy-first)
 ├── crumbkit-privacy.html       # CrumbKit privacy policy (zero data collection)
 ├── crumbkit-terms.html         # CrumbKit terms of service (MIT license)
-├── blog.html                     # Blog listing (10 posts, newsletter signup)
+├── blog.html                     # Blog listing (11 posts, newsletter signup)
 ├── blog/                         # Blog post pages
 │   ├── json-formatter-alternatives.html
 │   ├── snapmark-screenshot-tool.html

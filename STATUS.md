@@ -4,7 +4,7 @@
 
 ## ✅ Done
 
-### Website (32 pages)
+### Website (33 pages)
 | Page | Status | Notes |
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CrumbKit, CSSPick + ColorPeek), two groups (Browser Extensions / macOS Apps), shared values, no hero. 2026-08-13: repositioned to "Independent Developer Tools". GleanKit card removed 2026-08-14 (direction change — not a homepage product) |
@@ -28,7 +28,7 @@
 | CSSPick privacy | ✅ | Zero data collection, license verification only (api.wayknow.tech), device UUID for 3-device binding |
 | CSSPick terms | ✅ | Free + Pro tiers, Creem payment, 3-device license |
 | CSSPick refund | ✅ | 14-day conditional refund, 2-device max activation for eligibility |
-| Blog page | ✅ | 10 real posts, newsletter signup, proper SEO. `blog.html` |
+| Blog page | ✅ | 11 real posts, newsletter signup, proper SEO. `blog.html` |
 | Blog: JSON Formatter Alternatives | ✅ | Competitive comparison → ClearJSON. 2026-08-12: fixed HN link (real thread item?id=47721946), added author-defense paragraph, corrected paid-competitor facts (JSONVault Pro free+IAP, JSON Formatter Pro by Zovo), unified name to JSON Pretty Pro, cross-linked to the 2026 comparison post. `blog/json-formatter-alternatives.html` |
 | Blog: SnapMark Screenshot Tool | ✅ | Competitive comparison → SnapMark. Data corrected 2026-08-03: undo 100 steps both Free and Pro (v1.4.0 aligned free undo from 20→100). `blog/snapmark-screenshot-tool.html` |
 | Blog: CrumbKit Cookie Editor | ✅ | EditThisCookie story → CrumbKit. Feature list synced to v1.2.0 2026-08-07 (6 export formats, batch ops, profiles, auto-cleanup, interceptor, CHIPS, side panel; removed outdated "1,700 lines" claim). `blog/crumbkit-cookie-editor.html` |
@@ -39,6 +39,7 @@
 | Blog: How to Decode a JWT | ✅ | Tutorial → ClearJSON Pro (JWT auto-decode) + MCP. 5 methods (hand/terminal/jwt.io/extension/AI agent), claims reference, security gotcha. 2026-08-12. `blog/how-to-decode-jwt.html` |
 | Blog: EditThisCookie Alternatives | ✅ | Competitive comparison → CrumbKit. MV2 removal story, malicious clone warning, 4 options (DevTools/CookieMate/CookieJar/CrumbKit), migration guide, security checklist. 2026-08-13. `blog/editthiscookie-alternatives.html` |
 | Blog: CSS Scan Alternatives | ✅ | Competitive comparison → CSSPick. CSS Scan price disputed across sources ($39-99) → article uses range not fixed number; free alternatives (ExtractCSS/MiroMiro) covered honestly; $19 lifetime positioning. 2026-08-13. `blog/css-scan-alternatives.html` |
+| Blog: JSON Surgeon vs JSONClean vs ClearJSON | ✅ | 2026 JSON tool generation comparison → ClearJSON 2.0 subscription announcement + waitlist CTA. Competitors (JSON Surgeon $2.99/mo, JSONClean $2/mo, JSONVault Pro, Scrub $9) from CWS listings 2026-08. 2026-08-15. `blog/json-surgeon-vs-jsonclean-vs-clearjson.html` |
 | Newsletter signup | ✅ | On homepage and blog page. Posts to `api.wayknow.tech/subscribe` |
 | GleanKit landing (`gleankit/index.html`) | ⚠️ | AI extraction tool landing page at `https://gleankit.wayknow.tech` (nginx server block + Cloudflare CNAME). Waitlist form → `api.wayknow.tech/subscribe`. Privacy + Terms pages added 2026-08-14 (platform AI proxy / BYOK / subscription data flow). **2026-08-14: product direction under review — removed from homepage cards and all footers; landing page kept on subdomain** |
 

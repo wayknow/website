@@ -111,6 +111,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wayknow.tech/blog/json-surgeon-vs-jsonclean-vs-clearjson.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wayknow.tech/blog/css-scan-alternatives.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
