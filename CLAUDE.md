@@ -18,7 +18,7 @@
 wayknow/
 ├── index.html                  # 首页 — 产品卡片 + 品牌价值观
 ├── snapmark.html               # SnapMark 产品页（截图+标注，$39 终身）
-├── clearjson.html              # ClearJSON 产品页（JSON 查看器，$29 终身）
+├── clearjson.html              # ClearJSON 产品页（JSON 查看器，免费核心 + Pro $2.99/月订阅）
 ├── snapmark-privacy.html       # SnapMark 隐私政策
 ├── snapmark-terms.html         # SnapMark 服务条款
 ├── snapmark-refund.html        # SnapMark 退款政策
@@ -68,7 +68,7 @@ wayknow/
 | 产品 | 定位 | 定价 | 官网页面 | 扩展仓库 |
 |------|------|------|----------|----------|
 | SnapMark | 截图 + 标注 | 免费 + $39 终身 | `snapmark.html` | `../snapmark` |
-| ClearJSON | JSON 查看器 | 免费 + $29 终身 | `clearjson.html` | `../clearjson` |
+| ClearJSON | JSON 查看器 | 免费核心 + Pro $2.99/月 或 $19.99/年 | `clearjson.html` | `../clearjson` |
 | CrumbKit | Cookie 编辑器（合规新版） | 完全免费 | `crumbkit.html` | `../crumbkit` |
 | CSSPick | CSS 检查器 | 免费 + $19 终身 | `csspick.html` | `../csspick` |
 | ColorPeek | macOS 取色器 | 免费 + $19 终身 | `colorpeek.html` | `../colorpeek` |

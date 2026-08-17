@@ -737,3 +737,22 @@
 **Why**: Product direction has issues — homepage should not showcase it while the direction is being reworked.
 
 **Impact**: 23 files modified (index.html + 22 footers + docs).
+
+---
+
+## 48. ClearJSON Commercial Pivot: Buy-Once → Subscription (2026-08-17)
+
+**Decision**: ClearJSON pivoted from $29 lifetime buy-once to free core + Pro subscription ($2.99/mo or $19.99/yr). Supersedes Decisions #2 (No Subscription) and #4 ($29 lifetime) for ClearJSON.
+
+**Changes**:
+
+1. **Product page** (`clearjson.html`): Hero/meta/pricing/FAQ/comparison updated — Free core (MIT open-source version) + Pro subscription. Real Creem checkout links (monthly `prod_3ybErRdC6hwdGF8cJt21IF`, yearly `prod_XyNSKueGiqmuSxa9b9xRH`), waitlist replaced.
+2. **Terms** (`clearjson-terms.html`): Subscription terms (Free Tier MIT / Pro Tier subscription, auto-renewal, cancellation).
+3. **Homepage card**: Pricing tag updated.
+4. **Blog** (11th post): "JSON Surgeon vs JSONClean vs ClearJSON" — 2026-generation comparison + subscription announcement.
+5. **Blog pricing sync** (4 posts): `best-json-viewer`, `how-to-decode-jwt`, `json-formatter-alternatives`, `local-first-matters` — $29 buy-once → $2.99/mo. `crumbkit-cookie-editor` updated 2026-08-17 (missed by first pass, fixed in review).
+6. **STATUS**: ClearJSON row notes commercial rework (validation: ≥50 waitlist or ≥5 paid = direction confirmed).
+
+**Why**: Two years of one-time pricing didn't work — $29 can't fund ongoing maintenance; the category (2026-generation JSON tools) moved to subscriptions. Per the pivot writeup in the 11th blog post.
+
+**Impact**: `clearjson.html`, `clearjson-terms.html`, `index.html`, 5 blog posts, blog listing, sitemap, docs. README/CLAUDE pricing rows synced 2026-08-17 (review pass).

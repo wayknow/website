@@ -11,7 +11,7 @@ Official website for WayKnow, a collection of privacy-first local tools (Chrome 
 | Product | Description | Pricing |
 |---------|-------------|---------|
 | [SnapMark](./snapmark.html) | Screenshot + annotation Chrome extension (7 capture modes, 8 annotation tools, license server live) | Free + $39 lifetime |
-| [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, JWT decode, regex search, large files, MCP server) | Free + $29 lifetime |
+| [ClearJSON](./clearjson.html) | JSON viewer Chrome extension (formatting, tree view, JWT decode, regex search, large files, MCP server) | Free core + Pro $2.99/mo or $19.99/yr |
 | [CrumbKit](./crumbkit.html) | Cookie editor Chrome extension (privacy-first, MV3 native, v1.2.0 — batch edit, auto-cleanup, interceptor, CHIPS, 6 export formats) | Always Free |
 | [ColorPeek](./colorpeek.html) | macOS color picker for developers (menu bar, 8 formats, Tailwind CSS, SCSS, SwiftUI Color) | Free + $19 lifetime |
 | [CSSPick](./csspick.html) | CSS inspector Chrome extension (hover any element → view/copy computed CSS, 7 groups, 100% local) | Free + $19 lifetime |
@@ -28,7 +28,7 @@ Official website for WayKnow, a collection of privacy-first local tools (Chrome 
 | `support@wayknow.tech` | Cloudflare Email Routing → Gmail |
 | No subscription pricing | Both products: Free + one-time lifetime purchase only |
 | SnapMark Pro $39 | Researched competitors (FireShot $99.95 lifetime, others subscription-only). Deliberately underpriced for market entry |
-| ClearJSON Pro $29 | Impulse-buy price for developer tools (CSS Scan sold 1,450+ at $69) |
+| ClearJSON Pro $2.99/mo | Pivoted from buy-once $29 (2026-08-17) — one-time purchase couldn't fund maintenance; category moved to subscription (see DECISIONS #48) |
 | CrumbKit rebrand | CookieClear CWS item was blocked (spam policy). CrumbKit is a clean rebrand with new CWS item ID, published 2026-07-20 |
 
 ## Site Structure
