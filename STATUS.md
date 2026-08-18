@@ -9,7 +9,7 @@
 |------|:------:|-------|
 | Homepage (`index.html`) | ✅ | Product cards (SnapMark, ClearJSON, CrumbKit, CSSPick + ColorPeek), two groups (Browser Extensions / macOS Apps), shared values, no hero. 2026-08-13: repositioned to "Independent Developer Tools". GleanKit card removed 2026-08-14 (direction change — not a homepage product) |
 | SnapMark product | ✅ | v1.4.0: 7 capture modes (incl. Clean & Capture, Batch Capture), 8 annotation tools, text tool with IME (Chinese/Japanese/Korean) + 17 fonts + 9 sizes. CWS + Edge store links, pricing (Free + $39 lifetime, free undo now 100 steps), comparison table, FAQ. License server live at `api.wayknow.tech/snapmark`. Page synced from extension 2026-08-03 |
-| ClearJSON product | ✅ | v1.1.4: features, MCP server section (10 tools, `npx -y clearjson-mcp`), comparison table (incl. JSON Pretty Pro), FAQ. CWS + Edge store links, both stores live. Glama score A/A/B. npm package published. **2026-08-17: 商业化转型完成——买断 $29 → 免费核心 + Pro 订阅（$2.99/月 或 $19.99/年），Creem 订阅链接上线（月 `prod_3ybErRdC6hwdGF8cJt21IF` / 年 `prod_XyNSKueGiqmuSxa9b9xRH`），terms 更新，11 篇博客发布转型公告** |
+| ClearJSON product | ✅ | v2.0.0: features, MCP server section (10 tools, `npx -y clearjson-mcp`), comparison table (incl. JSON Pretty Pro), FAQ. CWS + Edge stores approved v2.0.0 2026-08-17. Glama score A/A/B. npm package published. 商业化转型完成——免费核心 + Pro 订阅（$2.99/月 或 $19.99/年），Creem 订阅链接上线（月 `prod_3ybErRdC6hwdGF8cJt21IF` / 年 `prod_XyNSKueGiqmuSxa9b9xRH`），terms 更新，11 篇博客发布转型公告 |
 | CrumbKit product | ✅ | v1.2.0: batch operations (multi-delete + bulk-edit), one-click copy, cookie profiles, side panel, scheduled auto-cleanup, Set-Cookie interceptor, CHIPS partitioned cookies, 6 export formats (JSON/Netscape/cURL/CSV/Puppeteer/Set-Cookie). Features, FAQ, always free, MV3-native. Published 2026-07-20, v1.2.0 2026-08-07. |
 | SnapMark privacy | ✅ | Synced with extension's canonical privacy policy |
 | SnapMark terms | ✅ | Updated July 9 2026: 10 sections, MIT license, Creem payment |
@@ -78,8 +78,8 @@
 | ClearJSON License API | ✅ | `api.wayknow.tech/clearjson` (Cloudflare Workers + D1), v0.3.0, 136 tests passing |
 | CSSPick License API | ✅ | `api.wayknow.tech/csspick` (Cloudflare Workers + D1), verify/generate/webhook/checkout/admin, 21 e2e tests passing |
 | CSSPick CWS submission | ✅ | v0.2.0 approved 2026-08-12. [CWS link](https://chromewebstore.google.com/detail/csspick-inspect-copy-css/kadcnmgmnjnjcggfbphjnbndkoadkghj). Page buttons live (removed Coming Soon placeholders) |
-| ClearJSON CWS submission | ✅ | v1.0.0 published 2026-07-10. [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
-| ClearJSON Edge Add-ons | ✅ | v1.1.4 approved 2026-08-10. Edge Store ID: `kdebbkdldjhhboafpflimanekmhinelg`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/clearjson/kdebbkdldjhhboafpflimanekmhinelg) |
+| ClearJSON CWS submission | ✅ | v2.0.0 approved (CWS + Edge, 2026-08-17). [CWS link](https://chromewebstore.google.com/detail/clearjson/bgcicghmdpefapfdeghgealacphkgobk) |
+| ClearJSON Edge Add-ons | ✅ | v2.0.0 approved 2026-08-17. Edge Store ID: `kdebbkdldjhhboafpflimanekmhinelg`. [Edge link](https://microsoftedge.microsoft.com/addons/detail/clearjson/kdebbkdldjhhboafpflimanekmhinelg) |
 | CrumbKit CWS submission | ✅ | v1.0.0 published 2026-07-20, v1.0.1 published 2026-07-29, v1.1.0 published 2026-08-06, v1.2.0 published 2026-08-07. [CWS link](https://chromewebstore.google.com/detail/crumbkit/ggnfjnagciaomejccfjceniohpdkcbjl). v1.0.0 submitted with `tabs` in manifest — passed review anyway. `tabs` removed in v1.0.1 (design system alignment + cross-promo). v1.1.0 adds table view, profiles, side panel. v1.2.0 adds batch edit, auto-cleanup, Set-Cookie interceptor, CHIPS, 6 export formats. |
 
 ### 2026-08-12 策略与获客（决策详见 DECISIONS.md #42-45）
